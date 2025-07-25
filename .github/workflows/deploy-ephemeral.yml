@@ -39,7 +39,7 @@ jobs:
         run: echo "branch_name=`echo ${{ github.head_ref || github.ref_name }}  | sed 's/refs\/heads\///'| cut - -c 1-30 | tr '[:upper:]' '[:lower:]'`" >> $GITHUB_OUTPUT
 
       - name: Setup Node
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.4.0
         with:
           node-version-file: .nvmrc
           cache: yarn

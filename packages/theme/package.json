@@ -14,9 +14,9 @@
   "types": "dist/types/index.d.ts",
   "dependencies": {
     "@blueshift-ui/tokens": "4.61.0",
-    "@fontsource/lato": "5.0.21",
-    "@fontsource/ovo": "5.1.0",
-    "@fontsource/poppins": "5.0.14"
+    "@fontsource/lato": "5.2.6",
+    "@fontsource/ovo": "5.2.6",
+    "@fontsource/poppins": "5.2.6"
   },
   "devDependencies": {
     "@blueshift-ui/feedback": "4.61.0"

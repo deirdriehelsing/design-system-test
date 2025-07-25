@@ -1,0 +1,21 @@
+{
+  "command": {
+    "publish": {
+      "allowBranch": "(master|v3)",
+      "ignoreChanges": ["**/*.test.@(j|t)s?(x)"],
+      "message": "publish",
+      "registry": "https://npm.fury.io/varsity/"
+    },
+    "version": {
+      "allowBranch": ["*", "*/*"],
+      "conventionalCommits": true,
+      "message": "chore(release): release new version %v"
+    },
+    "watch": {
+      "ignoreChanges": ["**/*.md", "**/*.test.@(j|t)s?(x)"]
+    }
+  },
+  "npmClient": "yarn",
+  "version": "4.61.0",
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
+}

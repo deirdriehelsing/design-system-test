@@ -1,0 +1,5 @@
+{
+  "trackingPlanId": ["tp_2txBTXZsARq7eHHW5S5rcP3ZRJT"],
+  "eventNamesOutputPath": "./src/constants/generated/analytics-event-names.ts",
+  "eventTypesOutputPath": "./src/types/generated/analytics-events.ts"
+}

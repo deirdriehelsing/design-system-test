@@ -1,0 +1,423 @@
+{
+  "token": {
+    "user_id": "s16hwvZMZ_2rUi3IhXTLmQ",
+    "roles": ["client", "mobile_app_user", "pt_user"],
+    "raw": null
+  },
+  "entity": {
+    "id": 1054487410,
+    "display_name": "Super N",
+    "first_name": "Super",
+    "last_name": "Nova",
+    "email": "super.nova@fairfaxtesting.com",
+    "login": "super.nova@fairfaxtesting.com",
+    "role": "client",
+    "is_client": true,
+    "client_id": 3023412,
+    "client_uuid": "7eb8d07e-5a2d-4a11-940e-29620d453776",
+    "tutor_id": null,
+    "tutor_uuid": null,
+    "teacher_uuid": null,
+    "product_state": "vt4s",
+    "updated_at": "2024-10-04T15:50:38Z",
+    "is_anonymous": false,
+    "token": "40e030d8e17f0409d628bfbadabfeaff",
+    "avatar_url": null,
+    "recruitment_link": null,
+    "can_impersonate": false,
+    "jurisdiction_id": 42,
+    "lab_user_type": 3,
+    "pending_tos_url": null
+  },
+  "students": [
+    {
+      "first_name": "Sally",
+      "last_name": "Nova",
+      "email": "sally.nova@fairfaxtesting.com",
+      "id": 1054487411,
+      "uuid": "24b15304-b64a-4010-9102-80f6beab01d8",
+      "user_id": "s16hwvZMZ_2rUi3IhXTLmQ",
+      "student_user_id": "w57ascEOw26YoDuLmzAJlQ",
+      "client": null,
+      "enrolled": true,
+      "grade_list_id": 14,
+      "avatar_url": null,
+      "enablements": [
+        {
+          "id": "73ef352b-10b0-4e97-8ccc-012f1e5eb1b0",
+          "product": {
+            "id": "0ebe7d86-3413-4542-907d-0b90b65811bd",
+            "name": "Academic Video On Demand",
+            "short_name": "academic_video_on_demand",
+            "description": "Academic Video On Demand",
+            "type": "catalog_access",
+            "default_configuration": {
+              "tag": "category-academic_on_demand"
+            }
+          },
+          "configuration": {
+            "tag": "category-academic_on_demand"
+          }
+        },
+        {
+          "id": "79b872ba-11ea-425d-ab3d-f227b3aacd94",
+          "product": {
+            "id": "f3ab6133-fac3-40b7-8162-296a0f7b0de6",
+            "name": "VT+ Courses",
+            "short_name": "vt+_courses",
+            "description": "VT+ Courses",
+            "type": "catalog_access",
+            "default_configuration": {
+              "tag": "category-vt+_course"
+            }
+          },
+          "configuration": {
+            "tag": "category-vt+_course"
+          }
+        },
+        {
+          "id": "2cb00c82-1085-4488-8e73-c33fdd9237d6",
+          "product": {
+            "id": "58d3bcd1-8aff-4286-8708-2bcad53b1afa",
+            "name": "Summer Offering Courses",
+            "short_name": "summer_offering_courses",
+            "description": "Summer Offering Courses",
+            "type": "catalog_access",
+            "default_configuration": {
+              "tag": "course_list-ll_summer_camps"
+            }
+          },
+          "configuration": {
+            "tag": "course_list-ll_summer_camps"
+          }
+        },
+        {
+          "id": "7099a1ab-1db2-41f8-8e0d-b264f8b69455",
+          "product": {
+            "id": "e258881f-bc81-4255-88f2-e232a304f621",
+            "name": "Instant Chat",
+            "short_name": "instant_chat",
+            "description": "Instant Chat product for staging testing",
+            "type": "",
+            "default_configuration": {
+              "subject_ids": [
+                2, 3, 7, 9, 10, 11, 12, 13, 178, 181, 704, 714, 727, 737, 739, 750, 775, 789, 796
+              ],
+              "tag": "instant_chat",
+              "tutor_flags": [11001, 11002]
+            }
+          },
+          "configuration": {
+            "tag": "instant_chat",
+            "tutor_flags": [11001, 11002],
+            "subjects": [
+              {
+                "id": 2,
+                "parent_id": 1,
+                "short_name": "algebra",
+                "display_name": "Algebra",
+                "name": "Algebra",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": null,
+                "updated_at": "2024-10-05T12:56:40Z"
+              },
+              {
+                "id": 3,
+                "parent_id": 1,
+                "short_name": "calculus",
+                "display_name": "Calculus",
+                "name": "Calculus",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": null,
+                "updated_at": "2024-10-05T12:56:41Z"
+              },
+              {
+                "id": 7,
+                "parent_id": 1,
+                "short_name": "geometry",
+                "display_name": "Geometry",
+                "name": "Geometry",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": null,
+                "updated_at": "2024-10-04T12:56:27Z"
+              },
+              {
+                "id": 9,
+                "parent_id": 1,
+                "short_name": "middle_school_math",
+                "display_name": "Middle School Math",
+                "name": "Middle School Math",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": null,
+                "updated_at": "2024-10-04T12:56:28Z"
+              },
+              {
+                "id": 10,
+                "parent_id": 1,
+                "short_name": "pre_calculus",
+                "display_name": "Pre-Calculus",
+                "name": "Pre-Calculus",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": null,
+                "updated_at": "2024-10-04T12:56:29Z"
+              },
+              {
+                "id": 11,
+                "parent_id": 1,
+                "short_name": "statistics",
+                "display_name": "Statistics",
+                "name": "Statistics",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": null,
+                "updated_at": "2024-09-16T12:56:45Z"
+              },
+              {
+                "id": 12,
+                "parent_id": 1,
+                "short_name": "trigonometry",
+                "display_name": "Trigonometry",
+                "name": "Trigonometry",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": null,
+                "updated_at": "2024-09-14T12:56:59Z"
+              },
+              {
+                "id": 13,
+                "parent_id": 1,
+                "short_name": "algebra_2",
+                "display_name": "Algebra 2",
+                "name": "Algebra 2",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": null,
+                "updated_at": "2024-10-04T12:56:31Z"
+              },
+              {
+                "id": 178,
+                "parent_id": 14,
+                "short_name": "earth_science",
+                "display_name": "Earth Science",
+                "name": "Earth Science",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2013-05-28T04:17:09Z",
+                "updated_at": "2024-09-22T12:56:39Z"
+              },
+              {
+                "id": 181,
+                "parent_id": 14,
+                "short_name": "environmental_science",
+                "display_name": "Environmental Science",
+                "name": "Environmental Science",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2013-05-28T04:17:12Z",
+                "updated_at": "2024-05-08T12:57:52Z"
+              },
+              {
+                "id": 704,
+                "parent_id": 70,
+                "short_name": "high_school_level_american_history",
+                "display_name": "High School Level American History",
+                "name": "High School Level American History",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:57Z",
+                "updated_at": "2023-11-20T13:56:47Z"
+              },
+              {
+                "id": 714,
+                "parent_id": 16,
+                "short_name": "high_school_biology",
+                "display_name": "High School Biology",
+                "name": "High School Biology",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:58Z",
+                "updated_at": "2024-05-18T12:56:36Z"
+              },
+              {
+                "id": 727,
+                "parent_id": 17,
+                "short_name": "high_school_chemistry",
+                "display_name": "High School Chemistry",
+                "name": "High School Chemistry",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:58Z",
+                "updated_at": "2024-05-18T12:56:37Z"
+              },
+              {
+                "id": 737,
+                "parent_id": 61,
+                "short_name": "high_school_english",
+                "display_name": "High School English",
+                "name": "High School English",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:58Z",
+                "updated_at": "2024-10-02T13:01:02Z"
+              },
+              {
+                "id": 739,
+                "parent_id": 63,
+                "short_name": "middle_school_writing",
+                "display_name": "Middle School Writing",
+                "name": "Middle School Writing",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:58Z",
+                "updated_at": "2024-05-12T12:56:45Z"
+              },
+              {
+                "id": 750,
+                "parent_id": 70,
+                "short_name": "high_school_world_history",
+                "display_name": "High School World History",
+                "name": "High School World History",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:58Z",
+                "updated_at": "2023-08-01T12:10:21Z"
+              },
+              {
+                "id": 775,
+                "parent_id": 1,
+                "short_name": "elementary_school_math",
+                "display_name": "Elementary School Math",
+                "name": "Elementary School Math",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:59Z",
+                "updated_at": "2024-10-05T12:57:26Z"
+              },
+              {
+                "id": 789,
+                "parent_id": 21,
+                "short_name": "high_school_physics",
+                "display_name": "High School Physics",
+                "name": "High School Physics",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:59Z",
+                "updated_at": "2024-09-22T12:57:05Z"
+              },
+              {
+                "id": 796,
+                "parent_id": 14,
+                "short_name": "elementary_school_science",
+                "display_name": "Elementary School Science",
+                "name": "Elementary School Science",
+                "display_order": 9999,
+                "is_leaf": null,
+                "created_at": "2016-08-25T04:21:59Z",
+                "updated_at": "2024-10-04T12:57:11Z"
+              }
+            ]
+          }
+        },
+        {
+          "id": "864d19f7-a2f7-42e7-be8c-066f7710a1be",
+          "product": {
+            "id": "0ebe7d86-3413-4542-907d-0b90b65811bd",
+            "name": "Academic Video On Demand",
+            "short_name": "academic_video_on_demand",
+            "description": "Academic Video On Demand",
+            "type": "catalog_access",
+            "default_configuration": {
+              "tag": "category-academic_on_demand"
+            }
+          },
+          "configuration": {
+            "tag": "category-academic_on_demand"
+          }
+        },
+        {
+          "id": "2f369824-6ff3-4b40-8453-c705bebf667f",
+          "product": {
+            "id": "1ac1b2c2-ef65-457f-8e8a-4190350c9e49",
+            "name": "Essay Editing",
+            "short_name": "essay_editing",
+            "description": "Essay Editing Product",
+            "type": "",
+            "default_configuration": {
+              "tag": "essay_editing"
+            }
+          },
+          "configuration": {
+            "tag": "essay_editing"
+          }
+        },
+        {
+          "id": "86b210f8-e10c-4889-b405-f313f421567f",
+          "product": {
+            "id": "7159832d-0ad3-4c73-bd74-f5fb245db015",
+            "name": "Merchandising Banner",
+            "short_name": "merchandising_banner",
+            "description": "Enable showing the Merchandising Banner to users in My Learning/UXP web application",
+            "type": "",
+            "default_configuration": {
+              "tag": "merchandising_banner"
+            }
+          },
+          "configuration": {
+            "tag": "merchandising_banner"
+          }
+        },
+        {
+          "id": "6b46ee42-5092-4285-a0ac-8215d1515066",
+          "product": {
+            "id": "0575159c-fb80-4f43-849b-d7c0f69642fc",
+            "name": "UXP Enabled",
+            "short_name": "uxp_enabled",
+            "description": "Enable redirecting users to the My Learning/UXP web application after login",
+            "type": "",
+            "default_configuration": {
+              "tag": "uxp_enabled"
+            }
+          },
+          "configuration": {
+            "tag": "uxp_enabled"
+          }
+        },
+        {
+          "id": "e7695a1e-55c1-490c-83b7-fe617001e2cd",
+          "product": {
+            "id": "1ffd9a04-a53d-4e53-b24a-9269a80112ff",
+            "name": "Live Classes",
+            "short_name": "live_classes",
+            "description": "Live Classes",
+            "type": "catalog_access",
+            "default_configuration": {
+              "tag": "course_list-ll_live_classes"
+            }
+          },
+          "configuration": {
+            "tag": "course_list-ll_live_classes"
+          }
+        }
+      ]
+    },
+    {
+      "first_name": "Leigh ",
+      "last_name": "Nova",
+      "email": "super.nova@fairfaxtesting.com",
+      "id": 1054661123,
+      "uuid": "e6abfadb-e293-48a9-9e44-589b4fb8ea09",
+      "user_id": "s16hwvZMZ_2rUi3IhXTLmQ",
+      "student_user_id": "Zdmsm13vBWFy1se401LhnQ",
+      "client": null,
+      "enrolled": false,
+      "grade_list_id": 14,
+      "avatar_url": null,
+      "enablements": null
+    }
+  ]
+}

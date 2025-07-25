@@ -1,0 +1,46 @@
+---
+description: JIRA tickets and git workflow
+globs: 
+alwaysApply: false
+---
+# Branch Management
+Before starting work:
+- Ensure you are on the master branch and it is up to date:
+  ```bash
+  git checkout master
+  git pull origin master
+  ```
+- Create a new branch from master using the JIRA ticket key as prefix:
+  ```bash
+  git checkout -b TICKET-123-descriptive-name
+  ```
+
+# JIRA Workflow
+When starting work on a ticket:
+1. Assign the ticket to yourself
+2. Move the ticket to "In Progress" status
+3. Estimate story points:
+   - 1 point ≈ 1 day of total work
+   - Include time for:
+     - Development
+     - Code review
+     - Testing
+     - Deployment
+   - Round up to the nearest point for uncertainty
+
+# Commit Guidelines
+Use conventional commits format.
+
+Types:
+- feat: New feature
+- fix: Bug fix
+- docs: Documentation changes
+- style: Code style changes (formatting, etc)
+- refactor: Code changes that neither fix bugs nor add features
+- test: Adding or modifying tests
+- chore: Changes to build process or auxiliary tools
+
+# Pull Request Conventions
+- Always check for and use PULL_REQUEST_TEMPLATE.md as the template for PR content
+- Prefix PR titles with the JIRA ticket number (e.g. "ACT-1234: Description")
+- Ensure PR descriptions follow the template structure exactly

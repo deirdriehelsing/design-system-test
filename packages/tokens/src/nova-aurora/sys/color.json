@@ -1,0 +1,76 @@
+{
+  "sys": {
+    "color": {
+      "accent01": {
+        "light": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.accent01.shade-80.value}"
+        }
+      },
+      "accent02": {
+        "light": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.accent02.shade-80.value}"
+        }
+      },
+      "accent03": {
+        "light": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.accent03.shade-80.value}"
+        }
+      },
+      "accent04": {
+        "light": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.accent04.shade-80.value}"
+        }
+      },
+      "action": {
+        "active": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.primary.shade-30.value}"
+        },
+        "disabled": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.neutral.shade-60.value}"
+        },
+        "disabledBackground": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.neutral.shade-70.value}"
+        },
+        "focus": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.primary.shade-30.value}"
+        },
+        "hover": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.primary.shade-30.value}"
+        },
+        "selected": {
+          "attributes": {
+            "category": "color"
+          },
+          "value": "{ref.palette.primary.shade-30.value}"
+        }
+      }
+    }
+  }
+}

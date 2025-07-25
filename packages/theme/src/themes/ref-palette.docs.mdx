@@ -1,0 +1,45 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import * as tokens from '@blueshift-ui/tokens';
+
+<Meta title="Theme/Tokens/Reference/Palette" />
+
+<ColorPalette>
+  {Object.entries(tokens).map(([themeName, themeValue]) => {
+    const params = new URLSearchParams(window.location.search);
+    const currentTheme = params.get('globals')
+      ? params.get('globals').split('theme:')[1]
+      : 'novaAurora';
+    const themeTokensKey = `${currentTheme}Tokens`;
+    const currentTokens = tokens[themeTokensKey];
+    if (themeName === themeTokensKey && currentTokens.ref && currentTokens.ref.palette) {
+      return Object.entries(currentTokens.ref.palette).map(([paletteName, paletteColors]) => {
+        // Convert paletteColors to an array of entries and sort it to ensure correct order
+        const sortedColors = Object.entries(paletteColors).sort(([a], [b]) => {
+          const aNum = parseInt(a.replace(/\D/g, ''));
+          const bNum = parseInt(b.replace(/\D/g, ''));
+          return aNum - bNum;
+        });
+
+        // Split sortedColors into chunks of 13
+        const colorChunks = sortedColors.reduce((acc, entry, index) => {
+          const chunkIndex = Math.floor(index / 13);
+          if (!acc[chunkIndex]) acc[chunkIndex] = [];
+          acc[chunkIndex].push(entry);
+          return acc;
+        }, []);
+
+        // Render a ColorItem for each chunk
+        return colorChunks.map((chunk, index) => (
+          <ColorItem
+            colors={Object.fromEntries(chunk)}
+            key={`${paletteName}-${index}`}
+            title={index === 0 ? `ref.palette.${paletteName}` : `ref.palette.${paletteName} (continued)`}
+          />
+        ));
+      });
+    }
+    return null;
+
+})}
+
+</ColorPalette>

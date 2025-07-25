@@ -1,0 +1,21 @@
+# Ignored directories:
+**/bin
+**/build
+**/dist
+**/node_modules
+**/public
+coverage
+docs/storybook
+lib
+
+# Ignored files/file types:
+.*
+*.config.js
+*.css
+*.html
+*.lock
+*.md
+*.mdx
+*.yml
+makefile
+package.json

@@ -1,0 +1,68 @@
+{
+  "sys": {
+    "shadow": {
+      "soft": {
+        "xs": {
+          "value": "{ref.shadow.xOffset.0} {ref.shadow.yOffset.2} {ref.shadow.blur.0} {ref.shadow.spread.0} {ref.shadow.color.shade-015}"
+        },
+        "s": {
+          "value": "{ref.shadow.xOffset.0} {ref.shadow.yOffset.8} {ref.shadow.blur.16} {ref.shadow.spread.0} {ref.shadow.color.shade-008}"
+        }
+      },
+      "box": {
+        "declaration-00": { "value": "none" },
+        "declaration-01": { "value": "0px 1px 1px 0px rgba(0, 0, 0, 0.1)" },
+        "declaration-02": { "value": "0px 2px 2px 0px rgba(0, 0, 0, 0.1)" },
+        "declaration-03": { "value": "0px 3px 4px 0px rgba(0, 0, 0, 0.1)" },
+        "declaration-04": { "value": "0px 4px 5px 0px rgba(0, 0, 0, 0.1)" },
+        "declaration-05": { "value": "0px 5px 8px 0px rgba(0, 0, 0, 0.1)" },
+        "declaration-06": { "value": "0px 6px 10px 0px rgba(0, 0, 0, 0.1)" },
+        "declaration-07": { "value": "0px 7px 10px 1px rgba(0, 0, 0, 0.1)" },
+        "declaration-08": { "value": "0px 8px 10px 1px rgba(0, 0, 0, 0.1)" },
+        "declaration-09": { "value": "0px 9px 12px 1px rgba(0, 0, 0, 0.1)" },
+        "declaration-10": { "value": "0px 10px 14px 1px rgba(0, 0, 0, 0.1)" },
+        "declaration-11": { "value": "0px 11px 15px 1px rgba(0, 0, 0, 0.1)" },
+        "declaration-12": { "value": "0px 12px 17px 2px rgba(0, 0, 0, 0.1)" },
+        "declaration-13": { "value": "0px 13px 19px 2px rgba(0, 0, 0, 0.1)" },
+        "declaration-14": { "value": "0px 14px 21px 2px rgba(0, 0, 0, 0.1)" },
+        "declaration-15": { "value": "0px 15px 22px 2px rgba(0, 0, 0, 0.1)" },
+        "declaration-16": { "value": "0px 16px 24px 2px rgba(0, 0, 0, 0.1)" },
+        "declaration-17": { "value": "0px 17px 26px 2px rgba(0, 0, 0, 0.1)" },
+        "declaration-18": { "value": "0px 18px 28px 2px rgba(0, 0, 0, 0.1)" },
+        "declaration-19": { "value": "0px 19px 29px 2px rgba(0, 0, 0, 0.1)" },
+        "declaration-20": { "value": "0px 20px 31px 3px rgba(0, 0, 0, 0.1)" },
+        "declaration-21": { "value": "0px 21px 33px 3px rgba(0, 0, 0, 0.1)" },
+        "declaration-22": { "value": "0px 22px 35px 3px rgba(0, 0, 0, 0.1)" },
+        "declaration-23": { "value": "0px 23px 36px 3px rgba(0, 0, 0, 0.1)" },
+        "declaration-24": { "value": "0px 24px 38px 3px rgba(0, 0, 0, 0.1)" }
+      },
+      "filter": {
+        "declaration-00": { "value": "none" },
+        "declaration-01": { "value": "drop-shadow(0px 1px 1px rgba(23, 25, 29, 0.12))" },
+        "declaration-02": { "value": "drop-shadow(0px 2px 2px rgba(23, 25, 29, 0.12))" },
+        "declaration-03": { "value": "drop-shadow(0px 3px 3px rgba(23, 25, 29, 0.12))" },
+        "declaration-04": { "value": "drop-shadow(0px 4px 4px rgba(23, 25, 29, 0.12))" },
+        "declaration-05": { "value": "drop-shadow(0px 5px 5px rgba(23, 25, 29, 0.12))" },
+        "declaration-06": { "value": "drop-shadow(0px 6px 6px rgba(23, 25, 29, 0.12))" },
+        "declaration-07": { "value": "drop-shadow(0px 7px 7px rgba(23, 25, 29, 0.12))" },
+        "declaration-08": { "value": "drop-shadow(0px 8px 8px rgba(23, 25, 29, 0.12))" },
+        "declaration-09": { "value": "drop-shadow(0px 9px 9px rgba(23, 25, 29, 0.12))" },
+        "declaration-10": { "value": "drop-shadow(0px 10px 10px rgba(23, 25, 29, 0.12))" },
+        "declaration-11": { "value": "drop-shadow(0px 11px 11px rgba(23, 25, 29, 0.12))" },
+        "declaration-12": { "value": "drop-shadow(0px 12px 12px rgba(23, 25, 29, 0.12))" },
+        "declaration-13": { "value": "drop-shadow(0px 13px 13px rgba(23, 25, 29, 0.12))" },
+        "declaration-14": { "value": "drop-shadow(0px 14px 14px rgba(23, 25, 29, 0.12))" },
+        "declaration-15": { "value": "drop-shadow(0px 15px 15px rgba(23, 25, 29, 0.12))" },
+        "declaration-16": { "value": "drop-shadow(0px 16px 16px rgba(23, 25, 29, 0.12))" },
+        "declaration-17": { "value": "drop-shadow(0px 17px 17px rgba(23, 25, 29, 0.12))" },
+        "declaration-18": { "value": "drop-shadow(0px 18px 18px rgba(23, 25, 29, 0.12))" },
+        "declaration-19": { "value": "drop-shadow(0px 19px 19px rgba(23, 25, 29, 0.12))" },
+        "declaration-20": { "value": "drop-shadow(0px 20px 20px rgba(23, 25, 29, 0.12))" },
+        "declaration-21": { "value": "drop-shadow(0px 21px 21px rgba(23, 25, 29, 0.12))" },
+        "declaration-22": { "value": "drop-shadow(0px 22px 22px rgba(23, 25, 29, 0.12))" },
+        "declaration-23": { "value": "drop-shadow(0px 23px 23px rgba(23, 25, 29, 0.12))" },
+        "declaration-24": { "value": "drop-shadow(0px 24px 24px rgba(23, 25, 29, 0.12))" }
+      }
+    }
+  }
+}

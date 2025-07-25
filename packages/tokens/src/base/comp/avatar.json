@@ -1,0 +1,61 @@
+{
+  "comp": {
+    "avatar": {
+      "background-color": {
+        "coral": {
+          "value": "#d44551"
+        },
+        "goldenrod": {
+          "value": "#f1ac00"
+        },
+        "royal-blue": {
+          "value": "#3a53a2"
+        },
+        "seafoam": {
+          "value": "#40c0ab"
+        }
+      },
+      "border-color": {
+        "gold": {
+          "value": "#d89136"
+        },
+        "green": {
+          "value": "#61b86e"
+        },
+        "brick": {
+          "value": "#ff8163"
+        },
+        "amethyst": {
+          "value": "#b49dcb"
+        }
+      },
+      "font-size": {
+        "small": {
+          "value": "0.88rem"
+        },
+        "medium": {
+          "value": "1.88rem"
+        },
+        "large": {
+          "value": "2.25rem"
+        }
+      },
+      "font-weight": {
+        "default": {
+          "value": "{ref.typeface.weight.bold.value}"
+        }
+      },
+      "size": {
+        "small": {
+          "value": "2.5rem"
+        },
+        "medium": {
+          "value": "6.25rem"
+        },
+        "large": {
+          "value": "7.5rem"
+        }
+      }
+    }
+  }
+}

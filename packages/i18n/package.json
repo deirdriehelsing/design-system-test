@@ -1,0 +1,39 @@
+{
+  "name": "@blueshift-ui/i18n",
+  "version": "4.61.0",
+  "description": "BlueshiftUI i18n provider and hooks",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/master/packages/i18n#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "sideEffects": [
+    "./src/lib/i18next/config/index.ts",
+    "./dist/lib/i18next/config/index.js",
+    "**/*.css.ts",
+    "**/*.css.js"
+  ],
+  "types": "dist/types/index.d.ts",
+  "dependencies": {
+    "@blueshift-ui/fetch": "4.61.0",
+    "@blueshift-ui/telemetry": "4.61.0",
+    "i18next": "22.4.15",
+    "i18next-browser-languagedetector": "7.0.2",
+    "i18next-chained-backend": "4.6.2",
+    "i18next-http-backend": "2.5.2",
+    "i18next-multiload-backend-adapter": "2.3.0",
+    "i18next-resources-to-backend": "1.2.1",
+    "react-datocms": "4.1.3",
+    "react-i18next": "12.1.5"
+  },
+  "peerDependencies": {
+    "jotai": "2.12.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && tsc",
+    "transpile-changes": "tsc -b",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

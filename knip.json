@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/knip@latest/schema.json",
+  "entry": ["packages/*/src/index.ts", "packages/*/src/index.tsx"],
+  "project": ["packages/*/src/**/*.{ts,tsx}"],
+  "ignoreDependencies": ["@types/*", "typescript"],
+  "ignore": [
+    "**/*.test.{ts,tsx}",
+    "**/*.stories.{ts,tsx}",
+    "**/jest.config.{ts,js}",
+    "**/vite.config.{ts,js}"
+  ]
+}

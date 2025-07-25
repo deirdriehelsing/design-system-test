@@ -1,0 +1,15 @@
+{
+  "name": "@blueshift-ui/testing-fixtures",
+  "version": "4.61.0",
+  "description": "Provides a collection of common API responses from data hooks",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/main/packages/testing-fixtures#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && tsc",
+    "transpile-changes": "tsc -b",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

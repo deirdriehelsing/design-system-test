@@ -1,0 +1,121 @@
+---
+description: Testing standards
+globs: *.test.*
+alwaysApply: false
+---
+# Testing Standards
+
+<rule>
+name: testing_standards
+description: Ensures that frontend test files adhere to React Testing Library best practices and avoid common pitfalls
+filters:
+  # Match test file patterns
+  - type: file_extension
+    pattern: "(test|spec)\\.(js|jsx|ts|tsx)$"
+  # Match file creation and update events
+  - type: event
+    pattern: "file_create|file_update"
+
+actions:
+  - type: suggest
+    message: |
+      **When creating or updating test files, follow these best practices:**
+
+      ---
+      ## **1. Core Testing Principles**
+
+      ### **1.1. "Do or do not, there is no 'should'"**
+      - Write tests that describe explicit behaviors rather than subjective expectations.
+      - Focus on **what** the application does, not on what it *should* ideally do.
+
+      ### **1.2. Writing Meaningful Test Descriptions**
+      - Clearly differentiate between React components and plain functions.
+      - Use JSX syntax in `describe()` blocks for React component tests, improving clarity for readers and maintainers.
+
+      ### **1.3. Test File Location**
+      - Place test files next to the implementation files they test
+      - DO NOT create separate `__tests__` directories
+      - This keeps tests and implementation code tightly coupled and makes it easier to find tests
+
+      ---
+      ## **2. React Testing Library – Best Practices**
+
+      ### **2.1. Use `screen` Instead of Destructuring Query Methods**
+      - Prefer `screen.getByText()` over directly destructuring `getByText()` from the `render()` return.
+      - Keeps tests cleaner, easier to maintain, and leverages IDE autocomplete.
+
+      ### **2.2. Unifying Similar Test Cases**
+      - Group multiple tests of the same component within one `describe` block.
+      - Render the component once per group instead of re-rendering in each test to reduce redundancy and speed up tests.
+
+      ### **2.3. Avoid Deep Nesting in Tests**
+      - Keep test structures flat to reduce cognitive load.
+      - Deeply nested describe blocks make debugging more difficult.
+
+      ---
+      ## **3. Handling Asynchronous Behavior**
+
+      ### **3.1. Use `waitFor` Correctly**
+      - Only use `waitFor` for asynchronous UI updates (e.g., data fetching).
+      - Avoid wrapping multiple assertions in a single `waitFor`; one assertion per `waitFor` is easier to debug.
+
+      ### **3.2. Use `findBy_` Instead of `waitFor` When Possible**
+      - Prefer `findBy_` queries for elements that appear asynchronously.
+      - `findBy_` automatically waits for the element, reducing the need for `waitFor`.
+
+      ---
+      ## **4. Simulating User Interactions**
+
+      ### **4.1. Prefer `userEvent` Over `fireEvent`**
+      - `userEvent` more accurately simulates real user behavior (key presses, focus events, etc.).
+      - `fireEvent` only triggers DOM events without replicating full user interactions.
+
+      ### **4.2. Avoid Using `data-testid`**
+      - Select elements based on text content, labels, or ARIA roles to reflect real user interactions.
+      - `data-testid` can lead to brittle tests that don't reflect actual usage patterns.
+
+      ---
+      ## **5. Handling Side Effects in Tests**
+
+      ### **5.1. Use `act()` for State Updates in Hooks**
+      - Wrap state updates in `act()` to ensure React processes the updates before assertions.
+
+      ### **5.2. Ensure All Side Effects are Completed**
+      - Wait for all side effects (animations, timers, etc.) to finish before concluding a test.
+      - Prevents misleading or flaky results and `act()` warnings.
+
+      ---
+      ## **6. Avoid Testing Implementation Details**
+
+      ### **6.1. Test Behavior, Not Internal Function Calls**
+      - Focus on verifying user-visible behavior rather than mocking internal functions.
+      - Over-reliance on `jest.fn()` or `spyOn()` can make tests fragile if internal implementation changes.
+
+      ---
+      ## **7. Automated Mock Handling**
+
+      ### **7.1. Do Not Manually Clear Mocks**
+      - Rely on your testing framework (e.g., Jest with clearMocks enabled) to automatically clear mocks between tests.
+      - Do not manually call functions like jest.clearAllMocks() to keep tests focused on behavior.
+
+      ---
+      ## **8. References & Further Learning**
+      - Kent C. Dodds' Blog: @https://kentcdodds.com/blog
+      - React Testing Library Docs: @https://testing-library.com/docs
+
+      ---
+      **Use these guidelines to keep your tests maintainable, clear, and focused on real user interactions.**
+
+examples:
+  - input: |
+      // Example test for a React component
+      describe("<MyComponent />", () => {
+        it("renders correctly", () => {
+          // ...
+        });
+      });
+    output: "Correctly follows best practices for naming and describing test blocks"
+metadata:
+  priority: high
+  version: 1.0
+</rule>

@@ -1,0 +1,30 @@
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+
+  - directory: "/"
+    package-ecosystem: "github-actions"
+    schedule:
+      interval: "weekly"
+    groups:
+      github-actions:
+        patterns:
+          - '*'
+
+  - directory: "/"
+    package-ecosystem: "npm"
+    schedule:
+      interval: "daily"
+    groups:
+      npm-minor-updates:
+        patterns:
+          - '*'
+        update-types:
+          - "patch"
+          - "minor"
+      npm-major-updates:
+        patterns:
+          - '*'
+        update-types:
+          - "major"

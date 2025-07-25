@@ -1,0 +1,41 @@
+name: Auto-Remove Ephemeral Branch
+
+concurrency:
+  # cancel any ephemeral deployments that are in progress since we are closing the PR
+  group: ephemeral-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [ closed ]
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  AWS_ACCOUNT_ID: 276760292304
+  GEMFURY_TOKEN: ${{ secrets.GEMFURY_TOKEN }}
+  REPO_NAME: blueshift-ui
+  S3_BUCKET: vt-assets-st
+  VT_GITHUB_TOKEN: ${{ secrets.VT_GITHUB_TOKEN }}
+
+jobs:
+  close_pr:
+    name: "Clean up ephemeral branch in S3"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get branch name
+        id: branch_name
+        run: echo "branch_name=`echo ${{ github.head_ref || github.ref_name }}  | sed 's/refs\/heads\///'| cut - -c 1-30 | tr '[:upper:]' '[:lower:]'`" >> $GITHUB_OUTPUT
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/nerdy-deployment-role
+          aws-region: us-west-2
+
+      - name: Clean up ephemeral branch in S3
+        run: |
+          aws s3 rm s3://${{ env.S3_BUCKET }}/${{ env.REPO_NAME}}/ephemeral/${{ steps.branch_name.outputs.branch_name }}/ --recursive

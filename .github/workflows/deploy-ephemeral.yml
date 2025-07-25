@@ -1,0 +1,63 @@
+name: Deploy to Ephemeral Folder
+
+concurrency:
+  # one ephemeral deployment per branch at a time
+  group: ephemeral-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+  push:
+    branches:
+      - ephemeral-*
+  workflow_dispatch:
+
+permissions:
+  id-token: write # This is required for requesting the JWT
+  contents: read
+
+env:
+  AWS_ACCOUNT_ID: 276760292304
+  GEMFURY_TOKEN: ${{ secrets.GEMFURY_TOKEN }}
+  REPO_NAME: blueshift-ui
+  S3_BUCKET: vt-assets-st
+  VT_GITHUB_TOKEN: ${{ secrets.VT_GITHUB_TOKEN }}
+
+jobs:
+  ephemeral-deploy:
+    name: Deploy to Ephemeral Folder
+    environment:
+      name: Ephemeral
+      url: https://assets2.vtstaging.com/${{ env.REPO_NAME }}/ephemeral/${{ steps.branch_name.outputs.branch_name }}/storybook/index.html
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get branch name
+        id: branch_name
+        run: echo "branch_name=`echo ${{ github.head_ref || github.ref_name }}  | sed 's/refs\/heads\///'| cut - -c 1-30 | tr '[:upper:]' '[:lower:]'`" >> $GITHUB_OUTPUT
+
+      - name: Setup Node
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn setup
+
+      - name: Build Storybook
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
+        run: yarn build-storybook
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/nerdy-deployment-role
+          aws-region: us-west-2
+
+      - name: S3 Upload
+        run: |
+          aws s3 cp ./docs/storybook s3://${{ env.S3_BUCKET }}/${{ env.REPO_NAME }}/ephemeral/${{ steps.branch_name.outputs.branch_name }}/storybook/ --recursive --acl public-read --follow-symlinks

@@ -1,0 +1,1844 @@
+{
+  "results": [
+    {
+      "data": {
+        "navigation": {
+          "menus": [
+            {
+              "applicationId": "my-learning",
+              "href": "/my-learning",
+              "items": null,
+              "slug": "logo_member",
+              "text": "Varsity Tutors"
+            },
+            {
+              "applicationId": "",
+              "href": "",
+              "items": [
+                {
+                  "text": "My Schedule",
+                  "href": "/my-learning/sessions",
+                  "application_id": "my-learning"
+                },
+                {
+                  "text": "My Past Sessions",
+                  "href": "/my-learning/sessions/recaps",
+                  "application_id": "my-learning"
+                },
+                {
+                  "divider": true
+                },
+                {
+                  "text": "Chat With a Tutor",
+                  "href": "/my-learning/tutor-chat",
+                  "application_id": "my-learning",
+                  "enablement": "instant_chat"
+                }
+              ],
+              "slug": "tutoring_vt4s_student",
+              "text": "Tutoring"
+            },
+            {
+              "applicationId": "",
+              "href": "",
+              "items": [
+                {
+                  "text": "Art",
+                  "items": [
+                    {
+                      "text": "Drawing",
+                      "href": "/my-learning/subjects/drawing",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Fine Arts",
+                      "href": "/my-learning/subjects/fine-arts",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Music Theory",
+                      "href": "/my-learning/subjects/music-theory",
+                      "application_id": "my-learning"
+                    }
+                  ]
+                },
+                {
+                  "text": "Business & Economics",
+                  "items": [
+                    {
+                      "text": "High School",
+                      "items": [
+                        {
+                          "text": "AP Macroeconomics",
+                          "href": "/my-learning/subjects/ap-macroeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Microeconomics",
+                          "href": "/my-learning/subjects/ap-microeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School Economics",
+                          "href": "/my-learning/subjects/high-school-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Business & Management",
+                          "href": "/my-learning/subjects/ib-business-management",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Economics",
+                          "href": "/my-learning/subjects/ib-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Macroeconomics",
+                          "href": "/my-learning/subjects/macroeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Microeconomics",
+                          "href": "/my-learning/subjects/microeconomics",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "College & Graduate School",
+                      "items": [
+                        {
+                          "text": "College Accounting",
+                          "href": "/my-learning/subjects/college-accounting",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Business",
+                          "href": "/my-learning/subjects/college-business",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Economics",
+                          "href": "/my-learning/subjects/college-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Corporate Finance",
+                          "href": "/my-learning/subjects/corporate-finance",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Finance",
+                          "href": "/my-learning/subjects/finance",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Financial Accounting",
+                          "href": "/my-learning/subjects/financial-accounting",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Managerial Accounting",
+                          "href": "/my-learning/subjects/managerial-accounting",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Macroeconomics",
+                          "href": "/my-learning/subjects/macroeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Microeconomics",
+                          "href": "/my-learning/subjects/microeconomics",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "College Admissions",
+                  "items": [
+                    {
+                      "text": "College Admissions",
+                      "href": "/my-learning/subjects/admissions-consulting",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "College Application Essays",
+                      "href": "/my-learning/subjects/college-application-essays",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "ACT",
+                      "href": "/my-learning/subjects/act",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "SAT",
+                      "href": "/my-learning/subjects/sat",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "PSAT",
+                      "href": "/my-learning/subjects/psat",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "ACT English",
+                      "href": "/my-learning/subjects/act-english",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "ACT Math",
+                      "href": "/my-learning/subjects/act-math",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "ACT Reading",
+                      "href": "/my-learning/subjects/act-reading",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "ACT Science",
+                      "href": "/my-learning/subjects/act-science",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "SAT Math",
+                      "href": "/my-learning/subjects/sat-math",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "SAT Reading",
+                      "href": "/my-learning/subjects/sat-reading",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "SAT Writing",
+                      "href": "/my-learning/subjects/sat-writing-language",
+                      "application_id": "my-learning"
+                    }
+                  ]
+                },
+                {
+                  "text": "English",
+                  "items": [
+                    {
+                      "text": "Elementary & Middle School",
+                      "items": [
+                        {
+                          "text": "Elementary School English",
+                          "href": "/my-learning/subjects/elementary-school-english",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Elementary School Reading",
+                          "href": "/my-learning/subjects/elementary-school-reading",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Elementary School Writing",
+                          "href": "/my-learning/subjects/elementary-school-writing",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Middle School English",
+                          "href": "/my-learning/subjects/middle-school-english",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Middle School Reading",
+                          "href": "/my-learning/subjects/middle-school-reading",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Middle School Reading Comprehension",
+                          "href": "/my-learning/subjects/middle-school-reading-comprehension",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Middle School Writing",
+                          "href": "/my-learning/subjects/middle-school-writing",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Creative Writing",
+                          "href": "/my-learning/subjects/creative-writing",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "English Grammar and Syntax",
+                          "href": "/my-learning/subjects/grammar-and-mechanics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Orton Gillingham Reading",
+                          "href": "/my-learning/subjects/og-reading",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Phonics",
+                          "href": "/my-learning/subjects/phonics",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "High School",
+                      "items": [
+                        {
+                          "text": "High School English",
+                          "href": "/my-learning/subjects/high-school-english",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School Writing",
+                          "href": "/my-learning/subjects/high-school-writing",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level English Literature",
+                          "href": "/my-learning/subjects/a-level-eng-lit",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP English Language and Composition",
+                          "href": "/my-learning/subjects/ap-english-language-and-composition",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP English Literature and Composition",
+                          "href": "/my-learning/subjects/ap-english-literature-and-composition",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Application Essays",
+                          "href": "/my-learning/subjects/college-application-essays",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Creative Writing",
+                          "href": "/my-learning/subjects/creative-writing",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE English Language",
+                          "href": "/my-learning/subjects/gcse-eng-lang",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "College English",
+                      "href": "/my-learning/subjects/college-english",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Creative Writing",
+                      "href": "/my-learning/subjects/creative-writing",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "ESL/ELL",
+                      "href": "/my-learning/subjects/esl-ell",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Adult ESL/ELL",
+                      "href": "/my-learning/subjects/adult-esl-ell",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Adult Literacy",
+                      "href": "/my-learning/subjects/adult-literacy",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "English Grammar and Syntax",
+                      "href": "/my-learning/subjects/grammar-and-mechanics",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Public Speaking",
+                      "href": "/my-learning/subjects/public-speaking",
+                      "application_id": "my-learning"
+                    }
+                  ]
+                },
+                {
+                  "text": "Enrichment",
+                  "items": [
+                    {
+                      "text": "Chess",
+                      "href": "/my-learning/subjects/chess",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Cooking",
+                      "href": "/my-learning/subjects/cooking",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Creative Writing",
+                      "href": "/my-learning/subjects/creative-writing",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Drawing",
+                      "href": "/my-learning/subjects/drawing",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "DC Presents: Comics 101",
+                      "href": "/my-learning/subjects/comics-101",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Monopoly Presents: Money Matters",
+                      "href": "/my-learning/subjects/money-matters",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "STEAM Innovation",
+                      "href": "/my-learning/subjects/steam-innovation",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Video Game Creation",
+                      "href": "/my-learning/subjects/video-game-creation",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Viral Content Creation",
+                      "href": "/my-learning/subjects/viral-content-creation",
+                      "application_id": "my-learning"
+                    }
+                  ]
+                },
+                {
+                  "text": "Languages",
+                  "items": [
+                    {
+                      "text": "American Sign Language",
+                      "href": "/my-learning/subjects/american-sign-language",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "English",
+                      "items": [
+                        {
+                          "text": "Adult ESL/ELL",
+                          "href": "/my-learning/subjects/adult-esl-ell",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "ESL/ELL",
+                          "href": "/my-learning/subjects/esl-ell",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "French",
+                      "items": [
+                        {
+                          "text": "Conversational French",
+                          "href": "/my-learning/subjects/conversational-french",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "French 1",
+                          "href": "/my-learning/subjects/french-01",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "French 2",
+                          "href": "/my-learning/subjects/french-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "French 3",
+                          "href": "/my-learning/subjects/french-3",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "French 4",
+                          "href": "/my-learning/subjects/french-4",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "German",
+                      "href": "/my-learning/subjects/conversational-german",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Italian",
+                      "href": "/my-learning/subjects/conversational-italian",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Japanese",
+                      "href": "/my-learning/subjects/japanese",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Korean",
+                      "href": "/my-learning/subjects/korean",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Latin",
+                      "items": [
+                        {
+                          "text": "Latin 2",
+                          "href": "/my-learning/subjects/latin-2",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Mandarin",
+                      "items": [
+                        {
+                          "text": "Conversational Mandarin",
+                          "href": "/my-learning/subjects/conversational-mandarin",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Mandarin Chinese 1",
+                          "href": "/my-learning/subjects/mandarin-chinese-1",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Russian",
+                      "href": "/my-learning/subjects/russian",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Spanish",
+                      "items": [
+                        {
+                          "text": "Conversational Spanish",
+                          "href": "/my-learning/subjects/conversational-spanish",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Conversational Spanish for Adults",
+                          "href": "/my-learning/subjects/conversational-spanish-adults",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Spanish 1",
+                          "href": "/my-learning/subjects/spanish-1",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Spanish 2",
+                          "href": "/my-learning/subjects/spanish-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Spanish 3",
+                          "href": "/my-learning/subjects/spanish-3",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Spanish 4",
+                          "href": "/my-learning/subjects/spanish-4",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Spanish Language & Culture",
+                          "href": "/my-learning/subjects/ap-spanish-language",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Learning Differences",
+                  "items": [
+                    {
+                      "text": "Special Education",
+                      "href": "/my-learning/subjects/special-education",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Executive Functioning",
+                      "href": "/my-learning/subjects/executive-functioning",
+                      "application_id": "my-learning"
+                    }
+                  ]
+                },
+                {
+                  "text": "Math",
+                  "items": [
+                    {
+                      "text": "Elementary & Middle School",
+                      "items": [
+                        {
+                          "text": "Elementary School Math",
+                          "href": "/my-learning/subjects/elementary-school-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Middle School Math",
+                          "href": "/my-learning/subjects/middle-school-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Pre-Algebra",
+                          "href": "/my-learning/subjects/pre_algebra",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Algebra",
+                          "href": "/my-learning/subjects/algebra",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Key Stage 2 Maths",
+                          "href": "/my-learning/subjects/ks2mat",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Key Stage 3 Maths",
+                          "href": "/my-learning/subjects/ks3mat",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "High School",
+                      "items": [
+                        {
+                          "text": "Algebra",
+                          "href": "/my-learning/subjects/algebra",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Algebra 2",
+                          "href": "/my-learning/subjects/algebra-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Geometry",
+                          "href": "/my-learning/subjects/geometry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Pre-Calculus",
+                          "href": "/my-learning/subjects/pre-calculus",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Trigonometry",
+                          "href": "/my-learning/subjects/trigonometry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Calculus",
+                          "href": "/my-learning/subjects/calculus",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Math 1",
+                          "href": "/my-learning/subjects/integrated-math-1",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Math 2",
+                          "href": "/my-learning/subjects/integrated-math-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Math 3",
+                          "href": "/my-learning/subjects/math-3",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Statistics",
+                          "href": "/my-learning/subjects/statistics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Probability",
+                          "href": "/my-learning/subjects/probability",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Linear Algebra",
+                          "href": "/my-learning/subjects/linear-algebra",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Grade 10 Math",
+                          "href": "/my-learning/subjects/grade-10-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Mathematics",
+                          "href": "/my-learning/subjects/a-level-maths",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Calculus AB",
+                          "href": "/my-learning/subjects/ap-calculus-ab",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Calculus BC",
+                          "href": "/my-learning/subjects/ap-calculus-bc",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Statistics",
+                          "href": "/my-learning/subjects/ap-statistics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Mathematics",
+                          "href": "/my-learning/subjects/gcse-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Mathematics: Analysis and Approaches",
+                          "href": "/my-learning/subjects/ib-mathematics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Mathematics: Applications and Interpretation",
+                          "href": "/my-learning/subjects/ib-mathematical-studies",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "College & Graduate School",
+                      "items": [
+                        {
+                          "text": "College Math",
+                          "href": "/my-learning/subjects/college-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Algebra",
+                          "href": "/my-learning/subjects/college-algebra",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Statistics",
+                          "href": "/my-learning/subjects/college-statistics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Calculus 2",
+                          "href": "/my-learning/subjects/calculus-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Calculus 3",
+                          "href": "/my-learning/subjects/calculus-3",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Differential Equations",
+                          "href": "/my-learning/subjects/differential-equations",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Multivariable Calculus",
+                          "href": "/my-learning/subjects/multivariable-calculus",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Discrete Math",
+                          "href": "/my-learning/subjects/discrete-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Finite Mathematics",
+                          "href": "/my-learning/subjects/finite-mathematics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Business Calculus",
+                          "href": "/my-learning/subjects/business-calculus",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Business Statistics",
+                          "href": "/my-learning/subjects/business-statistics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Statistics Graduate Level",
+                          "href": "/my-learning/subjects/statistics-graduate-level",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Professional Certifications",
+                  "items": [
+                    {
+                      "text": "Healthcare Careers",
+                      "items": [
+                        {
+                          "text": "ARRT - Radiography",
+                          "href": "/my-learning/subjects/arrtradiography",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "NASM",
+                          "href": "/my-learning/subjects/nasm",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "NCLEX",
+                          "href": "/my-learning/subjects/nclex",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Nursing",
+                          "href": "/my-learning/subjects/nursing",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "USMLE Step 1",
+                          "href": "/my-learning/subjects/usmle-step-1",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Financial Careers",
+                      "items": [
+                        {
+                          "text": "CPA",
+                          "href": "/my-learning/subjects/cpa",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "CPA AUD",
+                          "href": "/my-learning/subjects/cpa-aud",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "CPA BEC",
+                          "href": "/my-learning/subjects/cpa-bec",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "CPA FAR",
+                          "href": "/my-learning/subjects/cpa-far",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "CPA REG",
+                          "href": "/my-learning/subjects/cpa-reg",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Enrolled Agent (EA)",
+                          "href": "/my-learning/subjects/ea",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Series 7",
+                          "href": "/my-learning/subjects/series-7",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Series 65",
+                          "href": "/my-learning/subjects/series-65-exam",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "SIE",
+                          "href": "/my-learning/subjects/sie",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Bar Exam",
+                      "href": "/my-learning/subjects/bar-exam",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "All Other Careers",
+                      "items": [
+                        {
+                          "text": "MBLEX",
+                          "href": "/my-learning/subjects/mblex",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "NAPLEX",
+                          "href": "/my-learning/subjects/naplex",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "NMLS",
+                          "href": "/my-learning/subjects/nmls",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "PMP",
+                          "href": "/my-learning/subjects/pmp",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "PRAXIS",
+                          "href": "/my-learning/subjects/praxis",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "PRAXIS Core Math",
+                          "href": "/my-learning/subjects/praxis-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Real Estate License",
+                          "href": "/my-learning/subjects/real-estate",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Science",
+                  "items": [
+                    {
+                      "text": "Elementary & Middle School",
+                      "items": [
+                        {
+                          "text": "Elementary School Science",
+                          "href": "/my-learning/subjects/elementary-school-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Middle School Science",
+                          "href": "/my-learning/subjects/middle-school-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Earth Science",
+                          "href": "/my-learning/subjects/earth-science",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "High School",
+                      "items": [
+                        {
+                          "text": "A Level Biology",
+                          "href": "/my-learning/subjects/a-level-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Chemistry",
+                          "href": "/my-learning/subjects/a-level-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Physics",
+                          "href": "/my-learning/subjects/a-level-physics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Biology",
+                          "href": "/my-learning/subjects/ap-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Chemistry",
+                          "href": "/my-learning/subjects/ap-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Environmental Science",
+                          "href": "/my-learning/subjects/ap-environmental-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Physics 1",
+                          "href": "/my-learning/subjects/ap-physics-b",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Physics 2",
+                          "href": "/my-learning/subjects/ap-physics-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Physics C: Electricity and Magnetism",
+                          "href": "/my-learning/subjects/ap-physics-c-electricity-and-magnetism",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Physics C: Mechanics",
+                          "href": "/my-learning/subjects/ap-physics-c-mechanics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Earth Science",
+                          "href": "/my-learning/subjects/earth-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Genetics",
+                          "href": "/my-learning/subjects/genetics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Environmental Science",
+                          "href": "/my-learning/subjects/environmental-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Chemistry",
+                          "href": "/my-learning/subjects/gcse-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Combined Science",
+                          "href": "/my-learning/subjects/gcse-combined-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Physics",
+                          "href": "/my-learning/subjects/gcse-physics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School Biology",
+                          "href": "/my-learning/subjects/high-school-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School Chemistry",
+                          "href": "/my-learning/subjects/high-school-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School Physics",
+                          "href": "/my-learning/subjects/high-school-physics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Biology",
+                          "href": "/my-learning/subjects/ib-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Chemistry",
+                          "href": "/my-learning/subjects/ib-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Physics",
+                          "href": "/my-learning/subjects/ib-physics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Physical Chemistry",
+                          "href": "/my-learning/subjects/physical-chemistry",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "College & Graduate School",
+                      "items": [
+                        {
+                          "text": "Anatomy & Physiology",
+                          "href": "/my-learning/subjects/anatomy-physiology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Biochemistry",
+                          "href": "/my-learning/subjects/biochemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Cell Biology",
+                          "href": "/my-learning/subjects/cell-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Biology",
+                          "href": "/my-learning/subjects/college-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Chemistry",
+                          "href": "/my-learning/subjects/college-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Physics",
+                          "href": "/my-learning/subjects/college-physics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "General Chemistry 2",
+                          "href": "/my-learning/subjects/general-chemistry-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Genetics",
+                          "href": "/my-learning/subjects/genetics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Microbiology",
+                          "href": "/my-learning/subjects/microbiology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Organic Chemistry",
+                          "href": "/my-learning/subjects/organic-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Organic Chemistry 2",
+                          "href": "/my-learning/subjects/organic-chemistry-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Pharmacology",
+                          "href": "/my-learning/subjects/pharmacology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Public Health",
+                          "href": "/my-learning/subjects/public-health",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Thermodynamics",
+                          "href": "/my-learning/subjects/thermodynamics",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Social Studies",
+                  "items": [
+                    {
+                      "text": "High School",
+                      "items": [
+                        {
+                          "text": "AP European History",
+                          "href": "/my-learning/subjects/ap-european-history",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Human Geography",
+                          "href": "/my-learning/subjects/ap-human-geography",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Macroeconomics",
+                          "href": "/my-learning/subjects/ap-macroeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Microeconomics",
+                          "href": "/my-learning/subjects/ap-microeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Psychology",
+                          "href": "/my-learning/subjects/ap-psychology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP U.S. Government & Politics",
+                          "href": "/my-learning/subjects/ap-u-s-government-politics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP US History",
+                          "href": "/my-learning/subjects/ap-us-history",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP World History",
+                          "href": "/my-learning/subjects/ap-world-history",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School Economics",
+                          "href": "/my-learning/subjects/high-school-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School Level American History",
+                          "href": "/my-learning/subjects/high-school-level-american-history",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School World History",
+                          "href": "/my-learning/subjects/high-school-world-history",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Business & Management",
+                          "href": "/my-learning/subjects/ib-business-management",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Economics",
+                          "href": "/my-learning/subjects/ib-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Philosophy",
+                          "href": "/my-learning/subjects/ib-philosophy",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Macroeconomics",
+                          "href": "/my-learning/subjects/macroeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Microeconomics",
+                          "href": "/my-learning/subjects/microeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Business",
+                          "href": "/my-learning/subjects/a-level-business",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Economics",
+                          "href": "/my-learning/subjects/a-level-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Psychology",
+                          "href": "/my-learning/subjects/a-level-psych",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "College & Graduate School",
+                      "items": [
+                        {
+                          "text": "College Economics",
+                          "href": "/my-learning/subjects/college-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Macroeconomics",
+                          "href": "/my-learning/subjects/macroeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Microeconomics",
+                          "href": "/my-learning/subjects/microeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Sociology",
+                          "href": "/my-learning/subjects/sociology",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Technology & Coding",
+                  "items": [
+                    {
+                      "text": "Computer Science",
+                      "items": [
+                        {
+                          "text": "AP Computer Science A",
+                          "href": "/my-learning/subjects/ap-computer-science-a",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Computer Science Principles",
+                          "href": "/my-learning/subjects/ap-computer-science-principles",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Computer Science",
+                          "href": "/my-learning/subjects/college-computer-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Computer Science",
+                          "href": "/my-learning/subjects/gcse-compsci",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "High School Computer Science",
+                          "href": "/my-learning/subjects/high-school-computer-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Computer Science",
+                          "href": "/my-learning/subjects/ib-computer-science",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Coding",
+                      "items": [
+                        {
+                          "text": "Coding",
+                          "href": "/my-learning/subjects/coding",
+                          "application_id": "my-learning",
+                          "enablement": "codeverse"
+                        },
+                        {
+                          "text": "Computer Programming",
+                          "href": "/my-learning/subjects/computer-programming",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "HTML",
+                          "href": "/my-learning/subjects/html",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Java",
+                          "href": "/my-learning/subjects/java",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "JavaScript",
+                          "href": "/my-learning/subjects/javascript",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Python",
+                          "href": "/my-learning/subjects/python",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Microsoft Excel",
+                      "href": "/my-learning/subjects/microsoft-excel",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Microsoft Office",
+                      "href": "/my-learning/subjects/microsoft-office",
+                      "application_id": "my-learning"
+                    }
+                  ]
+                },
+                {
+                  "text": "Test Prep",
+                  "items": [
+                    {
+                      "text": "Advanced Placement",
+                      "items": [
+                        {
+                          "text": "AP Biology",
+                          "href": "/my-learning/subjects/ap-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Calculus AB",
+                          "href": "/my-learning/subjects/ap-calculus-ab",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Calculus BC",
+                          "href": "/my-learning/subjects/ap-calculus-bc",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Chemistry",
+                          "href": "/my-learning/subjects/ap-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Computer Science A",
+                          "href": "/my-learning/subjects/ap-computer-science-a",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Computer Science Principles",
+                          "href": "/my-learning/subjects/ap-computer-science-principles",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP English Language and Composition",
+                          "href": "/my-learning/subjects/ap-english-language-and-composition",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP English Literature and Composition",
+                          "href": "/my-learning/subjects/ap-english-literature-and-composition",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Environmental Science",
+                          "href": "/my-learning/subjects/ap-environmental-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP European History",
+                          "href": "/my-learning/subjects/ap-european-history",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Human Geography",
+                          "href": "/my-learning/subjects/ap-human-geography",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Macroeconomics",
+                          "href": "/my-learning/subjects/ap-macroeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Microeconomics",
+                          "href": "/my-learning/subjects/ap-microeconomics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Physics 1",
+                          "href": "/my-learning/subjects/ap-physics-b",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Physics 2",
+                          "href": "/my-learning/subjects/ap-physics-2",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Physics C: Electricity and Magnetism",
+                          "href": "/my-learning/subjects/ap-physics-c-electricity-and-magnetism",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Physics C: Mechanics",
+                          "href": "/my-learning/subjects/ap-physics-c-mechanics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Psychology",
+                          "href": "/my-learning/subjects/ap-psychology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Spanish Language & Culture",
+                          "href": "/my-learning/subjects/ap-spanish-language",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP Statistics",
+                          "href": "/my-learning/subjects/ap-statistics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP U.S. Government & Politics",
+                          "href": "/my-learning/subjects/ap-u-s-government-politics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP US History",
+                          "href": "/my-learning/subjects/ap-us-history",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "AP World History",
+                          "href": "/my-learning/subjects/ap-world-history",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "College Admissions",
+                      "items": [
+                        {
+                          "text": "College Admissions",
+                          "href": "/my-learning/subjects/admissions-consulting",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "College Application Essays",
+                          "href": "/my-learning/subjects/college-application-essays",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "ACT",
+                          "href": "/my-learning/subjects/act",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "SAT",
+                          "href": "/my-learning/subjects/sat",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "PSAT",
+                          "href": "/my-learning/subjects/psat",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "ACT English",
+                          "href": "/my-learning/subjects/act-english",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "ACT Math",
+                          "href": "/my-learning/subjects/act-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "ACT Reading",
+                          "href": "/my-learning/subjects/act-reading",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "ACT Science",
+                          "href": "/my-learning/subjects/act-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "SAT Math",
+                          "href": "/my-learning/subjects/sat-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "SAT Reading",
+                          "href": "/my-learning/subjects/sat-reading",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "SAT Writing",
+                          "href": "/my-learning/subjects/sat-writing-language",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "TEAS",
+                          "href": "/my-learning/subjects/teas",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "GED",
+                      "href": "/my-learning/subjects/ged",
+                      "application_id": "my-learning"
+                    },
+                    {
+                      "text": "Graduate Admissions",
+                      "items": [
+                        {
+                          "text": "GMAT",
+                          "href": "/my-learning/subjects/gmat",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GRE",
+                          "href": "/my-learning/subjects/gre",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "LSAT",
+                          "href": "/my-learning/subjects/lsat",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "MCAT",
+                          "href": "/my-learning/subjects/mcat",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "International Baccalaureate",
+                      "items": [
+                        {
+                          "text": "IB Biology",
+                          "href": "/my-learning/subjects/ib-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Business & Management",
+                          "href": "/my-learning/subjects/ib-business-management",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Chemistry",
+                          "href": "/my-learning/subjects/ib-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Computer Science",
+                          "href": "/my-learning/subjects/ib-computer-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Economics",
+                          "href": "/my-learning/subjects/ib-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Mathematics: Analysis and Approaches",
+                          "href": "/my-learning/subjects/ib-mathematics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Mathematics: Applications and Interpretation",
+                          "href": "/my-learning/subjects/ib-mathematical-studies",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Philosophy",
+                          "href": "/my-learning/subjects/ib-philosophy",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "IB Physics",
+                          "href": "/my-learning/subjects/ib-physics",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "K-12 Admissions",
+                      "items": [
+                        {
+                          "text": "HSPT",
+                          "href": "/my-learning/subjects/hspt",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "ISEE",
+                          "href": "/my-learning/subjects/isee",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "SSAT",
+                          "href": "/my-learning/subjects/ssat",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "SHSAT",
+                          "href": "/my-learning/subjects/shsat",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "United Kingdom",
+                      "items": [
+                        {
+                          "text": "A Level",
+                          "href": "/my-learning/subjects/a-level",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Eleven Plus",
+                          "href": "/my-learning/subjects/eleven-plus-exam",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE",
+                          "href": "/my-learning/subjects/gcse",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Biology",
+                          "href": "/my-learning/subjects/a-level-biology",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Business",
+                          "href": "/my-learning/subjects/a-level-business",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Chemistry",
+                          "href": "/my-learning/subjects/a-level-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Economics",
+                          "href": "/my-learning/subjects/a-level-economics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level English Literature",
+                          "href": "/my-learning/subjects/a-level-eng-lit",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Mathematics",
+                          "href": "/my-learning/subjects/a-level-maths",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Physics",
+                          "href": "/my-learning/subjects/a-level-physics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "A Level Psychology",
+                          "href": "/my-learning/subjects/a-level-psych",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Chemistry",
+                          "href": "/my-learning/subjects/gcse-chemistry",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Combined Science",
+                          "href": "/my-learning/subjects/gcse-combined-science",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Computer Science",
+                          "href": "/my-learning/subjects/gcse-compsci",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE English Language",
+                          "href": "/my-learning/subjects/gcse-eng-lang",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Mathematics",
+                          "href": "/my-learning/subjects/gcse-math",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "GCSE Physics",
+                          "href": "/my-learning/subjects/gcse-physics",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Key Stage 2 Maths",
+                          "href": "/my-learning/subjects/ks2mat",
+                          "application_id": "my-learning"
+                        },
+                        {
+                          "text": "Key Stage 3 Maths",
+                          "href": "/my-learning/subjects/ks3mat",
+                          "application_id": "my-learning"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "divider": true
+                },
+                {
+                  "text": "See All Subjects",
+                  "href": "/my-learning/search?",
+                  "application_id": "my-learning"
+                }
+              ],
+              "slug": "subjects_member",
+              "text": "Subjects"
+            },
+            {
+              "applicationId": "",
+              "href": "",
+              "items": [
+                {
+                  "text": "Explore Live Classes",
+                  "href": "/classes/search?f_parent_group=curation_list-varsity_tutors_for_schools",
+                  "enablement": "live_classes"
+                },
+                {
+                  "text": "Codeverse",
+                  "href": "/my-learning/codeverse",
+                  "application_id": "my-learning",
+                  "enablement": "codeverse"
+                },
+                {
+                  "divider": true
+                },
+                {
+                  "text": "Assessments",
+                  "href": "/my-learning/assessments",
+                  "application_id": "my-learning"
+                },
+                {
+                  "text": "Essay Review",
+                  "href": "/my-learning/essay-review",
+                  "application_id": "my-learning",
+                  "enablement": "essay_editing"
+                },
+                {
+                  "text": "Practice Problems",
+                  "href": "/my-learning/practice",
+                  "application_id": "my-learning"
+                },
+                {
+                  "text": "On-Demand Lessons",
+                  "href": "/my-learning/on-demand",
+                  "application_id": "my-learning",
+                  "enablement": "academic_video_on_demand"
+                }
+              ],
+              "slug": "classes_vt4s_student",
+              "text": "Classes & Self-Guided"
+            },
+            {
+              "applicationId": "",
+              "href": "",
+              "items": [
+                {
+                  "text": "Help Center",
+                  "href": "https://vt4s-parent.zendesk.com/hc/en-us",
+                  "target": "_blank"
+                },
+                {
+                  "divider": true
+                },
+                {
+                  "text": "Sign Out",
+                  "href": "/logout",
+                  "application_id": "vtwa"
+                }
+              ],
+              "slug": "account_vt4s_student",
+              "text": "Account"
+            }
+          ],
+          "slug": "vt4s_student_navbar"
+        }
+      },
+      "variables": {
+        "slug": "vt4s_student_navbar",
+        "locale": "en"
+      },
+      "cache": "SKIP"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "lib": ["es6", "dom"],
+    "noEmit": false,
+    "outDir": "./dist"
+  },
+  "exclude": ["test.helper.tsx?$", "*.test.tsx?$"],
+  "include": ["./src/**/*"]
+}

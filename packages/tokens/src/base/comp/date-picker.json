@@ -1,0 +1,22 @@
+{
+  "comp": {
+    "date-picker": {
+      "background-color": {
+        "enabled-date": {
+          "value": "{ref.palette.tertiary.shade-80.value}"
+        },
+        "selected-date": {
+          "value": "{ref.palette.tertiary.shade-30.value}"
+        },
+        "hover": {
+          "value": "{sys.color.secondary.main.value}"
+        }
+      },
+      "color": {
+        "primary": {
+          "value": "{ref.palette.tertiary.shade-00.value}"
+        }
+      }
+    }
+  }
+}

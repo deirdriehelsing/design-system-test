@@ -1,0 +1,21 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import * as tokens from '@blueshift-ui/tokens';
+
+<Meta title="Theme/Tokens/System/Colors" />
+
+<ColorPalette>
+  {Object.entries(tokens).map(([themeName, themeValue]) => {
+    const params = new URLSearchParams(window.location.search);
+    const currentTheme = params.get('globals')
+      ? params.get('globals').split('theme:')[1]
+      : 'novaAurora';
+    const themeTokensKey = `${currentTheme}Tokens`;
+    const currentTokens = tokens[themeTokensKey];
+    if (themeName === themeTokensKey && currentTokens.sys && currentTokens.sys.color) {
+      return Object.entries(currentTokens.sys.color).map(([colorName, colorValues]) => (
+        <ColorItem colors={colorValues} key={colorName} title={`sys.color.${colorName}`} />
+      ));
+    }
+    return null;
+  })}
+</ColorPalette>

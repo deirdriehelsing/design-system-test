@@ -1,0 +1,25 @@
+{
+  "comp": {
+    "tutor-tracker-layout": {
+      "border": {
+        "default": {
+          "value": "2px solid {ref.palette.secondary.shade-50.value}"
+        }
+      },
+      "box-shadow": {
+        "default": {
+          "value": "none"
+        }
+      },
+      "children": {
+        "time-left-or-tutor": {
+          "right": {
+            "default": {
+              "value": "-0.125rem"
+            }
+          }
+        }
+      }
+    }
+  }
+}

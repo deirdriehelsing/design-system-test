@@ -1,0 +1,62 @@
+---
+description: Mocking standards
+globs: *.test.*
+alwaysApply: false
+---
+ # Test Mocking Standards
+
+## Overview
+This rule establishes standards for using mocks in tests. The primary goal is to ensure that tests verify actual behavior rather than implementation details, and to maintain a balance between test isolation and realistic testing.
+
+## Guidelines
+
+### When to Avoid Mocks
+- **Don't mock pure functions** - Functions without side effects should be tested with real implementations
+- **Don't mock simple components** - Basic UI components should be tested as they actually render
+- **Don't mock data structures** - Use real data structures to ensure type safety and detect breaking changes
+- **Don't mock imports that don't interact with external services** - Internal utilities and helpers should use real implementations
+- **Don't mock TypeScript types/interfaces** - Use the actual types to ensure typechecking during tests
+
+### When Mocking is Appropriate
+- **Mock API calls and network requests** - To prevent actual network requests during tests
+- **Mock third-party services** - To avoid dependencies on external systems
+- **Mock time-based functionality** - For deterministic testing of timers, animations, etc.
+- **Mock browser APIs** when they cannot be easily controlled in the test environment
+- **Mock complex state management** when testing components in isolation
+
+### Best Practices
+1. **Mock at the lowest level possible** - Target specific modules rather than entire paths
+2. **Use jest.spyOn instead of jest.mock** when you only need to observe function calls
+3. **Explicitly specify return values** - Avoid implementation mocks that could drift from real implementations
+4. **Use `expect.objectContaining()` for partial object matching** to make tests more resilient to changes
+5. **Restore mocks after tests** with `afterEach(() => jest.restoreAllMocks())`
+6. **Prefer dependency injection** over import mocking when your architecture allows it
+7. **Keep mocks aligned with real implementations** - Update mocks when the real implementation changes
+
+### Examples
+
+#### Good - Minimal mocking
+```typescript
+// Only mock the specific functionality needed
+jest.mock('../../hooks/use-thing', () => ({
+  __esModule: true,
+  default: () => ({ track: mockTrack }),
+}));
+```
+
+#### Avoid - Excessive mocking
+```typescript
+// Don't mock entire paths or more than necessary
+jest.mock('../../hooks', () => ({
+  useThing: jest.fn(),
+  useOtherThing: jest.fn(),
+  useOneMoreThing: jest.fn(),
+  // ... many more mocks
+}));
+```
+
+## Benefits
+- **Faster test updates** - Fewer mocks means less maintenance when implementations change
+- **More reliable tests** - Tests that use real implementations better catch regressions
+- **Better refactoring support** - Tests won't break due to internal implementation changes
+- **Simpler test code** - Less mocking setup means cleaner, more maintainable tests 

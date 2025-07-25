@@ -1,0 +1,19 @@
+{
+  "comp": {
+    "card": {
+      "border-radius": {
+        "default": {
+          "value": "{sys.shape.corner.medium.value}"
+        }
+      },
+      "box-shadow": {
+        "default": {
+          "value": "{sys.shadow.box.declaration-02.value}"
+        },
+        "hover": {
+          "value": "{sys.shadow.box.declaration-14.value}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "comp": {
+    "onboarding": {
+      "steps": {
+        "take-assessment": {
+          "card": {
+            "border": {
+              "default": {
+                "value": "2px solid {ref.palette.accent03.shade-60.value}"
+              }
+            },
+            "box-shadow": {
+              "default": {
+                "value": "none"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+---
+description: Automated test creation
+globs: **/*.test.{js,jsx,ts,tsx}
+---
+# Automated Test Creation
+
+<rule>
+name: create_test
+description: |
+  When the user prompts "create tests <relative_path>" in the Composer, this rule checks if <relative_path> is a single source file (e.g., .js, .jsx, .ts, .tsx) that needs a test.
+  It then provides guidance on creating a corresponding test file named `index.test.tsx` in the **same directory** as the source file, following best practices from "frontend_testing_best_practices."
+filters:
+  # Listen for Composer prompts
+  - type: event
+    pattern: "composer_prompt"
+  # Match user input that starts with "create tests" followed by a relative path
+  - type: content
+    pattern: "^create tests (.*)$"
+
+actions:
+  - type: suggest
+    conditions:
+      # Match any JS/TS file that isn't already a test file
+      - pattern: "^.*\\.(js|jsx|ts|tsx)$"
+        message: "Detected a single source file for which tests should be created."
+    message: |
+      **Test Creation Guidance**
+
+      1. **Naming Convention**  
+         - The test file **must** be named `index.test.tsx` and located **in the same folder** as the file to be tested.
+         - For example, if the source file is `./src/components/button.index.tsx`, the test file will be `./src/components/button/index.test.tsx`.
+
+      2. **Apply Best Practices**  
+         - Use React Testing Library:
+           ```js
+           import { render, screen } from '@testing-library/react';
+           import userEvent from '@testing-library/user-event';
+           ```
+         - Always query elements via `screen.*` methods (e.g., `screen.getByText`).
+         - Organize related tests in a `describe("<Component>", () => { ... })` block.
+         - For async behavior, favor `findBy*` queries instead of wrapping multiple assertions in `waitFor`.
+
+      3. **Follow "frontend_testing_best_practices"**  
+         - Once you create `index.test.tsx`, you can run or rely on the `frontend_testing_best_practices` rule to review the file.
+         - Ensure tests remain focused on **user-visible behavior** and avoid testing internal implementations.
+
+      4. **Example**  
+         ```bash
+         # Prompt:
+         create tests ./src/components/Button.tsx
+
+         # Suggested Test File:
+         ./src/components/index.test.tsx
+         ```
+
+      **By following these steps, you'll keep your tests consistent, clear, and aligned with recommended best practices.**
+
+  # Fallback if the file doesn't match the expected pattern
+  - type: suggest
+    message: |
+      **No Valid Source File Detected**
+
+      The specified path doesn't appear to be a valid single-file source (e.g., `.js`, `.jsx`, `.ts`, or `.tsx` not ending in `.test` or `.spec`).
+      Please provide a single source file path, like:
+      
+      `create tests ./src/MyComponent.tsx`
+      
+      so a corresponding `index.test.tsx` file can be generated.
+
+examples:
+  - input: "create tests ./src/components/Button.tsx"
+    output: |
+      "Detected a single source file for which tests should be created."
+      (Followed by creation of ./src/components/index.test.tsx with best practices)
+  - input: "create tests ./src/components/Button.test.tsx"
+    output: "No Valid Source File Detected"
+metadata:
+  priority: medium
+  version: 1.0
+</rule>

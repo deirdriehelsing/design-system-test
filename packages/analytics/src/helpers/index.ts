@@ -1,0 +1,14 @@
+export { default as addCommonEventProperties } from './add-common-event-properties';
+export { default as applyMiddleware } from './apply-middleware';
+export { default as clearUrlStorage } from './clear-url-storage';
+export { default as getElementText } from './get-element-text';
+export { default as getRoleTraits } from './get-role-traits';
+export { default as getStudentTraits } from './get-student-traits';
+export { default as getUserTraits } from './get-user-traits';
+export { default as initializeAnalytics } from './initialize-analytics';
+export { default as initializeGuidesAndSurveys } from './initialize-guides-and-surveys';
+export { default as initializeSessionReplay } from './initialize-session-replay';
+export { default as storeCurrentUrl } from './store-current-url';
+export { default as trackElementClicked } from './track-element-clicked';
+export { default as trackElementClosed } from './track-element-closed';
+export { default as trackElementOpened } from './track-element-opened';

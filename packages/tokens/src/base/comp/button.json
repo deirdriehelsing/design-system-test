@@ -1,0 +1,115 @@
+{
+  "comp": {
+    "button": {
+      "blob": {
+        "minHeight": {
+          "default": {
+            "value": "6rem"
+          },
+          "row-small": {
+            "value": "4rem"
+          },
+          "column": {
+            "value": "8.5rem"
+          },
+          "column-small": {
+            "value": "7rem"
+          }
+        },
+        "font-size": {
+          "default": {
+            "value": "1rem"
+          }
+        },
+        "icon-size": {
+          "default": {
+            "value": "1.875rem"
+          },
+          "small": {
+            "value": "1.25rem"
+          }
+        },
+        "margin": {
+          "default": {
+            "value": "1rem"
+          }
+        },
+        "blob-size": {
+          "default": {
+            "value": "5.5rem"
+          },
+          "small": {
+            "value": "3.5rem"
+          }
+        }
+      },
+      "border-radius": {
+        "default": {
+          "value": "{sys.shape.corner.extra-large.value}"
+        }
+      },
+      "box-shadow": {
+        "default": {
+          "value": "none"
+        },
+        "active": {
+          "value": "0 {comp.button.offset-size.small} 0 {ref.palette.secondary.shade-00.value}"
+        },
+        "focus": {
+          "value": "0 {comp.button.offset-size.small} 0 {ref.palette.secondary.shade-00.value}"
+        },
+        "hover": {
+          "value": "0 {comp.button.offset-size.default} 0 {ref.palette.secondary.shade-00.value}"
+        }
+      },
+      "height": {
+        "small": {
+          "value": "2.5rem"
+        },
+        "default": {
+          "value": "3rem"
+        }
+      },
+      "horizontal-padding": {
+        "small": {
+          "value": "1rem"
+        },
+        "default": {
+          "value": "2rem"
+        }
+      },
+      "offset-size": {
+        "small": {
+          "value": "0.125rem"
+        },
+        "default": {
+          "value": "0.25rem"
+        }
+      },
+      "outline-width": {
+        "default": {
+          "value": "1px"
+        }
+      },
+      "text-transform": {
+        "default": {
+          "value": "none"
+        }
+      },
+      "transform": {
+        "default": {
+          "value": "none"
+        },
+        "active": {
+          "value": "translateY({comp.button.offset-size.small})"
+        },
+        "focus": {
+          "value": "translateY({comp.button.offset-size.small})"
+        },
+        "hover": {
+          "value": "translateY(-{comp.button.offset-size.default})"
+        }
+      }
+    }
+  }
+}

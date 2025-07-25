@@ -1,0 +1,53 @@
+{
+  "name": "@blueshift-ui/analytics",
+  "version": "4.61.0",
+  "description": "BlueshiftUI's analytics library",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/main/packages/analytics#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "bin": "./bin/cli.js",
+  "sideEffects": [
+    "**/*.css.ts",
+    "**/*.css.js"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@amplitude/analytics-types": "2.9.2",
+    "@amplitude/engagement-browser": "1.0.0",
+    "@amplitude/session-replay-browser": "1.22.10",
+    "@blueshift-ui/core": "4.61.0",
+    "@blueshift-ui/feedback": "4.61.0",
+    "@blueshift-ui/inputs": "4.61.0",
+    "@segment/analytics-next": "1.77.0",
+    "@segment/public-api-sdk-typescript": "^57.3.0-b10835",
+    "commander": "^13.1.0",
+    "quicktype-core": "^23.0.171"
+  },
+  "devDependencies": {
+    "@blueshift-ui/testing-fixtures": "4.61.0"
+  },
+  "peerDependencies": {
+    "jotai": "^2.12.1",
+    "lodash": "^4.17.21",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "jotai": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && tsc && tsc -p tsconfig.scripts.json",
+    "transpile-changes": "tsc -b && tsc -p tsconfig.scripts.json",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

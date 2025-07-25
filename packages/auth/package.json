@@ -1,0 +1,34 @@
+{
+  "name": "@blueshift-ui/auth",
+  "version": "4.61.0",
+  "description": "The Auth component serves auth related components such as access boundaries and user authentication.",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/master/packages/auth#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "sideEffects": [
+    "**/*.css.ts",
+    "**/*.css.js"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@blueshift-ui/analytics": "4.61.0",
+    "@blueshift-ui/core": "4.61.0",
+    "@blueshift-ui/fetch": "4.61.0",
+    "@blueshift-ui/telemetry": "4.61.0",
+    "@blueshift-ui/theme": "4.61.0",
+    "js-cookie": "3.0.5",
+    "launchdarkly-js-client-sdk": "3.4.0"
+  },
+  "peerDependencies": {
+    "jotai": "2.12.1",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && tsc",
+    "transpile-changes": "tsc -b",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

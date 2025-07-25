@@ -1,0 +1,50 @@
+---
+description: Automated test review
+globs: **/*.test.{js,jsx,ts,tsx}
+---
+# Automated Test Review
+
+<rule>
+name: review_test
+description: |
+  When the user prompts "review tests <relative_path>" in the Composer, this rule checks if <relative_path> is:
+    - A single test file (e.g., *.test.js or *.spec.ts)
+    - A folder containing multiple test files
+
+  It then applies the "frontend_testing_best_practices" rule accordingly to suggest improvements based on established testing guidelines.
+filters:
+  # Listen for Composer prompts
+  - type: event
+    pattern: "composer_prompt"
+  # Match user input that starts with "review tests" followed by a relative path
+  - type: content
+    pattern: "^review tests (.*)$"
+
+actions:
+  # If the path is a single test file, apply best practices review to that file
+  - type: run_rule
+    conditions:
+      - pattern: "^.*\\.(test|spec)\\.(js|jsx|ts|tsx)$"
+        message: "Detected a single test file. Applying 'testing_standards' checks."
+    rule: "frontend_testing_best_practices"
+    message: |
+      **Single File Review**  
+      Applying the "testing_standards" rule to the specified test file.
+
+  # Otherwise, assume it's a folder; apply best practices to all test files within
+  - type: run_rule
+    rule: "testing_standards"
+    message: |
+      **Folder Review**  
+      Applying the "testing_standards" rule to all test files in the specified folder.
+
+examples:
+  - input: "review tests ./src/components/Button.test.tsx"
+    output: "Single File Review"
+  - input: "review tests ./src/components"
+    output: "Folder Review"
+
+metadata:
+  priority: medium
+  version: 1.0
+</rule>

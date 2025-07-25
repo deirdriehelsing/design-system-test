@@ -1,0 +1,13 @@
+{
+  "comp": {
+    "dialog": {
+      "title": {
+        "height": {
+          "default": {
+            "value": "5.5rem"
+          }
+        }
+      }
+    }
+  }
+}

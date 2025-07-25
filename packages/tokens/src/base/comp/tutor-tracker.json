@@ -1,0 +1,20 @@
+{
+  "comp": {
+    "tutor-tracker-layout": {
+      "border": {
+        "default": {
+          "value": "none"
+        }
+      },
+      "children": {
+        "time-left-or-tutor": {
+          "right": {
+            "default": {
+              "value": "0"
+            }
+          }
+        }
+      }
+    }
+  }
+}

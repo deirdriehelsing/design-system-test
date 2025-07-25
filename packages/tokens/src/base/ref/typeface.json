@@ -1,0 +1,14 @@
+{
+  "ref": {
+    "typeface": {
+      "brand": { "value": "Poppins" },
+      "plain": { "value": "sans-serif" },
+      "weight": {
+        "bold": { "value": 700 },
+        "medium": { "value": 500 },
+        "regular": { "value": 400 },
+        "semibold": { "value": 600 }
+      }
+    }
+  }
+}

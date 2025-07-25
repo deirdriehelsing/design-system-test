@@ -1,0 +1,47 @@
+name: "Test and run SonarQube Scan"
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  GEMFURY_TOKEN: ${{ secrets.GEMFURY_TOKEN }}
+  VT_GITHUB_TOKEN: ${{ secrets.VT_GITHUB_TOKEN }} # for gh packages install
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+    secrets:
+      GEMFURY_TOKEN: ${{ secrets.GEMFURY_TOKEN }}
+      VT_GITHUB_TOKEN: ${{ secrets.VT_GITHUB_TOKEN }}
+
+  sonarqube:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download coverage artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: coverage-artifacts
+          path: docs/coverage/reports
+
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        with:
+          args: >
+            -Dsonar.projectVersion=${{ github.sha }}
+            -Dsonar.scm.provider=git
+            -Dsonar.sourceEncoding=UTF-8
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+
+      - name: SonarQube Quality Gate
+        uses: sonarsource/sonarqube-quality-gate-action@master
+        timeout-minutes: 5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

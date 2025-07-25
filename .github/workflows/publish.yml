@@ -1,0 +1,53 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+env:
+  REPO_NAME: blueshift-ui
+  GEMFURY_TOKEN: ${{ secrets.GEMFURY_TOKEN }}
+  VT_GITHUB_TOKEN: ${{ secrets.VT_GITHUB_TOKEN }}
+
+jobs:
+  test:
+    name: 'Run tests'
+    secrets:
+      GEMFURY_TOKEN: ${{ secrets.GEMFURY_TOKEN }}
+      VT_GITHUB_TOKEN: ${{ secrets.VT_GITHUB_TOKEN }}
+    uses: ./.github/workflows/test.yml
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn setup
+
+      - name: Lerna Publish
+        run: lerna publish from-package --yes
+
+      - name: Notify Slack on Publish Success
+        if: success()
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_MESSAGE: ${{ ':package:' }} Publish of ${{env.REPO_NAME}}'s updated packages succeeded!
+          SLACK_WEBHOOK: ${{ secrets.MET_SLACK_WEBHOOK_URL }}
+
+      - name: Notify Slack on Publish Failure
+        if: failure()
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_MESSAGE: ${{ ':no_entry:' }} Publish of ${{env.REPO_NAME}}'s updated packages failed!
+          SLACK_WEBHOOK: ${{ secrets.MET_SLACK_WEBHOOK_URL }}

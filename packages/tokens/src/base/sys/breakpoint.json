@@ -1,0 +1,11 @@
+{
+  "sys": {
+    "breakpoint": {
+      "xs": { "value": 0 },
+      "sm": { "value": 490 },
+      "md": { "value": 768 },
+      "lg": { "value": 1040 },
+      "xl": { "value": 1440 }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@blueshift-ui/testing-library",
+  "version": "4.61.0",
+  "description": "Provides helper functions and providers to make it easier to write tests and encourage good practices",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/main/packages/testing-library#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@blueshift-ui/auth": "4.61.0",
+    "@blueshift-ui/core": "4.61.0",
+    "@blueshift-ui/fetch": "4.61.0",
+    "@blueshift-ui/i18n": "4.61.0",
+    "@blueshift-ui/telemetry": "4.61.0",
+    "@blueshift-ui/testing-fixtures": "4.61.0",
+    "nock": "13.5.5"
+  },
+  "peerDependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && tsc",
+    "transpile-changes": "tsc -b",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

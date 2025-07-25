@@ -1,0 +1,20 @@
+{
+  "comp": {
+    "input": {
+      "padding": {
+        "default": {
+          "value": "1rem"
+        },
+        "large": {
+          "value": "1.25rem"
+        },
+        "extra-large": {
+          "value": "1.5rem"
+        },
+        "small": {
+          "value": "0.75rem"
+        }
+      }
+    }
+  }
+}

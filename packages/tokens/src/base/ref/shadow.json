@@ -1,0 +1,43 @@
+{
+  "ref": {
+    "shadow": {
+      "blur": {
+        "0": { "value": "0px" },
+        "2": { "value": "2px" },
+        "4": { "value": "4px" },
+        "8": { "value": "8px" },
+        "16": { "value": "16px" },
+        "32": { "value": "32px" }
+      },
+      "spread": {
+        "0": { "value": "0px" },
+        "2": { "value": "2px" },
+        "4": { "value": "4px" },
+        "8": { "value": "8px" },
+        "16": { "value": "16px" },
+        "32": { "value": "32px" }
+      },
+      "xOffset": {
+        "0": { "value": "0px" },
+        "2": { "value": "2px" },
+        "4": { "value": "4px" },
+        "8": { "value": "8px" },
+        "16": { "value": "16px" },
+        "32": { "value": "32px" }
+      },
+      "yOffset": {
+        "0": { "value": "0px" },
+        "2": { "value": "2px" },
+        "4": { "value": "4px" },
+        "8": { "value": "8px" },
+        "16": { "value": "16px" },
+        "32": { "value": "32px" }
+      },
+      "color": {
+        "shade-008": { "value": "#0d0c3c14" },
+        "shade-015": { "value": "#0d0c3c26" },
+        "shade-100": { "value": "#0d0c3c" }
+      }
+    }
+  }
+}

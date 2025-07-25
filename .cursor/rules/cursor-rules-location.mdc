@@ -1,0 +1,56 @@
+---
+description: Cursor rules location
+globs: *.mdc
+alwaysApply: false
+---
+# Cursor Rules Location and Format
+
+## File Location
+Always place rule files in PROJECT_ROOT/.cursor/rules/:
+```
+.cursor/rules/
+├── your-rule-name.mdc
+├── another-rule.mdc
+└── ...
+```
+
+## File Format
+1. Use Markdown format with frontmatter:
+   ```markdown
+   ---
+   description: Brief description of the rule
+   globs: **/*.*
+   alwaysApply: false
+   ---
+   # Main Title
+
+   ## Section
+   - Rule point 1
+   - Rule point 2
+   ```
+
+2. Avoid using YAML structure or XML-style tags
+   - Don't use `<rule>` tags
+   - Don't use complex YAML structures
+   - Keep it simple and readable
+
+## Naming Convention
+- Use kebab-case for filenames
+- Always use .mdc extension
+- Make names descriptive of the rule's purpose
+
+## Directory Structure
+```
+PROJECT_ROOT/
+├── .cursor/
+│   └── rules/
+│       ├── your-rule-name.mdc
+│       └── ...
+└── ...
+```
+
+## Prohibited Locations
+Never place rule files:
+- In the project root
+- In subdirectories outside .cursor/rules
+- In any other location

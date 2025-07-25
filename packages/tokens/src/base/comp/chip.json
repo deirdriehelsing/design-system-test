@@ -1,0 +1,46 @@
+{
+  "comp": {
+    "chip": {
+      "background-color": {
+        "link": {
+          "value": "{sys.color.secondary.light.value}"
+        }
+      },
+      "border-radius": {
+        "default": {
+          "value": "{sys.shape.corner.medium.value}"
+        },
+        "link": {
+          "value": "{sys.shape.corner.small.value}"
+        }
+      },
+      "font-size": {
+        "link": {
+          "value": "{sys.typescale.body.medium.size}"
+        }
+      },
+      "height": {
+        "small": {
+          "value": "2.75rem"
+        },
+        "default": {
+          "value": "3.25rem"
+        },
+        "large": {
+          "value": "5.25rem"
+        }
+      },
+      "horizontal-padding": {
+        "small": {
+          "value": "0.75rem"
+        },
+        "default": {
+          "value": "1rem"
+        },
+        "large": {
+          "value": "1.25rem"
+        }
+      }
+    }
+  }
+}

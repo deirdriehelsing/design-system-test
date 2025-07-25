@@ -1,0 +1,11 @@
+{
+  "comp": {
+    "rating": {
+      "color": {
+        "default": {
+          "value": "{ref.palette.warning.shade-70.value}"
+        }
+      }
+    }
+  }
+}

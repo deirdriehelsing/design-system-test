@@ -1,0 +1,41 @@
+{
+  "sys": {
+    "shape": {
+      "corner": {
+        "none": { "value": "0" },
+        "full": {
+          "value": "1000px",
+          "comment": "an arbitrary high value of 1000px to create fully round corners"
+        },
+        "small": { "value": "0.5rem" },
+        "extra-small": { "value": "0.25rem" },
+        "extra-small-top": { "value": "0.25rem 0.25rem 0 0" },
+        "extra-small-bottom": { "value": "0 0 0.25rem 0.25rem" },
+        "medium": { "value": "1rem" },
+        "large": { "value": "1.5rem" },
+        "large-end": { "value": "0 1.5rem 1.5rem 0" },
+        "large-start": { "value": "1rem 0 0 1rem" },
+        "large-top": { "value": "1rem 1rem 0 0" },
+        "large-bottom": { "value": "0 0 1rem 1rem" },
+        "extra-large": { "value": "2rem" },
+        "extra-large-top": { "value": "2rem 2rem 0 0" }
+      },
+      "thickness": {
+        "small": {
+          "value": "0.07em"
+        },
+        "medium": {
+          "value": "0.125em"
+        },
+        "large": {
+          "value": "0.19em"
+        }
+      },
+      "border": {
+        "card": {
+          "value": "none"
+        }
+      }
+    }
+  }
+}

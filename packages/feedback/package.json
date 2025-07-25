@@ -1,0 +1,32 @@
+{
+  "name": "@blueshift-ui/feedback",
+  "version": "4.61.0",
+  "description": "Feedback components and helpers",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/master/packages/feedback#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "sideEffects": [
+    "**/*.css.ts",
+    "**/*.css.js"
+  ],
+  "dependencies": {
+    "@blueshift-ui/core": "4.61.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.0",
+    "@mui/material": "6.4.1",
+    "@phosphor-icons/react": "2.0.10",
+    "@vanilla-extract/css": "1.13.0",
+    "clsx": "2.1.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && tsc",
+    "transpile-changes": "tsc -b",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

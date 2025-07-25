@@ -1,0 +1,31 @@
+{
+  "targetDefaults": {
+    "transpile": {
+      "dependsOn": ["^transpile"],
+      "cache": true,
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "yalc-push": {
+      "dependsOn": ["^yalc-push"]
+    },
+    "test": {
+      "outputs": ["{workspaceRoot}/docs/coverage"],
+      "cache": true,
+      "dependsOn": []
+    },
+    "clean": {
+      "dependsOn": []
+    },
+    "transpile-changes": {
+      "cache": true,
+      "dependsOn": [],
+      "outputs": ["{projectRoot}/dist"]
+    }
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "sharedGlobals": [],
+    "production": ["default"]
+  }
+}

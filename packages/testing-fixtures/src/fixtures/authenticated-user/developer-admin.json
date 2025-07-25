@@ -1,0 +1,47 @@
+{
+  "token": {
+    "user_id": "P-MbBlGFms47LFaFFGJq-Q",
+    "roles": ["developer_admin"],
+    "raw": null
+  },
+  "entity": {
+    "id": 1053761200,
+    "display_name": "Rodrigo N",
+    "first_name": "Rodrigo",
+    "last_name": "Nascimento",
+    "email": "rodrigo.nascimento@varsitytutors.com",
+    "login": "rodrigo.nascimento@varsitytutors.com",
+    "role": "developer_admin",
+    "is_client": false,
+    "client_id": null,
+    "client_uuid": null,
+    "tutor_id": null,
+    "tutor_uuid": null,
+    "teacher_uuid": null,
+    "product_state": null,
+    "updated_at": "2025-03-10T18:59:29Z",
+    "is_anonymous": false,
+    "token": "0c684289bca7ccc343ce4e1bb5077ade",
+    "avatar_url": null,
+    "recruitment_link": null,
+    "can_impersonate": true,
+    "jurisdiction_id": null,
+    "lab_user_type": 5
+  },
+  "students": [
+    {
+      "first_name": "Rodrigo",
+      "last_name": "Nascimento",
+      "email": "rodrigo.nascimento@varsitytutors.com",
+      "id": 1053761200,
+      "uuid": "P-MbBlGFms47LFaFFGJq-Q",
+      "user_id": "P-MbBlGFms47LFaFFGJq-Q",
+      "student_user_id": null,
+      "client": null,
+      "enrolled": false,
+      "grade_list_id": null,
+      "avatar_url": null,
+      "enablements": null
+    }
+  ]
+}

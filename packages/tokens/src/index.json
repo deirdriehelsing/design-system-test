@@ -1,0 +1,8 @@
+{
+  "themes": [
+    { "value": "base" },
+    { "value": "bossa-aurora" },
+    { "value": "nova-aurora" },
+    { "value": "solar-maxima" }
+  ]
+}

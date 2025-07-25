@@ -1,0 +1,11 @@
+{
+  "comp": {
+    "drawer": {
+      "box-shadow": {
+        "default": {
+          "value": "0 0 4px rgba(0, 0, 0, 0.1)"
+        }
+      }
+    }
+  }
+}

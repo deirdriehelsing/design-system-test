@@ -1,0 +1,92 @@
+{
+  "comp": {
+    "tooltip": {
+      "border-radius": {
+        "default": {
+          "value": "{sys.shape.corner.extra-small.value}"
+        }
+      },
+      "box-shadow": {
+        "default": {
+          "value": "none"
+        },
+        "active": {
+          "value": "{sys.shadow.box.declaration-08.value}"
+        }
+      },
+      "horizontal-padding": {
+        "small": {
+          "value": "0.5rem"
+        },
+        "default": {
+          "value": "1rem"
+        }
+      },
+      "vertical-padding": {
+        "small": {
+          "value": "0.25rem"
+        },
+        "default": {
+          "value": "0.5rem"
+        }
+      },
+      "font": {
+        "size": {
+          "value": "0.875rem"
+        },
+        "weight": {
+          "value": "500"
+        },
+        "line-height": {
+          "value": "1.5rem"
+        }
+      },
+      "arrow": {
+        "width": {
+          "value": "2rem"
+        },
+        "box-sizing": {
+          "value": "border-box"
+        }
+      },
+      "color": {
+        "accent01": {
+          "value": "{ref.palette.accent01.shade-50.value}"
+        },
+        "accent02": {
+          "value": "{ref.palette.accent02.shade-60.value}"
+        },
+        "accent03": {
+          "value": "{ref.palette.accent03.shade-60.value}"
+        },
+        "accent04": {
+          "value": "{ref.palette.accent04.shade-60.value}"
+        },
+        "default": {
+          "value": "{ref.palette.secondary.shade-05.value}"
+        },
+        "error": {
+          "value": "{ref.palette.error.shade-40.value}"
+        },
+        "info": {
+          "value": "{ref.palette.tertiary.shade-30.value}"
+        },
+        "inherit": {
+          "value": "currentColor"
+        },
+        "primary": {
+          "value": "{ref.palette.primary.shade-05.value}"
+        },
+        "secondary": {
+          "value": "{ref.palette.tertiary.shade-00.value}"
+        },
+        "success": {
+          "value": "{ref.palette.success.shade-00.value}"
+        },
+        "warning": {
+          "value": "{ref.palette.warning.shade-70.value}"
+        }
+      }
+    }
+  }
+}

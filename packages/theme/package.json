@@ -1,0 +1,38 @@
+{
+  "name": "@blueshift-ui/theme",
+  "version": "4.61.0",
+  "description": "BlueshiftUI theme provider and brand assets",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/master/packages/theme#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "sideEffects": [
+    "**/*.css.ts",
+    "**/*.css.js",
+    "./src/components/provider/index.tsx",
+    "./dist/components/provider/index.js"
+  ],
+  "types": "dist/types/index.d.ts",
+  "dependencies": {
+    "@blueshift-ui/tokens": "4.61.0",
+    "@fontsource/lato": "5.0.21",
+    "@fontsource/ovo": "5.1.0",
+    "@fontsource/poppins": "5.0.14"
+  },
+  "devDependencies": {
+    "@blueshift-ui/feedback": "4.61.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.0",
+    "@mui/material": "6.4.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && tsc && copyfiles -u 1 'src/**/*.@(css|ico|png|svg)' dist/",
+    "transpile-changes": "tsc -b && copyfiles -u 1 'src/**/*.@(css|ico|png|svg)' dist/",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "comp": {
+    "app-bar": {
+      "min-height": {
+        "small": {
+          "value": "4rem"
+        },
+        "default": {
+          "value": "4.5rem"
+        }
+      },
+      "children": {
+        "icon-button": {
+          "color": {
+            "default": {
+              "value": "{ref.palette.secondary.shade-100.value}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

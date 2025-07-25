@@ -1,0 +1,42 @@
+{
+  "entity": {
+    "id": 1054958434,
+    "display_name": "Prepare For Your Session T",
+    "first_name": "PrepareForYourSession",
+    "last_name": "TutorTracker",
+    "email": "tt-prepare-for-your-session@vtstaging.xyz",
+    "login": "tt-prepare-for-your-session@vtstaging.xyz",
+    "role": "client",
+    "is_client": true,
+    "client_id": 3251604,
+    "client_uuid": "89426602-d58e-46db-92fd-784b62945925",
+    "tutor_id": null,
+    "tutor_uuid": null,
+    "teacher_uuid": null,
+    "product_state": "one_on_one_membership",
+    "updated_at": "2024-10-04T12:22:15Z",
+    "is_anonymous": false,
+    "token": "bd38f93d0955b55a42171f1444440867",
+    "avatar_url": null,
+    "recruitment_link": null,
+    "can_impersonate": false,
+    "jurisdiction_id": 7,
+    "lab_user_type": 3,
+    "pending_tos_url": null
+  },
+  "students": [
+    {
+      "enrolled": true,
+      "first_name": "Buzz",
+      "grade_list_id": 1,
+      "last_name": "Aldrin",
+      "student_user_id": "mock-student-user-id",
+      "user_id": "mock-student-user-id",
+      "uuid": "mock-student-uuid"
+    }
+  ],
+  "token": {
+    "user_id": "raNIdqI9EWDrBwhbbPyvYA",
+    "roles": ["client"]
+  }
+}

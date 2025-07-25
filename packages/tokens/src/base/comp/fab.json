@@ -1,0 +1,33 @@
+{
+  "comp": {
+    "fab": {
+      "padding": {
+        "default": {
+          "value": "1.25rem"
+        },
+        "medium": {
+          "value": "0.5rem"
+        },
+        "small": {
+          "value": "0.25rem"
+        }
+      },
+      "shadow": {
+        "default": {
+          "value": "-1rem 0.5rem 1rem rgba(0, 0, 0, 0.05)"
+        }
+      },
+      "size": {
+        "default": {
+          "value": "5rem"
+        },
+        "medium": {
+          "value": "4rem"
+        },
+        "small": {
+          "value": "2.5rem"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@blueshift-ui/fetch",
+  "version": "4.61.0",
+  "description": "Fetch utils for remote procedure calls",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/main/packages/fetch#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "sideEffects": [
+    "**/*.css.ts",
+    "**/*.css.js"
+  ],
+  "dependencies": {
+    "@blueshift-ui/core": "4.61.0",
+    "@blueshift-ui/telemetry": "4.61.0",
+    "@tanstack/react-query": "4.32.0",
+    "axios": "1.8.2",
+    "graphql": "16.9.0",
+    "graphql-request": "6.1.0",
+    "js-cookie": "3.0.5",
+    "jsona": "1.12.1",
+    "pusher-js": "8.3.0"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "3.0.5"
+  },
+  "peerDependencies": {
+    "jotai": "2.12.1",
+    "lodash": "4.17.21",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && tsc",
+    "transpile-changes": "tsc -b",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

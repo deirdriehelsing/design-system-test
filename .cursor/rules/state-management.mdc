@@ -1,0 +1,47 @@
+---
+description: State menagement
+globs: .ts, .tsx
+---
+# State Menagement
+
+## Jotai API version
+
+<rule>
+name: jotai_api_version
+description: Ensures Jotai suggestions follow the official API for the version specified in package.json
+
+filters:
+  - type: content
+    pattern: "jotai"
+
+validations:
+  - type: version_check
+    source: package.json
+    dependency: "jotai"
+
+guidelines:
+  v1.x:
+    - Use atom() for creating basic atoms
+    - Use atomWithStorage() for persisted atoms
+    - Provider accepts initialValues as array of tuples
+    - Use useAtom() for reading/writing atoms
+    - Use useAtomValue() for read-only access
+    - Use useSetAtom() for write-only access
+
+  v2.x:
+    - All v1.x features plus:
+    - Use atomWithCache() for cached atoms
+    - Enhanced TypeScript support with strict types
+
+best_practices:
+  - Use appropriate atom creation method based on use case
+  - Always validate types. Never cause type errors.
+  - Follow Jotai's immutability principles
+  - Consider atomFamily for parameterized atoms
+  - Use appropriate hooks based on read/write needs
+  - Avoid mixing different state management solutions
+
+metadata:
+  priority: high
+  version: 1.0
+</rule>

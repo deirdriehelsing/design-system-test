@@ -1,0 +1,23 @@
+{
+  "name": "@blueshift-ui/tokens",
+  "version": "4.61.0",
+  "description": "BlueshiftUI design tokens",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/master/packages/tokens#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "sideEffects": [
+    "**/*.css.ts",
+    "**/*.css.js"
+  ],
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "style-dictionary": "4.3.3"
+  },
+  "scripts": {
+    "clean": "rm -rf {tmp,dist}",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "yarn clean && node ./lib/style-dictionary/build.mjs && tsc && copyfiles -u 1 tmp/**/*.css dist/ && rm -rf tmp",
+    "transpile-changes": "node ./lib/style-dictionary/build.mjs && tsc -b && copyfiles -u 1 tmp/**/*.css dist/ && rm -rf tmp",
+    "yalc-push": "yarn transpile && yalc push"
+  }
+}

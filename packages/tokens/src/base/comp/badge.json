@@ -1,0 +1,30 @@
+{
+  "comp": {
+    "badge": {
+      "border-radius": {
+        "default": {
+          "value": "{sys.shape.corner.full.value}"
+        },
+        "small": {
+          "value": "{sys.shape.corner.extra-small.value}"
+        }
+      },
+      "height": {
+        "medium": {
+          "value": "1.25rem"
+        },
+        "large": {
+          "value": "1.5rem"
+        }
+      },
+      "horizontal-padding": {
+        "default": {
+          "value": "0.375rem"
+        },
+        "large": {
+          "value": "0.5rem"
+        }
+      }
+    }
+  }
+}

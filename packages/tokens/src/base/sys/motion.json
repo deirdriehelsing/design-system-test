@@ -1,0 +1,23 @@
+{
+  "sys": {
+    "motion": {
+      "duration": {
+        "shortest": { "value": 100 },
+        "shorter": { "value": 150 },
+        "short": { "value": 200 },
+        "standard": { "value": 300 },
+        "complex": { "value": 500 }
+      },
+      "easing": {
+        "ease-in-out": { "value": "cubic-bezier(0.4, 0, 0.2, 1)" },
+        "emphasized": { "value": "cubic-bezier(0.2, 0, 0, 1)" },
+        "emphasized-accelerate": { "value": "cubic-bezier(0.3, 0, 0.8, 0.15)" },
+        "emphasized-decelerate": { "value": "cubic-bezier(0.5, 2.5, 0.7, 0.7)" },
+        "linear": { "value": "cubic-bezier(0, 0, 1, 1)" },
+        "standard": { "value": "cubic-bezier(0.2, 0, 0, 1)" },
+        "standard-accelerate": { "value": "cubic-bezier(0.3, 0, 1, 1)" },
+        "standard-decelerate": { "value": "cubic-bezier(0, 0, 0, 1)" }
+      }
+    }
+  }
+}

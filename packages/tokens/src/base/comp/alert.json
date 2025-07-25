@@ -1,0 +1,16 @@
+{
+  "comp": {
+    "alert": {
+      "padding": {
+        "default": {
+          "value": "1rem 1.5rem"
+        }
+      },
+      "borderRadius": {
+        "default": {
+          "value": "1.75rem"
+        }
+      }
+    }
+  }
+}

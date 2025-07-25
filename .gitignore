@@ -1,0 +1,31 @@
+# Directories
+**/build
+**/dist
+**/lib
+**/node_modules
+**/tmp
+.idea
+.run
+.nx
+.pnp
+.vscode
+.yarn
+docs/coverage
+docs/storybook
+
+# Files
+.cursor/rules/*.local.mdc
+.DS_Store
+.env.*local
+.eslintcache
+.pnp.js
+lerna-debug.log
+lib/**/yarn.lock
+newrelic_agent.log
+npm-debug.log*
+package-lock.json
+tsconfig.tsbuildinfo
+version.txt
+yarn-debug.log*
+yarn-error.log*
+check-dependencies.log

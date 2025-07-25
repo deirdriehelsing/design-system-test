@@ -1,0 +1,14 @@
+{
+  "comp": {
+    "media-card": {
+      "thumbnail": {
+        "height": {
+          "value": "10rem"
+        },
+        "width": {
+          "value": "19.5rem"
+        }
+      }
+    }
+  }
+}

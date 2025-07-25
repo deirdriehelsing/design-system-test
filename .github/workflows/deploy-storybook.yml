@@ -1,0 +1,59 @@
+name: Deploy Storybook
+
+concurrency: deploy-storybook
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+env:
+  AWS_ACCOUNT_ID: 276760292304
+  GEMFURY_TOKEN: ${{ secrets.GEMFURY_TOKEN }}
+  REPO_NAME: blueshift-ui
+  S3_BUCKET: vt-assets-st
+  VT_GITHUB_TOKEN: ${{ secrets.VT_GITHUB_TOKEN }}
+
+permissions:
+  id-token: write # This is required for requesting the JWT
+  contents: read  # This is required for actions/checkout
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: Staging
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn setup
+
+      - name: Build Storybook
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
+        run: yarn build-storybook
+
+      - name: Extract Version
+        id: package-version
+        run: echo "VERSION=$(node -p "require('./lerna.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/nerdy-deployment-role
+          aws-region: us-west-2
+
+      - name: S3 Upload Latest
+        run: |
+          aws s3 cp ./docs/storybook s3://${{ env.S3_BUCKET }}/${{ env.REPO_NAME }}/storybook/ --recursive --acl public-read --follow-symlinks
+
+      - name: S3 Upload Versioned
+        run: |
+          aws s3 cp ./docs/storybook s3://${{ env.S3_BUCKET }}/${{ env.REPO_NAME }}/v${{ steps.package-version.outputs.VERSION }}/storybook/ --recursive --acl public-read --follow-symlinks

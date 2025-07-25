@@ -1,0 +1,69 @@
+---
+description: Generate conventional commit for changes proposed by CursorAI
+globs: 
+---
+# Generate Conventional Commit
+
+Generate conventional commit for changes proposed by CursorAI
+
+<rule>
+name: commit_changes
+description: >
+  When the commit prompt ("commit changes") is triggered, this rule analyzes the changed files and suggests
+  git commands to stage them and commit using a Conventional Commits message. Use this as a guide to decide
+  on the proper commit type, scope, and a short description of the changes.
+filters:
+  - type: event
+    pattern: "^commit_changes$"
+  - type: file
+    pattern: ".*"
+actions:
+  - type: suggest
+    message: |
+      **Git Commit Command Suggestion**
+
+      1. **Stage the Changes:**  
+         Identify the files you modified. For instance, if your changed files include:
+         - `packages/one-on-one-tutoring/src/hooks/use-next-tutoring-session/index.test.ts`
+         - `packages/ai/src/hooks/use-chat-completion/index.ts`
+
+         You can stage them with:
+         ```bash
+         git add packages/one-on-one-tutoring/src/hooks/use-next-tutoring-session/index.test.ts packages/ai/src/hooks/use-chat-completion/index.ts
+         ```
+
+      2. **Select a Commit Type:**  
+         Choose one of the following based on your changes:
+         - **chore:** Changes to the build process or auxiliary tools and libraries
+         - **docs:** Documentation only changes
+         - **feat:** A new feature
+         - **fix:** A bug fix
+         - **perf:** A code change that improves performance
+         - **refactor:** A code change that neither fixes a bug nor adds a feature
+         - **revert:** A code change that reverts a commit or PR
+         - **style:** Changes that do not affect the meaning of the code (formatting, etc.)
+         - **test:** Adding or updating tests
+
+      3. **Construct the Commit Message:**  
+         Follow the format:
+         ```
+         <type>(<scope>): <short description>
+         ```
+         For example, if you modified tutoring and AI chat functionality, a sample command might be:
+         ```bash
+         git commit -m "feat(tutoring,ai): update tests and enhance chat completion"
+         ```
+
+      4. **Putting It All Together:**  
+         A complete workflow example:
+         ```bash
+         git add <changed_file1> <changed_file2> ...
+         git commit -m "<type>(<scope>): <short description>"
+         ```
+         _Adjust the `<type>`, `<scope>`, and `<short description>` based on the files that were changed._
+
+      **Note:** Review your changed files carefully and adjust the commit message so it best reflects the nature of your updates.
+metadata:
+  priority: medium
+  version: 1.0
+</rule>

@@ -1,0 +1,53 @@
+name: Check Dependencies Consistency
+
+concurrency:
+  # one check per branch at a time
+  group: check-dependencies-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+  id-token: write
+  pull-requests: write
+
+env:
+  GEMFURY_TOKEN: ${{ secrets.GEMFURY_TOKEN }}
+  VT_GITHUB_TOKEN: ${{ secrets.VT_GITHUB_TOKEN }}
+
+jobs:
+  check-dependencies:
+    name: Check Dependencies Consistency
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - id: syncpack
+        name: Run syncpack
+        run: |
+          npx syncpack list-mismatches --filter="@blueshift-ui/" >&1 | sed -e 's/✘/❌/' -e 's/✓/✅/' | tee check-dependencies.log
+          exit ${PIPESTATUS[0]}
+
+      - name: Comment syncpack output
+        uses: actions/github-script@v6
+        if: ${{ failure() }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const comment = fs.readFileSync('${{ github.workspace }}/check-dependencies.log', { encoding: 'utf-8' })
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `\`\`\`\n${comment}\n\`\`\``,
+            });

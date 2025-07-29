@@ -4,20 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlueshiftUI Design System - Component Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #1976d2;
-            --secondary-color: #42a5f5;
-            --accent-color: #ff6b35;
-            --background-color: #fafafa;
-            --surface-color: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #666666;
-            --border-color: #e0e0e0;
-            --shadow: 0 2px 8px rgba(0,0,0,0.1);
-            --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
-            --border-radius: 8px;
-            --transition: all 0.2s ease-in-out;
+            /* Primary Colors from Design Tokens */
+            --primary-05: #1c1b31;
+            --primary-10: #343272;
+            --primary-20: #3f3b91;
+            --primary-30: #4a4bb6;
+            --primary-40: #6c64c9;
+            --primary-50: #8c82da;
+            --primary-70: #d0c7f0;
+            --primary-80: #e5dff7;
+            --primary-90: #efecfa;
+            --primary-100: #fff;
+
+            /* Secondary Colors */
+            --secondary-05: #1d192c;
+            --secondary-10: #3c3553;
+            --secondary-30: #5b536e;
+            --secondary-60: #a8a4b3;
+            --secondary-70: #cdcbd4;
+            --secondary-80: #e3e2e7;
+            --secondary-90: #eeedf0;
+            --secondary-100: #fff;
+
+            /* Surface Colors */
+            --surface-90: #f9f8f7;
+            --surface-91: #efeeea;
+            --surface-100: #fff;
+
+            /* Accent Colors */
+            --accent01-30: #4a4bb6;
+            --accent01-70: #d0c7f0;
+            --accent01-90: #efecfa;
+            
+            --accent02-70: #9bd8cd;
+            --accent02-90: #ddf2ee;
+            
+            --accent03-70: #f2ca7e;
+            --accent03-90: #faf4e8;
+            
+            --accent04-70: #ffb3ba;
+            --accent04-90: #ffeaec;
+
+            /* System Colors Based on Tokens */
+            --color-primary: var(--primary-30);
+            --color-primary-light: var(--primary-80);
+            --color-primary-dark: var(--primary-10);
+            
+            --color-secondary: var(--secondary-10);
+            --color-secondary-light: var(--secondary-80);
+            
+            --color-background: var(--surface-90);
+            --color-surface: var(--surface-100);
+            --color-text-primary: var(--secondary-05);
+            --color-text-secondary: var(--secondary-60);
+            --color-border: var(--secondary-80);
+            
+            /* Design System Typography */
+            --font-family: 'Poppins', sans-serif;
+            --font-weight-regular: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            
+            /* Typography Scale */
+            --type-display-large: 5rem;
+            --type-headline-large: 3rem;
+            --type-headline-medium: 2.5rem;
+            --type-headline-small: 2rem;
+            --type-title-large: 1.5rem;
+            --type-title-medium: 1.25rem;
+            --type-body-large: 1.125rem;
+            --type-body-medium: 1rem;
+            --type-body-small: 0.875rem;
+            --type-label-large: 1rem;
+            --type-label-medium: 0.875rem;
+            --type-label-small: 0.75rem;
+
+            /* Shadows */
+            --shadow-01: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            --shadow-02: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            --shadow-03: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            
+            /* Spacing */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-xxl: 3rem;
+            
+            /* Border Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+            
+            /* Transitions */
+            --transition-fast: 0.15s ease-in-out;
+            --transition-base: 0.2s ease-in-out;
+            --transition-slow: 0.3s ease-in-out;
         }
 
         * {
@@ -27,16 +115,17 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: var(--font-family);
             line-height: 1.6;
-            color: var(--text-primary);
-            background-color: var(--background-color);
+            color: var(--color-text-primary);
+            background: var(--color-background);
+            font-weight: var(--font-weight-regular);
         }
 
         .header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--primary-30), var(--primary-50));
+            color: var(--primary-100);
+            padding: var(--space-xxl) var(--space-xl);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -50,13 +139,13 @@
             width: 200%;
             height: 200%;
             background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
+            background-size: 40px 40px;
             animation: float 20s ease-in-out infinite;
         }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            50% { transform: translateY(-15px); }
         }
 
         .header-content {
@@ -67,188 +156,238 @@
         }
 
         .header h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
+            font-size: var(--type-display-large);
+            margin-bottom: var(--space-sm);
+            font-weight: var(--font-weight-bold);
+            letter-spacing: -0.02em;
         }
 
         .header .subtitle {
-            font-size: 1.2rem;
+            font-size: var(--type-title-large);
             opacity: 0.9;
-            margin-bottom: 1rem;
+            margin-bottom: var(--space-md);
+            font-weight: var(--font-weight-medium);
         }
 
         .header .description {
-            font-size: 1rem;
+            font-size: var(--type-body-large);
             max-width: 600px;
             margin: 0 auto;
-            opacity: 0.8;
+            opacity: 0.85;
+            line-height: 1.5;
         }
 
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: var(--space-xl);
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: -1rem 2rem 3rem;
+            gap: var(--space-lg);
+            margin: calc(-1 * var(--space-md)) var(--space-xl) var(--space-xxl);
             position: relative;
             z-index: 2;
         }
 
         .stat-card {
-            background: var(--surface-color);
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
+            background: var(--color-surface);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-02);
             text-align: center;
-            transition: var(--transition);
+            transition: var(--transition-base);
+            border: 1px solid var(--color-border);
         }
 
         .stat-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-03);
         }
 
         .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
+            font-size: var(--type-headline-medium);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary);
             display: block;
+            line-height: 1.2;
         }
 
         .stat-label {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-top: 0.25rem;
+            color: var(--color-text-secondary);
+            font-size: var(--type-body-small);
+            margin-top: var(--space-xs);
+            font-weight: var(--font-weight-medium);
         }
 
         .section {
-            margin-bottom: 3rem;
+            margin-bottom: var(--space-xxl);
         }
 
         .section-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-            border-left: 4px solid var(--primary-color);
-            padding-left: 1rem;
+            font-size: var(--type-headline-small);
+            margin-bottom: var(--space-md);
+            color: var(--color-text-primary);
+            border-left: 4px solid var(--color-primary);
+            padding-left: var(--space-md);
+            font-weight: var(--font-weight-bold);
+            line-height: 1.3;
         }
 
         .section-description {
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-xl);
+            font-size: var(--type-body-large);
+            line-height: 1.6;
         }
 
         .package-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: var(--space-xl);
         }
 
         .package-card {
-            background: var(--surface-color);
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-02);
             overflow: hidden;
-            transition: var(--transition);
-            border: 1px solid var(--border-color);
+            transition: var(--transition-base);
+            border: 1px solid var(--color-border);
+            position: relative;
         }
 
         .package-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-03);
         }
 
         .package-header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-30), var(--primary-40));
+            color: var(--primary-100);
+            padding: var(--space-lg);
             position: relative;
         }
 
         .package-name {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+            font-size: var(--type-title-medium);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-sm);
+            font-family: 'Monaco', 'Menlo', monospace;
         }
 
         .package-description {
             opacity: 0.9;
-            font-size: 0.95rem;
+            font-size: var(--type-body-medium);
+            line-height: 1.5;
         }
 
         .component-count {
             position: absolute;
-            top: 1rem;
-            right: 1rem;
+            top: var(--space-md);
+            right: var(--space-md);
             background: rgba(255,255,255,0.2);
-            padding: 0.25rem 0.75rem;
+            padding: var(--space-xs) var(--space-sm);
             border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
+            font-size: var(--type-label-small);
+            font-weight: var(--font-weight-medium);
+            backdrop-filter: blur(10px);
         }
 
         .components-list {
-            padding: 1.5rem;
+            padding: var(--space-lg);
         }
 
         .component-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            gap: 0.75rem;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: var(--space-sm);
         }
 
         .component-item {
-            background: var(--background-color);
-            padding: 0.75rem;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: 500;
+            background: var(--color-background);
+            padding: var(--space-md) var(--space-sm);
+            border-radius: var(--radius-md);
+            font-size: var(--type-label-medium);
+            font-weight: var(--font-weight-medium);
             text-align: center;
-            transition: var(--transition);
-            border: 1px solid var(--border-color);
+            transition: var(--transition-base);
+            border: 1px solid var(--color-border);
             cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            min-height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .component-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--color-primary);
+            transform: scaleX(0);
+            transition: var(--transition-base);
         }
 
         .component-item:hover {
-            background: var(--primary-color);
-            color: white;
-            transform: scale(1.05);
+            background: var(--primary-90);
+            color: var(--primary-05);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-01);
         }
 
+        .component-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Component Type Indicators */
+        .component-item[data-type="input"] { border-left: 3px solid var(--accent02-70); }
+        .component-item[data-type="display"] { border-left: 3px solid var(--accent03-70); }
+        .component-item[data-type="navigation"] { border-left: 3px solid var(--accent04-70); }
+        .component-item[data-type="surface"] { border-left: 3px solid var(--accent01-70); }
+
         .utilities-section {
-            background: var(--surface-color);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            margin-bottom: 2rem;
+            background: var(--color-surface);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-02);
+            margin-bottom: var(--space-xl);
+            border: 1px solid var(--color-border);
         }
 
         .utility-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-md);
         }
 
         .utility-card {
-            background: var(--background-color);
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            border: 1px solid var(--border-color);
+            background: var(--color-background);
+            padding: var(--space-lg);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            transition: var(--transition-base);
+        }
+
+        .utility-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-01);
         }
 
         .utility-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            color: var(--primary-color);
+            font-size: var(--type-title-medium);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-sm);
+            color: var(--color-primary);
+            font-family: 'Monaco', 'Menlo', monospace;
         }
 
         .utility-list {
@@ -256,159 +395,270 @@
         }
 
         .utility-list li {
-            padding: 0.25rem 0;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
+            padding: var(--space-xs) 0;
+            font-size: var(--type-body-small);
+            color: var(--color-text-secondary);
+            display: flex;
+            align-items: center;
         }
 
         .utility-list li::before {
             content: '▸';
-            color: var(--accent-color);
-            margin-right: 0.5rem;
+            color: var(--color-primary);
+            margin-right: var(--space-sm);
+            font-weight: var(--font-weight-bold);
         }
 
         .theme-showcase {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-md);
         }
 
         .theme-card {
-            background: var(--surface-color);
-            border-radius: var(--border-radius);
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
             overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            box-shadow: var(--shadow-02);
+            transition: var(--transition-base);
+            border: 1px solid var(--color-border);
         }
 
         .theme-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-03);
         }
 
         .theme-preview {
-            height: 100px;
+            height: 120px;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-weight: 600;
+            color: var(--primary-100);
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--type-title-medium);
         }
 
-        .theme-base { background: linear-gradient(135deg, #1976d2, #42a5f5); }
-        .theme-bossa { background: linear-gradient(135deg, #6a1b9a, #ab47bc); }
-        .theme-nova { background: linear-gradient(135deg, #d84315, #ff5722); }
-        .theme-solar { background: linear-gradient(135deg, #f57f17, #ffc107); }
+        .theme-base { 
+            background: linear-gradient(135deg, var(--primary-30), var(--primary-50));
+        }
+        .theme-bossa { 
+            background: linear-gradient(135deg, #4a4bb6, #8c82da);
+        }
+        .theme-nova { 
+            background: linear-gradient(135deg, #d84315, #ff5722);
+        }
+        .theme-solar { 
+            background: linear-gradient(135deg, #f57f17, #ffc107);
+        }
 
         .theme-info {
-            padding: 1rem;
+            padding: var(--space-md);
         }
 
         .theme-name {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-sm);
+            font-size: var(--type-body-large);
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+
+        .theme-info p {
+            font-size: var(--type-body-small);
+            color: var(--color-text-secondary);
+            line-height: 1.5;
         }
 
         .quick-start {
-            background: linear-gradient(135deg, #4caf50, #66bb6a);
-            color: white;
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            margin: 2rem 0;
+            background: linear-gradient(135deg, #2e7d32, #43a047);
+            color: var(--primary-100);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            margin: var(--space-xl) 0;
+            box-shadow: var(--shadow-02);
         }
 
         .quick-start h3 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            margin-bottom: var(--space-md);
+            font-size: var(--type-headline-small);
+            font-weight: var(--font-weight-bold);
         }
 
         .command-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
+            gap: var(--space-md);
+            margin-top: var(--space-md);
         }
 
         .command-item {
-            background: rgba(255,255,255,0.1);
-            padding: 1rem;
-            border-radius: 6px;
+            background: rgba(255,255,255,0.15);
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
             font-family: 'Monaco', 'Menlo', monospace;
-            font-size: 0.9rem;
+            font-size: var(--type-body-small);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
         .command-label {
             opacity: 0.8;
-            margin-bottom: 0.5rem;
-            font-size: 0.8rem;
+            margin-bottom: var(--space-sm);
+            font-size: var(--type-label-small);
+            font-weight: var(--font-weight-medium);
         }
 
         .search-box {
             width: 100%;
             max-width: 400px;
-            margin: 0 auto 2rem;
-            padding: 0.75rem 1.5rem;
-            border: 2px solid var(--border-color);
+            margin: 0 auto var(--space-xl);
+            padding: var(--space-md) var(--space-lg);
+            border: 2px solid var(--color-border);
             border-radius: 25px;
-            font-size: 1rem;
+            font-size: var(--type-body-medium);
+            font-family: var(--font-family);
             outline: none;
-            transition: var(--transition);
+            transition: var(--transition-base);
+            background: var(--color-surface);
         }
 
         .search-box:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(74, 75, 182, 0.15);
+        }
+
+        .search-box::placeholder {
+            color: var(--color-text-secondary);
+            font-weight: var(--font-weight-regular);
         }
 
         .footer {
             text-align: center;
-            padding: 3rem 2rem;
-            background: var(--surface-color);
-            border-top: 1px solid var(--border-color);
-            margin-top: 3rem;
+            padding: var(--space-xxl) var(--space-xl);
+            background: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            margin-top: var(--space-xxl);
         }
 
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1rem;
+            gap: var(--space-xl);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
         }
 
         .footer-link {
-            color: var(--primary-color);
+            color: var(--color-primary);
             text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
+            font-weight: var(--font-weight-medium);
+            font-size: var(--type-body-medium);
+            transition: var(--transition-base);
         }
 
         .footer-link:hover {
-            color: var(--accent-color);
+            color: var(--primary-40);
+            text-decoration: underline;
+        }
+
+        .footer p {
+            font-size: var(--type-body-small);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer em {
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        /* Visual Component Previews */
+        .component-preview {
+            position: absolute;
+            top: var(--space-xs);
+            right: var(--space-xs);
+            width: 16px;
+            height: 16px;
+            border-radius: var(--radius-sm);
+            opacity: 0.7;
+        }
+
+        .component-item[data-component="Button"] .component-preview {
+            background: var(--color-primary);
+            border-radius: var(--radius-sm);
+        }
+
+        .component-item[data-component="TextField"] .component-preview {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+        }
+
+        .component-item[data-component="Card"] .component-preview {
+            background: var(--color-surface);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .component-item[data-component="Avatar"] .component-preview {
+            background: var(--accent01-70);
+            border-radius: 50%;
+        }
+
+        .component-item[data-component="Chip"] .component-preview {
+            background: var(--accent02-70);
+            border-radius: 8px;
         }
 
         @media (max-width: 768px) {
             .container {
-                padding: 1rem;
+                padding: var(--space-md);
+            }
+            
+            .header {
+                padding: var(--space-xl) var(--space-md);
             }
             
             .header h1 {
-                font-size: 2rem;
+                font-size: var(--type-headline-large);
             }
             
             .package-grid,
-            .command-grid {
+            .command-grid,
+            .theme-showcase {
                 grid-template-columns: 1fr;
             }
             
             .stats-grid {
-                margin: -1rem 1rem 2rem;
+                margin: calc(-1 * var(--space-sm)) var(--space-md) var(--space-xl);
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-links {
+                gap: var(--space-md);
             }
         }
 
         .hidden {
             display: none;
+        }
+
+        /* Sticker Sheet Enhancements */
+        .package-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-top: 20px solid rgba(255,255,255,0.1);
+            pointer-events: none;
+        }
+
+        .component-item:active {
+            transform: translateY(0);
+            transition: none;
         }
     </style>
 </head>
@@ -454,40 +704,49 @@
                 <!-- Core Components -->
                 <div class="package-card" data-package="core">
                     <div class="package-header">
-                        <div class="component-count">23 components</div>
+                        <div class="component-count">28 components</div>
                         <div class="package-name">@blueshift-ui/core</div>
                         <div class="package-description">Essential building blocks and foundational components</div>
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">Box</div>
-                            <div class="component-item">Button</div>
-                            <div class="component-item">Chip</div>
-                            <div class="component-item">CircularProgress</div>
-                            <div class="component-item">ClickAwayListener</div>
-                            <div class="component-item">Collapse</div>
-                            <div class="component-item">Container</div>
-                            <div class="component-item">Divider</div>
-                            <div class="component-item">Drawer</div>
-                            <div class="component-item">DrawerContent</div>
-                            <div class="component-item">DrawerFooter</div>
-                            <div class="component-item">DrawerHeader</div>
-                            <div class="component-item">Fab</div>
-                            <div class="component-item">Fade</div>
-                            <div class="component-item">Grow</div>
-                            <div class="component-item">Icon</div>
-                            <div class="component-item">IconButton</div>
-                            <div class="component-item">Image</div>
-                            <div class="component-item">LinearProgress</div>
-                            <div class="component-item">Link</div>
-                            <div class="component-item">List</div>
-                            <div class="component-item">Markdown</div>
-                            <div class="component-item">Paper</div>
-                            <div class="component-item">RoundButton</div>
-                            <div class="component-item">Skeleton</div>
-                            <div class="component-item">Slide</div>
-                            <div class="component-item">Stack</div>
-                            <div class="component-item">Tooltip</div>
+                            <div class="component-item" data-component="Box" data-type="core">
+                                <span class="component-preview"></span>
+                                Box
+                            </div>
+                            <div class="component-item" data-component="Button" data-type="core">
+                                <span class="component-preview"></span>
+                                Button
+                            </div>
+                            <div class="component-item" data-component="Chip" data-type="core">
+                                <span class="component-preview"></span>
+                                Chip
+                            </div>
+                            <div class="component-item" data-component="CircularProgress" data-type="core">CircularProgress</div>
+                            <div class="component-item" data-component="ClickAwayListener" data-type="core">ClickAwayListener</div>
+                            <div class="component-item" data-component="Collapse" data-type="core">Collapse</div>
+                            <div class="component-item" data-component="Container" data-type="core">Container</div>
+                            <div class="component-item" data-component="Divider" data-type="core">Divider</div>
+                            <div class="component-item" data-component="Drawer" data-type="core">Drawer</div>
+                            <div class="component-item" data-component="DrawerContent" data-type="core">DrawerContent</div>
+                            <div class="component-item" data-component="DrawerFooter" data-type="core">DrawerFooter</div>
+                            <div class="component-item" data-component="DrawerHeader" data-type="core">DrawerHeader</div>
+                            <div class="component-item" data-component="Fab" data-type="core">Fab</div>
+                            <div class="component-item" data-component="Fade" data-type="core">Fade</div>
+                            <div class="component-item" data-component="Grow" data-type="core">Grow</div>
+                            <div class="component-item" data-component="Icon" data-type="core">Icon</div>
+                            <div class="component-item" data-component="IconButton" data-type="core">IconButton</div>
+                            <div class="component-item" data-component="Image" data-type="core">Image</div>
+                            <div class="component-item" data-component="LinearProgress" data-type="core">LinearProgress</div>
+                            <div class="component-item" data-component="Link" data-type="core">Link</div>
+                            <div class="component-item" data-component="List" data-type="core">List</div>
+                            <div class="component-item" data-component="Markdown" data-type="core">Markdown</div>
+                            <div class="component-item" data-component="Paper" data-type="core">Paper</div>
+                            <div class="component-item" data-component="RoundButton" data-type="core">RoundButton</div>
+                            <div class="component-item" data-component="Skeleton" data-type="core">Skeleton</div>
+                            <div class="component-item" data-component="Slide" data-type="core">Slide</div>
+                            <div class="component-item" data-component="Stack" data-type="core">Stack</div>
+                            <div class="component-item" data-component="Tooltip" data-type="core">Tooltip</div>
                         </div>
                     </div>
                 </div>
@@ -495,34 +754,37 @@
                 <!-- Input Components -->
                 <div class="package-card" data-package="inputs">
                     <div class="package-header">
-                        <div class="component-count">16 components</div>
+                        <div class="component-count">20 components</div>
                         <div class="package-name">@blueshift-ui/inputs</div>
                         <div class="package-description">Form controls, input fields, and interactive elements</div>
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">ActionButton</div>
-                            <div class="component-item">AsyncActionButton</div>
-                            <div class="component-item">Autocomplete</div>
-                            <div class="component-item">AutocompleteWithExternalTags</div>
-                            <div class="component-item">BlobButton</div>
-                            <div class="component-item">CardInputOption</div>
-                            <div class="component-item">Checkbox</div>
-                            <div class="component-item">CopyButton</div>
-                            <div class="component-item">DateCalendar</div>
-                            <div class="component-item">DateCalendarSkeleton</div>
-                            <div class="component-item">DatePicker</div>
-                            <div class="component-item">DateRangeFilterMenu</div>
-                            <div class="component-item">DateRangePicker</div>
-                            <div class="component-item">FilterMenu</div>
-                            <div class="component-item">LazyDatePicker</div>
-                            <div class="component-item">MultiInputTimeRangeField</div>
-                            <div class="component-item">RadioButtonGroup</div>
-                            <div class="component-item">Rating</div>
-                            <div class="component-item">Select</div>
-                            <div class="component-item">TextArea</div>
-                            <div class="component-item">TextField</div>
-                            <div class="component-item">ThumbsRating</div>
+                            <div class="component-item" data-component="ActionButton" data-type="input">ActionButton</div>
+                            <div class="component-item" data-component="AsyncActionButton" data-type="input">AsyncActionButton</div>
+                            <div class="component-item" data-component="Autocomplete" data-type="input">Autocomplete</div>
+                            <div class="component-item" data-component="AutocompleteWithExternalTags" data-type="input">AutocompleteWithExternalTags</div>
+                            <div class="component-item" data-component="BlobButton" data-type="input">BlobButton</div>
+                            <div class="component-item" data-component="CardInputOption" data-type="input">CardInputOption</div>
+                            <div class="component-item" data-component="Checkbox" data-type="input">Checkbox</div>
+                            <div class="component-item" data-component="CopyButton" data-type="input">CopyButton</div>
+                            <div class="component-item" data-component="DateCalendar" data-type="input">DateCalendar</div>
+                            <div class="component-item" data-component="DateCalendarSkeleton" data-type="input">DateCalendarSkeleton</div>
+                            <div class="component-item" data-component="DatePicker" data-type="input">DatePicker</div>
+                            <div class="component-item" data-component="DateRangeFilterMenu" data-type="input">DateRangeFilterMenu</div>
+                            <div class="component-item" data-component="DateRangePicker" data-type="input">DateRangePicker</div>
+                            <div class="component-item" data-component="FilterMenu" data-type="input">FilterMenu</div>
+                            <div class="component-item" data-component="LazyDatePicker" data-type="input">LazyDatePicker</div>
+                            <div class="component-item" data-component="MultiInputTimeRangeField" data-type="input">MultiInputTimeRangeField</div>
+                            <div class="component-item" data-component="RadioButtonGroup" data-type="input">RadioButtonGroup</div>
+                            <div class="component-item" data-component="Rating" data-type="input">Rating</div>
+                            <div class="component-item" data-component="Select" data-type="input">Select</div>
+                            <div class="component-item" data-component="TextArea" data-type="input">TextArea</div>
+                            <div class="component-item" data-component="TextField" data-type="input">
+                                <span class="component-preview"></span>
+                                TextField
+                            </div>
+                            <div class="component-item" data-component="ThumbsRating" data-type="input">ThumbsRating</div>
                         </div>
                     </div>
                 </div>
@@ -536,15 +798,18 @@
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">Avatar</div>
-                            <div class="component-item">Badge</div>
-                            <div class="component-item">Carousel</div>
-                            <div class="component-item">DataGrid</div>
-                            <div class="component-item">ExpandableContent</div>
-                            <div class="component-item">LineChart</div>
-                            <div class="component-item">PieChart</div>
-                            <div class="component-item">Tag</div>
-                            <div class="component-item">VideoPlayer</div>
+                            <div class="component-item" data-component="Avatar" data-type="display">
+                                <span class="component-preview"></span>
+                                Avatar
+                            </div>
+                            <div class="component-item" data-component="Badge" data-type="display">Badge</div>
+                            <div class="component-item" data-component="Carousel" data-type="display">Carousel</div>
+                            <div class="component-item" data-component="DataGrid" data-type="display">DataGrid</div>
+                            <div class="component-item" data-component="ExpandableContent" data-type="display">ExpandableContent</div>
+                            <div class="component-item" data-component="LineChart" data-type="display">LineChart</div>
+                            <div class="component-item" data-component="PieChart" data-type="display">PieChart</div>
+                            <div class="component-item" data-component="Tag" data-type="display">Tag</div>
+                            <div class="component-item" data-component="VideoPlayer" data-type="display">VideoPlayer</div>
                         </div>
                     </div>
                 </div>
@@ -558,14 +823,14 @@
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">BackToTopButton</div>
-                            <div class="component-item">Breadcrumbs</div>
-                            <div class="component-item">Menu</div>
-                            <div class="component-item">Pagination</div>
-                            <div class="component-item">SiteNav</div>
-                            <div class="component-item">Stepper</div>
-                            <div class="component-item">Tabs</div>
-                            <div class="component-item">WizardStepper</div>
+                            <div class="component-item" data-component="BackToTopButton" data-type="navigation">BackToTopButton</div>
+                            <div class="component-item" data-component="Breadcrumbs" data-type="navigation">Breadcrumbs</div>
+                            <div class="component-item" data-component="Menu" data-type="navigation">Menu</div>
+                            <div class="component-item" data-component="Pagination" data-type="navigation">Pagination</div>
+                            <div class="component-item" data-component="SiteNav" data-type="navigation">SiteNav</div>
+                            <div class="component-item" data-component="Stepper" data-type="navigation">Stepper</div>
+                            <div class="component-item" data-component="Tabs" data-type="navigation">Tabs</div>
+                            <div class="component-item" data-component="WizardStepper" data-type="navigation">WizardStepper</div>
                         </div>
                     </div>
                 </div>
@@ -573,21 +838,24 @@
                 <!-- Surface Components -->
                 <div class="package-card" data-package="surfaces">
                     <div class="package-header">
-                        <div class="component-count">8 components</div>
+                        <div class="component-count">9 components</div>
                         <div class="package-name">@blueshift-ui/surfaces</div>
                         <div class="package-description">Cards, panels, and surface-level layout components</div>
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">Accordion</div>
-                            <div class="component-item">ActionCard</div>
-                            <div class="component-item">AppBar</div>
-                            <div class="component-item">BaseCard</div>
-                            <div class="component-item">CardPitch</div>
-                            <div class="component-item">MediaCard</div>
-                            <div class="component-item">MediaCardAction</div>
-                            <div class="component-item">MerchandisingCard</div>
-                            <div class="component-item">Toolbar</div>
+                            <div class="component-item" data-component="Accordion" data-type="surface">Accordion</div>
+                            <div class="component-item" data-component="ActionCard" data-type="surface">
+                                <span class="component-preview"></span>
+                                ActionCard
+                            </div>
+                            <div class="component-item" data-component="AppBar" data-type="surface">AppBar</div>
+                            <div class="component-item" data-component="BaseCard" data-type="surface">BaseCard</div>
+                            <div class="component-item" data-component="CardPitch" data-type="surface">CardPitch</div>
+                            <div class="component-item" data-component="MediaCard" data-type="surface">MediaCard</div>
+                            <div class="component-item" data-component="MediaCardAction" data-type="surface">MediaCardAction</div>
+                            <div class="component-item" data-component="MerchandisingCard" data-type="surface">MerchandisingCard</div>
+                            <div class="component-item" data-component="Toolbar" data-type="surface">Toolbar</div>
                         </div>
                     </div>
                 </div>
@@ -601,9 +869,9 @@
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">Alert</div>
-                            <div class="component-item">Dialog</div>
-                            <div class="component-item">Snackbar</div>
+                            <div class="component-item" data-component="Alert" data-type="feedback">Alert</div>
+                            <div class="component-item" data-component="Dialog" data-type="feedback">Dialog</div>
+                            <div class="component-item" data-component="Snackbar" data-type="feedback">Snackbar</div>
                         </div>
                     </div>
                 </div>
@@ -617,14 +885,14 @@
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">Controller</div>
-                            <div class="component-item">Form</div>
-                            <div class="component-item">FormControl</div>
-                            <div class="component-item">FormControlLabel</div>
-                            <div class="component-item">FormDialog</div>
-                            <div class="component-item">FormGroup</div>
-                            <div class="component-item">FormLabel</div>
-                            <div class="component-item">FormProvider</div>
+                            <div class="component-item" data-component="Controller" data-type="form">Controller</div>
+                            <div class="component-item" data-component="Form" data-type="form">Form</div>
+                            <div class="component-item" data-component="FormControl" data-type="form">FormControl</div>
+                            <div class="component-item" data-component="FormControlLabel" data-type="form">FormControlLabel</div>
+                            <div class="component-item" data-component="FormDialog" data-type="form">FormDialog</div>
+                            <div class="component-item" data-component="FormGroup" data-type="form">FormGroup</div>
+                            <div class="component-item" data-component="FormLabel" data-type="form">FormLabel</div>
+                            <div class="component-item" data-component="FormProvider" data-type="form">FormProvider</div>
                         </div>
                     </div>
                 </div>
@@ -638,13 +906,13 @@
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">FetchProvider</div>
-                            <div class="component-item">useAxiosClient</div>
-                            <div class="component-item">useData</div>
-                            <div class="component-item">useGraphqlClient</div>
-                            <div class="component-item">useInfiniteData</div>
-                            <div class="component-item">useMutation</div>
-                            <div class="component-item">usePusherChannel</div>
+                            <div class="component-item" data-component="FetchProvider" data-type="utility">FetchProvider</div>
+                            <div class="component-item" data-component="useAxiosClient" data-type="utility">useAxiosClient</div>
+                            <div class="component-item" data-component="useData" data-type="utility">useData</div>
+                            <div class="component-item" data-component="useGraphqlClient" data-type="utility">useGraphqlClient</div>
+                            <div class="component-item" data-component="useInfiniteData" data-type="utility">useInfiniteData</div>
+                            <div class="component-item" data-component="useMutation" data-type="utility">useMutation</div>
+                            <div class="component-item" data-component="usePusherChannel" data-type="utility">usePusherChannel</div>
                         </div>
                     </div>
                 </div>
@@ -657,11 +925,11 @@
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">Provider</div>
-                            <div class="component-item">RichTranslation</div>
-                            <div class="component-item">Translation</div>
-                            <div class="component-item">useTranslation</div>
-                            <div class="component-item">useRichTranslation</div>
+                            <div class="component-item" data-component="Provider" data-type="utility">Provider</div>
+                            <div class="component-item" data-component="RichTranslation" data-type="utility">RichTranslation</div>
+                            <div class="component-item" data-component="Translation" data-type="utility">Translation</div>
+                            <div class="component-item" data-component="useTranslation" data-type="utility">useTranslation</div>
+                            <div class="component-item" data-component="useRichTranslation" data-type="utility">useRichTranslation</div>
                         </div>
                     </div>
                 </div>
@@ -674,11 +942,11 @@
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">InteractionEventTrigger</div>
-                            <div class="component-item">TrackInteractionProvider</div>
-                            <div class="component-item">ViewTracker</div>
-                            <div class="component-item">useInteractionTracker</div>
-                            <div class="component-item">useViewTracking</div>
+                            <div class="component-item" data-component="InteractionEventTrigger" data-type="utility">InteractionEventTrigger</div>
+                            <div class="component-item" data-component="TrackInteractionProvider" data-type="utility">TrackInteractionProvider</div>
+                            <div class="component-item" data-component="ViewTracker" data-type="utility">ViewTracker</div>
+                            <div class="component-item" data-component="useInteractionTracker" data-type="utility">useInteractionTracker</div>
+                            <div class="component-item" data-component="useViewTracking" data-type="utility">useViewTracking</div>
                         </div>
                     </div>
                 </div>
@@ -691,10 +959,10 @@
                     </div>
                     <div class="components-list">
                         <div class="component-grid">
-                            <div class="component-item">SearchInput</div>
-                            <div class="component-item">useClassesSearch</div>
-                            <div class="component-item">useSubjectsSearch</div>
-                            <div class="component-item">useSubjectById</div>
+                            <div class="component-item" data-component="SearchInput" data-type="utility">SearchInput</div>
+                            <div class="component-item" data-component="useClassesSearch" data-type="utility">useClassesSearch</div>
+                            <div class="component-item" data-component="useSubjectsSearch" data-type="utility">useSubjectsSearch</div>
+                            <div class="component-item" data-component="useSubjectById" data-type="utility">useSubjectById</div>
                         </div>
                     </div>
                 </div>
@@ -877,13 +1145,15 @@
                     // Highlight matching components
                     card.querySelectorAll('.component-item').forEach(item => {
                         if (item.textContent.toLowerCase().includes(searchTerm)) {
-                            item.style.background = 'var(--accent-color)';
-                            item.style.color = 'white';
-                            item.style.transform = 'scale(1.05)';
+                            item.style.background = 'var(--accent01-90)';
+                            item.style.color = 'var(--primary-05)';
+                            item.style.transform = 'translateY(-2px)';
+                            item.style.boxShadow = 'var(--shadow-01)';
                         } else {
                             item.style.background = '';
                             item.style.color = '';
                             item.style.transform = '';
+                            item.style.boxShadow = '';
                         }
                     });
                 } else {
@@ -899,15 +1169,26 @@
                         item.style.background = '';
                         item.style.color = '';
                         item.style.transform = '';
+                        item.style.boxShadow = '';
                     });
                 });
             }
         });
 
-        // Component item click handlers
+        // Component item click handlers with visual feedback
         document.querySelectorAll('.component-item').forEach(item => {
             item.addEventListener('click', () => {
-                const componentName = item.textContent;
+                const componentName = item.textContent.trim();
+                
+                // Add click animation
+                item.style.transform = 'scale(0.95)';
+                item.style.transition = 'transform 0.1s ease-in-out';
+                
+                setTimeout(() => {
+                    item.style.transform = '';
+                    item.style.transition = 'var(--transition-base)';
+                }, 100);
+                
                 // In a real implementation, this could navigate to Storybook or documentation
                 console.log(`Clicked on ${componentName}`);
                 // Example: window.open(`/storybook/?path=/story/${componentName.toLowerCase()}`, '_blank');
@@ -931,10 +1212,36 @@
         // Add loading states and interactions
         window.addEventListener('load', () => {
             document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.3s ease-in-out';
+            document.body.style.transition = 'opacity 0.4s ease-in-out';
             setTimeout(() => {
                 document.body.style.opacity = '1';
             }, 100);
+            
+            // Add stagger animation to component items
+            const componentItems = document.querySelectorAll('.component-item');
+            componentItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(10px)';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                    item.style.transition = 'var(--transition-base)';
+                }, 50 + (index * 20));
+            });
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '/' && !e.target.matches('input')) {
+                e.preventDefault();
+                searchBox.focus();
+            }
+            
+            if (e.key === 'Escape') {
+                searchBox.value = '';
+                searchBox.dispatchEvent(new Event('input'));
+                searchBox.blur();
+            }
         });
     </script>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueshiftUI Design System - Component Library</title>
+    <title>VT Design System - Component Library</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -641,6 +641,220 @@
             font-size: var(--type-body-small);
             color: var(--color-text-secondary);
         }
+
+        /* Tokens Display Styles */
+        .tokens-display {
+            padding: var(--space-xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tokens-header {
+            margin-bottom: var(--space-xxl);
+        }
+
+        .tokens-header h1 {
+            font-size: var(--type-headline-large);
+            font-weight: var(--font-weight-bold);
+            margin: 0 0 var(--space-md) 0;
+            color: var(--color-text-primary);
+        }
+
+        .tokens-header p {
+            font-size: var(--type-body-large);
+            color: var(--color-text-secondary);
+            margin: 0;
+            max-width: 800px;
+        }
+
+        .token-section {
+            margin-bottom: var(--space-xxl);
+        }
+
+        .token-section h2 {
+            font-size: var(--type-headline-medium);
+            font-weight: var(--font-weight-semibold);
+            margin: 0 0 var(--space-lg) 0;
+            color: var(--color-text-primary);
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: var(--space-sm);
+        }
+
+        .token-grid {
+            display: grid;
+            gap: var(--space-xl);
+        }
+
+        .token-category h3 {
+            font-size: var(--type-title-medium);
+            font-weight: var(--font-weight-medium);
+            margin: 0 0 var(--space-md) 0;
+            color: var(--color-text-primary);
+        }
+
+        /* Color Tokens */
+        .color-tokens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .color-token {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-md);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+        }
+
+        .color-swatch {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .token-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+
+        .token-name {
+            font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+            font-size: var(--type-body-small);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-primary);
+        }
+
+        .token-value {
+            font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+            font-size: var(--type-body-small);
+            color: var(--color-text-secondary);
+        }
+
+        /* Typography Tokens */
+        .typography-tokens {
+            display: grid;
+            gap: var(--space-lg);
+        }
+
+        .typography-token {
+            padding: var(--space-lg);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+        }
+
+        .token-sample {
+            margin-top: var(--space-md);
+            padding: var(--space-md);
+            background: var(--color-background);
+            border-radius: var(--radius-sm);
+        }
+
+        /* Spacing Tokens */
+        .spacing-tokens {
+            display: grid;
+            gap: var(--space-lg);
+        }
+
+        .spacing-token {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            padding: var(--space-lg);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+        }
+
+        .spacing-visual {
+            border-radius: var(--radius-sm);
+        }
+
+        /* Shadow Tokens */
+        .shadow-tokens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .shadow-token {
+            padding: var(--space-lg);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+        }
+
+        .shadow-sample {
+            width: 80px;
+            height: 80px;
+            background: var(--color-surface);
+            border-radius: var(--radius-md);
+            margin-top: var(--space-md);
+        }
+
+        /* Radius Tokens */
+        .radius-tokens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .radius-token {
+            padding: var(--space-lg);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+        }
+
+        .radius-sample {
+            width: 80px;
+            height: 80px;
+            background: var(--color-primary);
+            margin-top: var(--space-md);
+        }
+
+        /* Tokens Header Styling */
+        .tokens-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-md) var(--space-lg);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            transition: var(--transition-base);
+            margin-bottom: var(--space-md);
+        }
+
+        .tokens-header:hover {
+            background: var(--primary-90);
+            border-color: var(--color-primary);
+        }
+
+        .tokens-header.active {
+            background: var(--primary-90);
+            border-color: var(--color-primary);
+            color: var(--primary-05);
+        }
+
+        /* CSS Animations for component previews */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes progressAnimation {
+            0% { width: 0%; }
+            50% { width: 100%; }
+            100% { width: 0%; }
+        }
     </style>
 </head>
 <body>
@@ -648,7 +862,7 @@
         <!-- Header -->
         <header class="header">
             <div class="header-left">
-                <h1>BlueshiftUI</h1>
+                <h1>VT Design System</h1>
                 <span class="subtitle">Component Library</span>
             </div>
             <input type="text" class="search-box" id="searchBox" placeholder="Search components...">
@@ -659,7 +873,7 @@
             <!-- Core Components -->
             <div class="package-section">
                 <div class="package-header" data-package="core">
-                    <span class="package-name">@blueshift-ui/core</span>
+                    <span class="package-name">@vt-design-system/core</span>
                     <span class="package-count">28</span>
                 </div>
                 <div class="component-list" id="core-list">
@@ -709,7 +923,7 @@
             <!-- Input Components -->
             <div class="package-section">
                 <div class="package-header" data-package="inputs">
-                    <span class="package-name">@blueshift-ui/inputs</span>
+                    <span class="package-name">@vt-design-system/inputs</span>
                     <span class="package-count">20</span>
                 </div>
                 <div class="component-list" id="inputs-list">
@@ -747,7 +961,7 @@
             <!-- Feedback Components -->
             <div class="package-section">
                 <div class="package-header" data-package="feedback">
-                    <span class="package-name">@blueshift-ui/feedback</span>
+                    <span class="package-name">@vt-design-system/feedback</span>
                     <span class="package-count">3</span>
                 </div>
                 <div class="component-list" id="feedback-list">
@@ -769,7 +983,7 @@
             <!-- Navigation Components -->
             <div class="package-section">
                 <div class="package-header" data-package="navigation">
-                    <span class="package-name">@blueshift-ui/navigation</span>
+                    <span class="package-name">@vt-design-system/navigation</span>
                     <span class="package-count">8</span>
                 </div>
                 <div class="component-list" id="navigation-list">
@@ -791,13 +1005,21 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Design Tokens Section -->
+            <div class="package-section">
+                <div class="tokens-header" id="tokensHeader">
+                    <span class="package-name">Design Tokens</span>
+                    <span class="package-count">4</span>
+                </div>
+            </div>
         </nav>
 
         <!-- Main Content -->
         <main class="main-content" id="mainContent">
             <!-- Welcome Screen -->
             <div class="welcome-screen" id="welcomeScreen">
-                <h2>Welcome to BlueshiftUI Component Library</h2>
+                <h2>Welcome to VT Design System Component Library</h2>
                 <p>Select a component from the sidebar to view its implementation, variants, and usage examples. This interactive library showcases all available components with live previews.</p>
                 
                 <div class="stats-grid">
@@ -820,6 +1042,371 @@
                 </div>
             </div>
 
+            <!-- Tokens Display (Hidden by default) -->
+            <div class="tokens-display hidden" id="tokensDisplay">
+                <div class="tokens-header">
+                    <h1>Design Tokens</h1>
+                    <p>Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes.</p>
+                </div>
+                
+                <div class="tokens-content">
+                    <!-- Color Tokens -->
+                    <section class="token-section">
+                        <h2>Colors</h2>
+                        <div class="token-grid">
+                            <div class="token-category">
+                                <h3>Primary Colors</h3>
+                                <div class="color-tokens">
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--color-primary);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--color-primary</span>
+                                            <span class="token-value">#4a4bb6</span>
+                                        </div>
+                                    </div>
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--primary-90);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--primary-90</span>
+                                            <span class="token-value">#e8e8f5</span>
+                                        </div>
+                                    </div>
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--primary-100);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--primary-100</span>
+                                            <span class="token-value">#ffffff</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="token-category">
+                                <h3>Secondary Colors</h3>
+                                <div class="color-tokens">
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--color-secondary);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--color-secondary</span>
+                                            <span class="token-value">#6c757d</span>
+                                        </div>
+                                    </div>
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--secondary-05);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--secondary-05</span>
+                                            <span class="token-value">#2d3436</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="token-category">
+                                <h3>Surface & Background</h3>
+                                <div class="color-tokens">
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--color-surface); border: 1px solid var(--color-border);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--color-surface</span>
+                                            <span class="token-value">#ffffff</span>
+                                        </div>
+                                    </div>
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--color-background);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--color-background</span>
+                                            <span class="token-value">#f8f9fa</span>
+                                        </div>
+                                    </div>
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--color-border);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--color-border</span>
+                                            <span class="token-value">#e9ecef</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="token-category">
+                                <h3>Text Colors</h3>
+                                <div class="color-tokens">
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--color-text-primary);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--color-text-primary</span>
+                                            <span class="token-value">#212529</span>
+                                        </div>
+                                    </div>
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--color-text-secondary);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--color-text-secondary</span>
+                                            <span class="token-value">#6c757d</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="token-category">
+                                <h3>Semantic Colors</h3>
+                                <div class="color-tokens">
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--success-main);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--success-main</span>
+                                            <span class="token-value">#28a745</span>
+                                        </div>
+                                    </div>
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--warning-main);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--warning-main</span>
+                                            <span class="token-value">#ffc107</span>
+                                        </div>
+                                    </div>
+                                    <div class="color-token">
+                                        <div class="color-swatch" style="background: var(--error-main);"></div>
+                                        <div class="token-info">
+                                            <span class="token-name">--error-main</span>
+                                            <span class="token-value">#dc3545</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Typography Tokens -->
+                    <section class="token-section">
+                        <h2>Typography</h2>
+                        <div class="token-grid">
+                            <div class="token-category">
+                                <h3>Font Family</h3>
+                                <div class="typography-tokens">
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--font-family</span>
+                                            <span class="token-value">Poppins, sans-serif</span>
+                                        </div>
+                                        <div class="token-sample" style="font-family: var(--font-family);">The quick brown fox jumps over the lazy dog</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="token-category">
+                                <h3>Font Weights</h3>
+                                <div class="typography-tokens">
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--font-weight-regular</span>
+                                            <span class="token-value">400</span>
+                                        </div>
+                                        <div class="token-sample" style="font-weight: var(--font-weight-regular);">Regular Text</div>
+                                    </div>
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--font-weight-medium</span>
+                                            <span class="token-value">500</span>
+                                        </div>
+                                        <div class="token-sample" style="font-weight: var(--font-weight-medium);">Medium Text</div>
+                                    </div>
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--font-weight-semibold</span>
+                                            <span class="token-value">600</span>
+                                        </div>
+                                        <div class="token-sample" style="font-weight: var(--font-weight-semibold);">Semibold Text</div>
+                                    </div>
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--font-weight-bold</span>
+                                            <span class="token-value">700</span>
+                                        </div>
+                                        <div class="token-sample" style="font-weight: var(--font-weight-bold);">Bold Text</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="token-category">
+                                <h3>Type Scale</h3>
+                                <div class="typography-tokens">
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--type-headline-large</span>
+                                            <span class="token-value">2.5rem</span>
+                                        </div>
+                                        <div class="token-sample" style="font-size: var(--type-headline-large); font-weight: var(--font-weight-bold);">Headline Large</div>
+                                    </div>
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--type-headline-medium</span>
+                                            <span class="token-value">2rem</span>
+                                        </div>
+                                        <div class="token-sample" style="font-size: var(--type-headline-medium); font-weight: var(--font-weight-semibold);">Headline Medium</div>
+                                    </div>
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--type-title-large</span>
+                                            <span class="token-value">1.5rem</span>
+                                        </div>
+                                        <div class="token-sample" style="font-size: var(--type-title-large); font-weight: var(--font-weight-medium);">Title Large</div>
+                                    </div>
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--type-body-large</span>
+                                            <span class="token-value">1.125rem</span>
+                                        </div>
+                                        <div class="token-sample" style="font-size: var(--type-body-large);">Body Large</div>
+                                    </div>
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--type-body-medium</span>
+                                            <span class="token-value">1rem</span>
+                                        </div>
+                                        <div class="token-sample" style="font-size: var(--type-body-medium);">Body Medium</div>
+                                    </div>
+                                    <div class="typography-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--type-body-small</span>
+                                            <span class="token-value">0.875rem</span>
+                                        </div>
+                                        <div class="token-sample" style="font-size: var(--type-body-small);">Body Small</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Spacing Tokens -->
+                    <section class="token-section">
+                        <h2>Spacing</h2>
+                        <div class="token-grid">
+                            <div class="token-category">
+                                <h3>Space Scale</h3>
+                                <div class="spacing-tokens">
+                                    <div class="spacing-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--space-xs</span>
+                                            <span class="token-value">0.25rem (4px)</span>
+                                        </div>
+                                        <div class="spacing-visual" style="width: var(--space-xs); height: 20px; background: var(--color-primary);"></div>
+                                    </div>
+                                    <div class="spacing-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--space-sm</span>
+                                            <span class="token-value">0.5rem (8px)</span>
+                                        </div>
+                                        <div class="spacing-visual" style="width: var(--space-sm); height: 20px; background: var(--color-primary);"></div>
+                                    </div>
+                                    <div class="spacing-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--space-md</span>
+                                            <span class="token-value">1rem (16px)</span>
+                                        </div>
+                                        <div class="spacing-visual" style="width: var(--space-md); height: 20px; background: var(--color-primary);"></div>
+                                    </div>
+                                    <div class="spacing-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--space-lg</span>
+                                            <span class="token-value">1.5rem (24px)</span>
+                                        </div>
+                                        <div class="spacing-visual" style="width: var(--space-lg); height: 20px; background: var(--color-primary);"></div>
+                                    </div>
+                                    <div class="spacing-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--space-xl</span>
+                                            <span class="token-value">2rem (32px)</span>
+                                        </div>
+                                        <div class="spacing-visual" style="width: var(--space-xl); height: 20px; background: var(--color-primary);"></div>
+                                    </div>
+                                    <div class="spacing-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--space-xxl</span>
+                                            <span class="token-value">3rem (48px)</span>
+                                        </div>
+                                        <div class="spacing-visual" style="width: var(--space-xxl); height: 20px; background: var(--color-primary);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Elevation & Shadow Tokens -->
+                    <section class="token-section">
+                        <h2>Elevation & Shadows</h2>
+                        <div class="token-grid">
+                            <div class="token-category">
+                                <h3>Shadow Scale</h3>
+                                <div class="shadow-tokens">
+                                    <div class="shadow-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--shadow-01</span>
+                                            <span class="token-value">0 1px 3px rgba(0,0,0,0.12)</span>
+                                        </div>
+                                        <div class="shadow-sample" style="box-shadow: var(--shadow-01);"></div>
+                                    </div>
+                                    <div class="shadow-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--shadow-02</span>
+                                            <span class="token-value">0 4px 6px rgba(0,0,0,0.1)</span>
+                                        </div>
+                                        <div class="shadow-sample" style="box-shadow: var(--shadow-02);"></div>
+                                    </div>
+                                    <div class="shadow-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--shadow-03</span>
+                                            <span class="token-value">0 10px 25px rgba(0,0,0,0.15)</span>
+                                        </div>
+                                        <div class="shadow-sample" style="box-shadow: var(--shadow-03);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Border Radius Tokens -->
+                    <section class="token-section">
+                        <h2>Border Radius</h2>
+                        <div class="token-grid">
+                            <div class="token-category">
+                                <h3>Radius Scale</h3>
+                                <div class="radius-tokens">
+                                    <div class="radius-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--radius-sm</span>
+                                            <span class="token-value">0.25rem (4px)</span>
+                                        </div>
+                                        <div class="radius-sample" style="border-radius: var(--radius-sm);"></div>
+                                    </div>
+                                    <div class="radius-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--radius-md</span>
+                                            <span class="token-value">0.5rem (8px)</span>
+                                        </div>
+                                        <div class="radius-sample" style="border-radius: var(--radius-md);"></div>
+                                    </div>
+                                    <div class="radius-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--radius-lg</span>
+                                            <span class="token-value">0.75rem (12px)</span>
+                                        </div>
+                                        <div class="radius-sample" style="border-radius: var(--radius-lg);"></div>
+                                    </div>
+                                    <div class="radius-token">
+                                        <div class="token-info">
+                                            <span class="token-name">--radius-xl</span>
+                                            <span class="token-value">1rem (16px)</span>
+                                        </div>
+                                        <div class="radius-sample" style="border-radius: var(--radius-xl);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
             <!-- Component Display (Hidden by default) -->
             <div class="component-display hidden" id="componentDisplay">
                 <div class="component-header">
@@ -827,7 +1414,7 @@
                         <span id="componentName">Component Name</span>
                         <span class="component-type-badge" id="componentBadge">Type</span>
                     </div>
-                    <div class="component-package" id="componentPackage">@blueshift-ui/package</div>
+                    <div class="component-package" id="componentPackage">@vt-design-system/package</div>
                     <div class="component-description" id="componentDescription">Component description</div>
                 </div>
                 <div class="component-body">
@@ -848,8 +1435,9 @@
     <script>
         // Component data with descriptions and previews
         const componentData = {
+            // Core Components
             Button: {
-                package: '@blueshift-ui/core',
+                package: '@vt-design-system/core',
                 description: 'Primary interactive element for user actions. Supports multiple variants, sizes, and states.',
                 type: 'core',
                 preview: `<button class="mock-button">Primary Button</button>`,
@@ -860,7 +1448,7 @@
                 ]
             },
             TextField: {
-                package: '@blueshift-ui/core',
+                package: '@vt-design-system/core',
                 description: 'Text input component with support for labels, validation, and various input types.',
                 type: 'core',
                 preview: `<input class="mock-text-field" placeholder="Enter text..." value="Sample text">`,
@@ -871,7 +1459,7 @@
                 ]
             },
             Card: {
-                package: '@blueshift-ui/core',
+                package: '@vt-design-system/core',
                 description: 'Container component for grouping related content with consistent spacing and elevation.',
                 type: 'core',
                 preview: `<div class="mock-card">
@@ -879,12 +1467,13 @@
                     <p style="margin: 0; color: var(--color-text-secondary);">This is a sample card with some content.</p>
                 </div>`,
                 variants: [
-                    { label: 'Basic', content: `<div class="mock-card"><p>Basic Card</p></div>` },
-                    { label: 'With Header', content: `<div class="mock-card"><h4 style="margin: 0 0 var(--space-sm) 0;">Header</h4><p>Content</p></div>` }
+                    { label: 'Basic', content: `<div class="mock-card"><p style="margin: 0;">Basic Card</p></div>` },
+                    { label: 'With Header', content: `<div class="mock-card"><h4 style="margin: 0 0 var(--space-sm) 0;">Header</h4><p style="margin: 0;">Content</p></div>` },
+                    { label: 'With Actions', content: `<div class="mock-card"><h4 style="margin: 0 0 var(--space-sm) 0;">Card with Actions</h4><p style="margin: 0 0 var(--space-md) 0;">Card content goes here.</p><button class="mock-button" style="font-size: var(--type-label-medium); padding: var(--space-xs) var(--space-md);">Action</button></div>` }
                 ]
             },
             Avatar: {
-                package: '@blueshift-ui/core',
+                package: '@vt-design-system/core',
                 description: 'Display user profile pictures or initials in a circular format.',
                 type: 'core',
                 preview: `<div class="mock-avatar">JD</div>`,
@@ -895,18 +1484,205 @@
                 ]
             },
             Chip: {
-                package: '@blueshift-ui/core',
+                package: '@vt-design-system/core',
                 description: 'Compact element for displaying tags, filters, or selections.',
                 type: 'core',
                 preview: `<div class="mock-chip">Sample Chip</div>`,
                 variants: [
                     { label: 'Default', content: `<div class="mock-chip">Default</div>` },
-                    { label: 'Clickable', content: `<div class="mock-chip" style="cursor: pointer;">Clickable</div>` },
-                    { label: 'With Close', content: `<div class="mock-chip">Closeable ×</div>` }
+                    { label: 'Clickable', content: `<div class="mock-chip" style="cursor: pointer; transform: scale(1.02);">Clickable</div>` },
+                    { label: 'With Close', content: `<div class="mock-chip">Closeable <span style="margin-left: var(--space-xs); opacity: 0.7;">×</span></div>` }
                 ]
             },
+            Box: {
+                package: '@vt-design-system/core',
+                description: 'Flexible container component for layout and spacing.',
+                type: 'core',
+                preview: `<div style="border: 2px dashed var(--color-border); padding: var(--space-lg); border-radius: var(--radius-md); text-align: center; color: var(--color-text-secondary);">
+                    <div style="font-weight: var(--font-weight-medium); margin-bottom: var(--space-sm);">Box Container</div>
+                    <div style="font-size: var(--type-body-small);">Flexible layout component</div>
+                </div>`,
+                variants: [
+                    { label: 'Basic', content: `<div style="border: 1px solid var(--color-border); padding: var(--space-md); border-radius: var(--radius-md);">Basic Box</div>` },
+                    { label: 'With Background', content: `<div style="background: var(--primary-90); padding: var(--space-md); border-radius: var(--radius-md); color: var(--primary-05);">Styled Box</div>` }
+                ]
+            },
+            CircularProgress: {
+                package: '@vt-design-system/core',
+                description: 'Circular progress indicator for loading states.',
+                type: 'core',
+                preview: `<div style="width: 40px; height: 40px; border: 3px solid var(--primary-90); border-top: 3px solid var(--color-primary); border-radius: 50%; animation: spin 1s linear infinite;"></div>`,
+                variants: [
+                    { label: 'Default', content: `<div style="width: 40px; height: 40px; border: 3px solid var(--primary-90); border-top: 3px solid var(--color-primary); border-radius: 50%; animation: spin 1s linear infinite;"></div>` },
+                    { label: 'Small', content: `<div style="width: 24px; height: 24px; border: 2px solid var(--primary-90); border-top: 2px solid var(--color-primary); border-radius: 50%; animation: spin 1s linear infinite;"></div>` },
+                    { label: 'Large', content: `<div style="width: 56px; height: 56px; border: 4px solid var(--primary-90); border-top: 4px solid var(--color-primary); border-radius: 50%; animation: spin 1s linear infinite;"></div>` }
+                ]
+            },
+            LinearProgress: {
+                package: '@vt-design-system/core',
+                description: 'Linear progress indicator for showing loading states and progress.',
+                type: 'core',
+                preview: `<div class="mock-progress"><div class="mock-progress-bar"></div></div>`,
+                variants: [
+                    { label: 'Determinate', content: `<div class="mock-progress"><div class="mock-progress-bar" style="width: 75%; animation: none;"></div></div>` },
+                    { label: 'Indeterminate', content: `<div class="mock-progress"><div class="mock-progress-bar" style="animation: progressAnimation 1.5s linear infinite;"></div></div>` }
+                ]
+            },
+            Divider: {
+                package: '@vt-design-system/core',
+                description: 'Visual separator for organizing content sections.',
+                type: 'core',
+                preview: `<div style="display: flex; align-items: center; width: 200px;">
+                    <span style="color: var(--color-text-secondary);">Before</span>
+                    <hr style="flex: 1; border: none; height: 1px; background: var(--color-border); margin: 0 var(--space-md);">
+                    <span style="color: var(--color-text-secondary);">After</span>
+                </div>`,
+                variants: [
+                    { label: 'Horizontal', content: `<hr style="width: 200px; border: none; height: 1px; background: var(--color-border); margin: var(--space-md) 0;">` },
+                    { label: 'Vertical', content: `<div style="display: flex; align-items: center; height: 40px;"><span>Left</span><div style="width: 1px; height: 30px; background: var(--color-border); margin: 0 var(--space-md);"></div><span>Right</span></div>` },
+                    { label: 'With Text', content: `<div style="display: flex; align-items: center; width: 200px;"><hr style="flex: 1; border: none; height: 1px; background: var(--color-border);"><span style="padding: 0 var(--space-md); color: var(--color-text-secondary); font-size: var(--type-body-small);">OR</span><hr style="flex: 1; border: none; height: 1px; background: var(--color-border);"></div>` }
+                ]
+            },
+            Paper: {
+                package: '@vt-design-system/core',
+                description: 'Elevated surface component with consistent shadow and styling.',
+                type: 'core',
+                preview: `<div style="background: var(--color-surface); padding: var(--space-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-02); max-width: 250px;">
+                    <h4 style="margin: 0 0 var(--space-sm) 0; font-size: var(--type-title-medium);">Paper Component</h4>
+                    <p style="margin: 0; color: var(--color-text-secondary); font-size: var(--type-body-small);">Elevated surface with shadow.</p>
+                </div>`,
+                variants: [
+                    { label: 'Elevation 1', content: `<div style="background: var(--color-surface); padding: var(--space-md); border-radius: var(--radius-md); box-shadow: var(--shadow-01);">Low elevation</div>` },
+                    { label: 'Elevation 2', content: `<div style="background: var(--color-surface); padding: var(--space-md); border-radius: var(--radius-md); box-shadow: var(--shadow-02);">Medium elevation</div>` },
+                    { label: 'Elevation 3', content: `<div style="background: var(--color-surface); padding: var(--space-md); border-radius: var(--radius-md); box-shadow: var(--shadow-03);">High elevation</div>` }
+                ]
+            },
+
+            // Input Components
+            ActionButton: {
+                package: '@vt-design-system/inputs',
+                description: 'Button with integrated loading and success states for actions.',
+                type: 'input',
+                preview: `<button class="mock-button" style="display: flex; align-items: center; gap: var(--space-sm);">
+                    <div style="width: 16px; height: 16px; border: 2px solid var(--primary-100); border-top: 2px solid transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                    Processing...
+                </button>`,
+                variants: [
+                    { label: 'Default', content: `<button class="mock-button">Action Button</button>` },
+                    { label: 'Loading', content: `<button class="mock-button" style="display: flex; align-items: center; gap: var(--space-sm);"><div style="width: 16px; height: 16px; border: 2px solid var(--primary-100); border-top: 2px solid transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>Loading...</button>` },
+                    { label: 'Success', content: `<button class="mock-button" style="background: var(--success-main); display: flex; align-items: center; gap: var(--space-sm);">✓ Success</button>` }
+                ]
+            },
+            Autocomplete: {
+                package: '@vt-design-system/inputs',
+                description: 'Input field with dropdown suggestions and filtering.',
+                type: 'input',
+                preview: `<div style="position: relative; width: 250px;">
+                    <input class="mock-text-field" placeholder="Type to search..." value="Apple" style="width: 100%;">
+                    <div style="position: absolute; top: 100%; left: 0; right: 0; background: var(--color-surface); border: 1px solid var(--color-border); border-top: none; border-radius: 0 0 var(--radius-md) var(--radius-md); box-shadow: var(--shadow-02); z-index: 10;">
+                        <div style="padding: var(--space-sm) var(--space-md); background: var(--primary-90); color: var(--primary-05); cursor: pointer;">Apple</div>
+                        <div style="padding: var(--space-sm) var(--space-md); cursor: pointer;">Apricot</div>
+                        <div style="padding: var(--space-sm) var(--space-md); cursor: pointer;">Avocado</div>
+                    </div>
+                </div>`,
+                variants: [
+                    { label: 'Default', content: `<input class="mock-text-field" placeholder="Search options..." style="width: 200px;">` },
+                    { label: 'With Options', content: `<div style="position: relative; width: 200px;"><input class="mock-text-field" placeholder="Search..." style="width: 100%;"><div style="position: absolute; top: 100%; left: 0; right: 0; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 0 0 var(--radius-md) var(--radius-md); box-shadow: var(--shadow-01);"><div style="padding: var(--space-sm) var(--space-md); background: var(--primary-90);">Option 1</div><div style="padding: var(--space-sm) var(--space-md);">Option 2</div></div></div>` }
+                ]
+            },
+            Checkbox: {
+                package: '@vt-design-system/inputs',
+                description: 'Checkbox input for binary selections and multi-select options.',
+                type: 'input',
+                preview: `<label style="display: flex; align-items: center; gap: var(--space-sm); cursor: pointer;">
+                    <div style="width: 18px; height: 18px; border: 2px solid var(--color-primary); border-radius: var(--radius-sm); background: var(--color-primary); display: flex; align-items: center; justify-content: center; color: var(--primary-100); font-size: 12px;">✓</div>
+                    <span>Checkbox Label</span>
+                </label>`,
+                variants: [
+                    { label: 'Checked', content: `<label style="display: flex; align-items: center; gap: var(--space-sm);"><div style="width: 18px; height: 18px; border: 2px solid var(--color-primary); border-radius: var(--radius-sm); background: var(--color-primary); display: flex; align-items: center; justify-content: center; color: var(--primary-100); font-size: 12px;">✓</div>Checked</label>` },
+                    { label: 'Unchecked', content: `<label style="display: flex; align-items: center; gap: var(--space-sm);"><div style="width: 18px; height: 18px; border: 2px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface);"></div>Unchecked</label>` },
+                    { label: 'Indeterminate', content: `<label style="display: flex; align-items: center; gap: var(--space-sm);"><div style="width: 18px; height: 18px; border: 2px solid var(--color-primary); border-radius: var(--radius-sm); background: var(--color-primary); display: flex; align-items: center; justify-content: center; color: var(--primary-100); font-size: 12px;">−</div>Indeterminate</label>` }
+                ]
+            },
+            DatePicker: {
+                package: '@vt-design-system/inputs',
+                description: 'Date selection component with calendar interface.',
+                type: 'input',
+                preview: `<div style="position: relative; width: 200px;">
+                    <input class="mock-text-field" placeholder="Select date..." value="Dec 15, 2024" readonly style="width: 100%; cursor: pointer;">
+                    <div style="position: absolute; top: 100%; left: 0; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--shadow-02); padding: var(--space-md); margin-top: var(--space-xs);">
+                        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: var(--space-xs); font-size: var(--type-label-small);">
+                            <div style="text-align: center; font-weight: var(--font-weight-medium); color: var(--color-text-secondary);">S</div>
+                            <div style="text-align: center; font-weight: var(--font-weight-medium); color: var(--color-text-secondary);">M</div>
+                            <div style="text-align: center; font-weight: var(--font-weight-medium); color: var(--color-text-secondary);">T</div>
+                            <div style="text-align: center; font-weight: var(--font-weight-medium); color: var(--color-text-secondary);">W</div>
+                            <div style="text-align: center; font-weight: var(--font-weight-medium); color: var(--color-text-secondary);">T</div>
+                            <div style="text-align: center; font-weight: var(--font-weight-medium); color: var(--color-text-secondary);">F</div>
+                            <div style="text-align: center; font-weight: var(--font-weight-medium); color: var(--color-text-secondary);">S</div>
+                            <div style="text-align: center; padding: var(--space-xs); cursor: pointer;">13</div>
+                            <div style="text-align: center; padding: var(--space-xs); cursor: pointer;">14</div>
+                            <div style="text-align: center; padding: var(--space-xs); cursor: pointer; background: var(--color-primary); color: var(--primary-100); border-radius: var(--radius-sm);">15</div>
+                            <div style="text-align: center; padding: var(--space-xs); cursor: pointer;">16</div>
+                            <div style="text-align: center; padding: var(--space-xs); cursor: pointer;">17</div>
+                            <div style="text-align: center; padding: var(--space-xs); cursor: pointer;">18</div>
+                            <div style="text-align: center; padding: var(--space-xs); cursor: pointer;">19</div>
+                        </div>
+                    </div>
+                </div>`,
+                variants: [
+                    { label: 'Default', content: `<input class="mock-text-field" placeholder="Select date..." style="width: 180px;">` },
+                    { label: 'With Value', content: `<input class="mock-text-field" value="Dec 15, 2024" readonly style="width: 180px;">` }
+                ]
+            },
+            Rating: {
+                package: '@vt-design-system/inputs',
+                description: 'Star rating component for user feedback and ratings.',
+                type: 'input',
+                preview: `<div style="display: flex; gap: var(--space-xs);">
+                    <span style="color: #ffc107; font-size: 20px;">★</span>
+                    <span style="color: #ffc107; font-size: 20px;">★</span>
+                    <span style="color: #ffc107; font-size: 20px;">★</span>
+                    <span style="color: #ffc107; font-size: 20px;">★</span>
+                    <span style="color: var(--color-border); font-size: 20px;">★</span>
+                </div>`,
+                variants: [
+                    { label: '5 Stars', content: `<div style="display: flex; gap: var(--space-xs);"><span style="color: #ffc107; font-size: 20px;">★★★★★</span></div>` },
+                    { label: '3 Stars', content: `<div style="display: flex; gap: var(--space-xs);"><span style="color: #ffc107; font-size: 20px;">★★★</span><span style="color: var(--color-border); font-size: 20px;">★★</span></div>` },
+                    { label: 'Interactive', content: `<div style="display: flex; gap: var(--space-xs);"><span style="color: #ffc107; font-size: 20px; cursor: pointer;">★</span><span style="color: #ffc107; font-size: 20px; cursor: pointer;">★</span><span style="color: #ffc107; font-size: 20px; cursor: pointer;">★</span><span style="color: var(--color-border); font-size: 20px; cursor: pointer;">★</span><span style="color: var(--color-border); font-size: 20px; cursor: pointer;">★</span></div>` }
+                ]
+            },
+            Select: {
+                package: '@vt-design-system/inputs',
+                description: 'Dropdown selection component with multiple options.',
+                type: 'input',
+                preview: `<div style="position: relative; width: 200px;">
+                    <div style="padding: var(--space-md); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <span>Select an option</span>
+                        <span style="color: var(--color-text-secondary);">▼</span>
+                    </div>
+                </div>`,
+                variants: [
+                    { label: 'Default', content: `<div style="position: relative; width: 180px;"><div style="padding: var(--space-md); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center;"><span>Select an option</span><span>▼</span></div></div>` },
+                    { label: 'Selected', content: `<div style="position: relative; width: 180px;"><div style="padding: var(--space-md); border: 1px solid var(--color-primary); border-radius: var(--radius-md); background: var(--color-surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center;"><span>Option 1</span><span>▼</span></div></div>` },
+                    { label: 'With Options', content: `<div style="position: relative; width: 180px;"><div style="padding: var(--space-md); border: 1px solid var(--color-primary); border-radius: var(--radius-md) var(--radius-md) 0 0; background: var(--color-surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center;"><span>Option 1</span><span>▲</span></div><div style="border: 1px solid var(--color-border); border-top: none; border-radius: 0 0 var(--radius-md) var(--radius-md); background: var(--color-surface); box-shadow: var(--shadow-01);"><div style="padding: var(--space-sm) var(--space-md); background: var(--primary-90); cursor: pointer;">Option 1</div><div style="padding: var(--space-sm) var(--space-md); cursor: pointer;">Option 2</div><div style="padding: var(--space-sm) var(--space-md); cursor: pointer;">Option 3</div></div></div>` }
+                ]
+            },
+            TextArea: {
+                package: '@vt-design-system/inputs',
+                description: 'Multi-line text input for longer content.',
+                type: 'input',
+                preview: `<textarea class="mock-text-field" placeholder="Enter your message..." rows="4" style="width: 250px; resize: vertical; font-family: var(--font-family);">Sample text content
+that spans multiple lines
+in the textarea component.</textarea>`,
+                variants: [
+                    { label: 'Default', content: `<textarea class="mock-text-field" placeholder="Enter text..." rows="3" style="width: 200px; resize: vertical; font-family: var(--font-family);"></textarea>` },
+                    { label: 'With Content', content: `<textarea class="mock-text-field" rows="3" style="width: 200px; resize: vertical; font-family: var(--font-family);">This is sample content in a textarea component.</textarea>` }
+                ]
+            },
+
+            // Feedback Components
             Alert: {
-                package: '@blueshift-ui/feedback',
+                package: '@vt-design-system/feedback',
                 description: 'Display important messages and notifications to users.',
                 type: 'utility',
                 preview: `<div class="mock-alert">ℹ️ This is an informational alert</div>`,
@@ -917,18 +1693,91 @@
                     { label: 'Error', content: `<div class="mock-alert error">❌ Error message</div>` }
                 ]
             },
-            LinearProgress: {
-                package: '@blueshift-ui/core',
-                description: 'Linear progress indicator for showing loading states and progress.',
-                type: 'core',
-                preview: `<div class="mock-progress"><div class="mock-progress-bar"></div></div>`,
+            Dialog: {
+                package: '@vt-design-system/feedback',
+                description: 'Modal dialog for user confirmations and important information.',
+                type: 'utility',
+                preview: `<div style="background: rgba(0,0,0,0.5); padding: var(--space-xl); border-radius: var(--radius-lg); display: inline-block;">
+                    <div style="background: var(--color-surface); padding: var(--space-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-03); max-width: 300px;">
+                        <h3 style="margin: 0 0 var(--space-md) 0; font-size: var(--type-title-medium);">Dialog Title</h3>
+                        <p style="margin: 0 0 var(--space-lg) 0; color: var(--color-text-secondary);">This is a dialog message that requires user attention.</p>
+                        <div style="display: flex; gap: var(--space-md); justify-content: flex-end;">
+                            <button class="mock-button secondary" style="font-size: var(--type-body-small); padding: var(--space-sm) var(--space-md);">Cancel</button>
+                            <button class="mock-button" style="font-size: var(--type-body-small); padding: var(--space-sm) var(--space-md);">Confirm</button>
+                        </div>
+                    </div>
+                </div>`,
                 variants: [
-                    { label: 'Determinate', content: `<div class="mock-progress"><div class="mock-progress-bar" style="width: 75%;"></div></div>` },
-                    { label: 'Indeterminate', content: `<div class="mock-progress"><div class="mock-progress-bar" style="animation: progressAnimation 1.5s linear infinite;"></div></div>` }
+                    { label: 'Confirmation', content: `<div style="background: var(--color-surface); padding: var(--space-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-02); max-width: 280px; border: 1px solid var(--color-border);"><h4 style="margin: 0 0 var(--space-sm) 0;">Confirm Action</h4><p style="margin: 0 0 var(--space-md) 0; font-size: var(--type-body-small); color: var(--color-text-secondary);">Are you sure?</p><div style="display: flex; gap: var(--space-sm); justify-content: flex-end;"><button class="mock-button secondary" style="font-size: var(--type-label-medium); padding: var(--space-xs) var(--space-md);">Cancel</button><button class="mock-button" style="font-size: var(--type-label-medium); padding: var(--space-xs) var(--space-md);">OK</button></div></div>` },
+                    { label: 'Alert Dialog', content: `<div style="background: var(--color-surface); padding: var(--space-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-02); max-width: 280px; border: 1px solid var(--error-main);"><h4 style="margin: 0 0 var(--space-sm) 0; color: var(--error-main);">⚠️ Warning</h4><p style="margin: 0 0 var(--space-md) 0; font-size: var(--type-body-small); color: var(--color-text-secondary);">This action cannot be undone.</p><div style="display: flex; justify-content: flex-end;"><button class="mock-button" style="background: var(--error-main); font-size: var(--type-label-medium); padding: var(--space-xs) var(--space-md);">Understood</button></div></div>` }
+                ]
+            },
+            Snackbar: {
+                package: '@vt-design-system/feedback',
+                description: 'Temporary notification that appears at the bottom of the screen.',
+                type: 'utility',
+                preview: `<div style="background: var(--secondary-05); color: var(--primary-100); padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-02); display: flex; align-items: center; justify-content: space-between; max-width: 300px;">
+                    <span>Snackbar message</span>
+                    <button style="background: none; border: none; color: var(--primary-100); cursor: pointer; padding: var(--space-xs);">×</button>
+                </div>`,
+                variants: [
+                    { label: 'Default', content: `<div style="background: var(--secondary-05); color: var(--primary-100); padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-02);">Default message</div>` },
+                    { label: 'Success', content: `<div style="background: var(--success-main); color: var(--primary-100); padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-02);">✓ Success message</div>` },
+                    { label: 'With Action', content: `<div style="background: var(--secondary-05); color: var(--primary-100); padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-02); display: flex; align-items: center; gap: var(--space-lg);"><span>Message with action</span><button style="background: none; border: none; color: var(--primary-100); cursor: pointer; text-decoration: underline; font-weight: var(--font-weight-medium);">UNDO</button></div>` }
+                ]
+            },
+
+            // Navigation Components
+            Breadcrumbs: {
+                package: '@vt-design-system/navigation',
+                description: 'Navigation aid showing the current page location within a hierarchy.',
+                type: 'navigation',
+                preview: `<nav style="display: flex; align-items: center; gap: var(--space-sm); font-size: var(--type-body-small);">
+                    <a href="#" style="color: var(--color-primary); text-decoration: none;">Home</a>
+                    <span style="color: var(--color-text-secondary);">›</span>
+                    <a href="#" style="color: var(--color-primary); text-decoration: none;">Category</a>
+                    <span style="color: var(--color-text-secondary);">›</span>
+                    <span style="color: var(--color-text-secondary);">Current Page</span>
+                </nav>`,
+                variants: [
+                    { label: 'Simple', content: `<nav style="display: flex; align-items: center; gap: var(--space-sm); font-size: var(--type-body-small);"><a href="#" style="color: var(--color-primary); text-decoration: none;">Home</a><span style="color: var(--color-text-secondary);">›</span><span style="color: var(--color-text-secondary);">Current</span></nav>` },
+                    { label: 'With Icons', content: `<nav style="display: flex; align-items: center; gap: var(--space-sm); font-size: var(--type-body-small);"><a href="#" style="color: var(--color-primary); text-decoration: none; display: flex; align-items: center; gap: var(--space-xs);">🏠 Home</a><span style="color: var(--color-text-secondary);">›</span><span style="color: var(--color-text-secondary);">📄 Page</span></nav>` }
+                ]
+            },
+            Menu: {
+                package: '@vt-design-system/navigation',
+                description: 'Contextual menu with selectable options.',
+                type: 'navigation',
+                preview: `<div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--shadow-02); min-width: 150px;">
+                    <div style="padding: var(--space-sm) var(--space-md); cursor: pointer; transition: var(--transition-base);" onmouseover="this.style.background='var(--primary-90)'" onmouseout="this.style.background='transparent'">Menu Item 1</div>
+                    <div style="padding: var(--space-sm) var(--space-md); cursor: pointer; background: var(--primary-90); color: var(--primary-05);">Active Item</div>
+                    <div style="height: 1px; background: var(--color-border); margin: var(--space-xs) 0;"></div>
+                    <div style="padding: var(--space-sm) var(--space-md); cursor: pointer;" onmouseover="this.style.background='var(--primary-90)'" onmouseout="this.style.background='transparent'">Menu Item 3</div>
+                </div>`,
+                variants: [
+                    { label: 'Basic', content: `<div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--shadow-01); min-width: 120px;"><div style="padding: var(--space-sm) var(--space-md); cursor: pointer;">Item 1</div><div style="padding: var(--space-sm) var(--space-md); cursor: pointer;">Item 2</div></div>` },
+                    { label: 'With Icons', content: `<div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--shadow-01); min-width: 140px;"><div style="padding: var(--space-sm) var(--space-md); cursor: pointer; display: flex; align-items: center; gap: var(--space-sm);">📝 Edit</div><div style="padding: var(--space-sm) var(--space-md); cursor: pointer; display: flex; align-items: center; gap: var(--space-sm);">🗑️ Delete</div></div>` }
+                ]
+            },
+            Pagination: {
+                package: '@vt-design-system/navigation',
+                description: 'Navigation component for paginated content.',
+                type: 'navigation',
+                preview: `<nav style="display: flex; align-items: center; gap: var(--space-sm);">
+                    <button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-md); cursor: pointer; color: var(--color-text-secondary);" disabled>‹ Prev</button>
+                    <button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-primary); background: var(--color-primary); color: var(--primary-100); border-radius: var(--radius-md); cursor: pointer;">1</button>
+                    <button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-md); cursor: pointer;">2</button>
+                    <button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-md); cursor: pointer;">3</button>
+                    <span style="color: var(--color-text-secondary);">...</span>
+                    <button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-md); cursor: pointer;">Next ›</button>
+                </nav>`,
+                variants: [
+                    { label: 'Simple', content: `<nav style="display: flex; gap: var(--space-sm);"><button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-md);">‹ Previous</button><button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-md);">Next ›</button></nav>` },
+                    { label: 'With Info', content: `<nav style="display: flex; align-items: center; gap: var(--space-md);"><button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-md);">‹</button><span style="font-size: var(--type-body-small); color: var(--color-text-secondary);">Page 1 of 5</span><button style="padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-md);">›</button></nav>` }
                 ]
             },
             Tabs: {
-                package: '@blueshift-ui/navigation',
+                package: '@vt-design-system/navigation',
                 description: 'Navigation component for switching between different views or sections.',
                 type: 'navigation',
                 preview: `<div class="mock-tabs">
@@ -937,7 +1786,9 @@
                     <div class="mock-tab">Tab 3</div>
                 </div>`,
                 variants: [
-                    { label: 'Basic', content: `<div class="mock-tabs"><div class="mock-tab active">Active</div><div class="mock-tab">Inactive</div></div>` }
+                    { label: 'Basic', content: `<div class="mock-tabs"><div class="mock-tab active">Active</div><div class="mock-tab">Inactive</div></div>` },
+                    { label: 'With Icons', content: `<div class="mock-tabs"><div class="mock-tab active">📊 Analytics</div><div class="mock-tab">⚙️ Settings</div><div class="mock-tab">👤 Profile</div></div>` },
+                    { label: 'Vertical', content: `<div style="display: flex; flex-direction: column; border-right: 1px solid var(--color-border);"><div style="padding: var(--space-md) var(--space-lg); border-bottom: 1px solid transparent; border-right: 2px solid var(--color-primary); background: var(--primary-90); color: var(--primary-05);">Active Tab</div><div style="padding: var(--space-md) var(--space-lg); border-bottom: 1px solid transparent;">Tab 2</div><div style="padding: var(--space-md) var(--space-lg); border-bottom: 1px solid transparent;">Tab 3</div></div>` }
                 ]
             }
         };
@@ -947,6 +1798,7 @@
         const mainContent = document.getElementById('mainContent');
         const welcomeScreen = document.getElementById('welcomeScreen');
         const componentDisplay = document.getElementById('componentDisplay');
+        const tokensDisplay = document.getElementById('tokensDisplay');
         const searchBox = document.getElementById('searchBox');
 
         // Package header toggle
@@ -969,6 +1821,11 @@
                     header.classList.add('active');
                 }
             });
+        });
+
+        // Tokens header click
+        document.getElementById('tokensHeader').addEventListener('click', () => {
+            showTokens();
         });
 
         // Component selection
@@ -994,9 +1851,13 @@
                 return;
             }
 
-            // Hide welcome screen and show component display
+            // Hide welcome screen and tokens display, show component display
             welcomeScreen.classList.add('hidden');
+            tokensDisplay.classList.add('hidden');
             componentDisplay.classList.remove('hidden');
+
+            // Clear tokens header active state
+            document.getElementById('tokensHeader').classList.remove('active');
 
             // Update component info
             document.getElementById('componentName').textContent = componentName;
@@ -1026,7 +1887,11 @@
 
         function showPlaceholder(componentName) {
             welcomeScreen.classList.add('hidden');
+            tokensDisplay.classList.add('hidden');
             componentDisplay.classList.remove('hidden');
+
+            // Clear tokens header active state
+            document.getElementById('tokensHeader').classList.remove('active');
 
             document.getElementById('componentName').textContent = componentName;
             document.getElementById('componentPackage').textContent = 'Coming Soon';
@@ -1038,6 +1903,21 @@
 
             document.getElementById('previewContainer').innerHTML = '<div class="placeholder-text">Component preview coming soon...</div>';
             document.getElementById('componentVariants').innerHTML = '';
+        }
+
+        function showTokens() {
+            // Hide welcome screen and component display, show tokens display
+            welcomeScreen.classList.add('hidden');
+            componentDisplay.classList.add('hidden');
+            tokensDisplay.classList.remove('hidden');
+
+            // Clear any active component selections
+            document.querySelectorAll('.component-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Set tokens header as active
+            document.getElementById('tokensHeader').classList.add('active');
         }
 
         // Search functionality

@@ -16,11 +16,11 @@
     "@blueshift-ui/surfaces": "4.61.0",
     "@blueshift-ui/telemetry": "4.61.0",
     "@blueshift-ui/theme": "4.61.0",
-    "@mui/x-date-pickers": "7.24.0",
-    "@mui/x-date-pickers-pro": "7.24.0",
+    "@mui/x-date-pickers": "8.9.0",
+    "@mui/x-date-pickers-pro": "8.9.0",
     "date-fns": "^4.1.0",
     "emoji-picker-react": "4.10.0",
-    "swiper": "9.4.1"
+    "swiper": "11.2.10"
   },
   "peerDependencies": {
     "@emotion/react": "11.14.0",

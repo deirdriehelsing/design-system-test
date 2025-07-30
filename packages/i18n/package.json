@@ -15,14 +15,14 @@
   "dependencies": {
     "@blueshift-ui/fetch": "4.61.0",
     "@blueshift-ui/telemetry": "4.61.0",
-    "i18next": "22.4.15",
-    "i18next-browser-languagedetector": "7.0.2",
+    "i18next": "25.3.2",
+    "i18next-browser-languagedetector": "8.2.0",
     "i18next-chained-backend": "4.6.2",
-    "i18next-http-backend": "2.5.2",
+    "i18next-http-backend": "3.0.2",
     "i18next-multiload-backend-adapter": "2.3.0",
     "i18next-resources-to-backend": "1.2.1",
-    "react-datocms": "4.1.3",
-    "react-i18next": "12.1.5"
+    "react-datocms": "7.2.2",
+    "react-i18next": "15.6.1"
   },
   "peerDependencies": {
     "jotai": "2.12.1",

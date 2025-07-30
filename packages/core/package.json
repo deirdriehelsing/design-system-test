@@ -11,14 +11,14 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@mui/x-tree-view": "7.24.0",
+    "@mui/x-tree-view": "8.9.0",
     "launchdarkly-js-client-sdk": "3.4.0",
     "react-node-to-string": "0.1.2",
     "remarkable": "2.0.1"
   },
   "devDependencies": {
     "@types/remarkable": "2.0.8",
-    "react-router-dom": "6.24.0"
+    "react-router-dom": "7.7.1"
   },
   "peerDependencies": {
     "@emotion/react": "11.14.0",

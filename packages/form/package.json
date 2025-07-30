@@ -15,7 +15,7 @@
     "@blueshift-ui/i18n": "4.61.0",
     "@blueshift-ui/inputs": "4.61.0",
     "@blueshift-ui/theme": "4.61.0",
-    "react-hook-form": "7.52.0"
+    "react-hook-form": "7.61.1"
   },
   "peerDependencies": {
     "@emotion/react": "11.14.0",

@@ -14,14 +14,14 @@
     "@blueshift-ui/core": "4.61.0",
     "@blueshift-ui/i18n": "4.61.0",
     "@blueshift-ui/theme": "4.61.0",
-    "@mui/icons-material": "6.4.1",
-    "@mui/x-charts": "7.24.0",
-    "@mui/x-data-grid-pro": "7.24.0",
-    "react-player": "2.16.0",
-    "swiper": "9.4.1"
+    "@mui/icons-material": "7.2.0",
+    "@mui/x-charts": "8.9.0",
+    "@mui/x-data-grid-pro": "8.9.1",
+    "react-player": "3.3.1",
+    "swiper": "11.2.10"
   },
   "devDependencies": {
-    "@mui/x-data-grid-generator": "7.24.0"
+    "@mui/x-data-grid-generator": "8.9.1"
   },
   "peerDependencies": {
     "@emotion/react": "11.14.0",

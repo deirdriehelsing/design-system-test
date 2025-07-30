@@ -12,7 +12,7 @@
     "@blueshift-ui/i18n": "4.61.0",
     "@blueshift-ui/telemetry": "4.61.0",
     "@blueshift-ui/testing-fixtures": "4.61.0",
-    "nock": "13.5.5"
+    "nock": "14.0.7"
   },
   "peerDependencies": {
     "react": "19.0.0",

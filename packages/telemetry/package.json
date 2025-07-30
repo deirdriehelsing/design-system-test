@@ -13,7 +13,7 @@
     "@blueshift-ui/core": "4.61.0",
     "@varsitytutors/event-tracker": "1.1.0",
     "js-cookie": "3.0.5",
-    "uuid": "9.0.1"
+    "uuid": "11.1.0"
   },
   "devDependencies": {
     "@types/js-cookie": "3.0.5",

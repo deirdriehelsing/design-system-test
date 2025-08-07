@@ -11,7 +11,7 @@
   ],
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "style-dictionary": "4.3.3"
+    "style-dictionary": "5.0.1"
   },
   "scripts": {
     "clean": "rm -rf {tmp,dist}",

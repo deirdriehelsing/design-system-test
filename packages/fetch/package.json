@@ -12,10 +12,10 @@
   "dependencies": {
     "@blueshift-ui/core": "4.61.0",
     "@blueshift-ui/telemetry": "4.61.0",
-    "@tanstack/react-query": "4.32.0",
+    "@tanstack/react-query": "5.84.1",
     "axios": "1.8.2",
     "graphql": "16.9.0",
-    "graphql-request": "6.1.0",
+    "graphql-request": "7.2.0",
     "js-cookie": "3.0.5",
     "jsona": "1.12.1",
     "pusher-js": "8.3.0"

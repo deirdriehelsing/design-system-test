@@ -13,15 +13,15 @@
     "@blueshift-ui/core": "4.61.0",
     "@blueshift-ui/telemetry": "4.61.0",
     "@tanstack/react-query": "4.32.0",
-    "axios": "1.8.2",
-    "graphql": "16.9.0",
+    "axios": "1.11.0",
+    "graphql": "16.11.0",
     "graphql-request": "6.1.0",
     "js-cookie": "3.0.5",
     "jsona": "1.12.1",
-    "pusher-js": "8.3.0"
+    "pusher-js": "8.4.0"
   },
   "devDependencies": {
-    "@types/js-cookie": "3.0.5"
+    "@types/js-cookie": "3.0.6"
   },
   "peerDependencies": {
     "jotai": "2.12.1",

@@ -13,12 +13,12 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "@amplitude/analytics-types": "2.9.2",
-    "@amplitude/engagement-browser": "1.0.0",
-    "@amplitude/session-replay-browser": "1.22.10",
+    "@amplitude/engagement-browser": "1.0.2",
+    "@amplitude/session-replay-browser": "1.28.3",
     "@blueshift-ui/core": "4.61.0",
     "@blueshift-ui/feedback": "4.61.0",
     "@blueshift-ui/inputs": "4.61.0",
-    "@segment/analytics-next": "1.77.0",
+    "@segment/analytics-next": "1.81.1",
     "@segment/public-api-sdk-typescript": "^57.3.0-b10835",
     "commander": "^13.1.0",
     "quicktype-core": "^23.0.171"

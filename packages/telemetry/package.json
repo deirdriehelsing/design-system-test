@@ -16,8 +16,8 @@
     "uuid": "9.0.1"
   },
   "devDependencies": {
-    "@types/js-cookie": "3.0.5",
-    "@types/new-relic-browser": "1.230.4"
+    "@types/js-cookie": "3.0.6",
+    "@types/new-relic-browser": "1.230.5"
   },
   "peerDependencies": {
     "@emotion/react": "11.14.0",

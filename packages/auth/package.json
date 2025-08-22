@@ -17,7 +17,7 @@
     "@blueshift-ui/telemetry": "4.61.0",
     "@blueshift-ui/theme": "4.61.0",
     "js-cookie": "3.0.5",
-    "launchdarkly-js-client-sdk": "3.4.0"
+    "launchdarkly-js-client-sdk": "3.8.1"
   },
   "peerDependencies": {
     "jotai": "2.12.1",

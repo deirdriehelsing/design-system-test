@@ -32,14 +32,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Get branch name
         id: branch_name
         run: echo "branch_name=`echo ${{ github.head_ref || github.ref_name }}  | sed 's/refs\/heads\///'| cut - -c 1-30 | tr '[:upper:]' '[:lower:]'`" >> $GITHUB_OUTPUT
 
       - name: Setup Node
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v5.0.0
         with:
           node-version-file: .nvmrc
           cache: yarn
@@ -53,7 +53,7 @@ jobs:
         run: yarn build-storybook
 
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5
         with:
           role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/nerdy-deployment-role
           aws-region: us-west-2

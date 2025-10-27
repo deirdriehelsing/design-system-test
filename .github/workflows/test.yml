@@ -19,10 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v6.0.0
         with:
           node-version-file: .nvmrc
           cache: yarn
@@ -35,10 +35,10 @@ jobs:
         shard: [1, 2, 3, 4]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4.0.0
+        uses: actions/setup-node@v6.0.0
         with:
           node-version-file: .nvmrc
           cache: yarn
@@ -62,7 +62,7 @@ jobs:
           mv docs/coverage/lcov.info docs/coverage/reports/${{ matrix.shard }}.lcov.info
 
       - name: Upload Code Coverage
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: coverage-artifacts-${{ matrix.shard }}
           path: docs/coverage/reports/
@@ -72,10 +72,10 @@ jobs:
     needs: test
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           path: docs/coverage/reports
           pattern: coverage-artifacts-*
